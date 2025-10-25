@@ -7,15 +7,20 @@ module graphics_card_tb ();
   logic rst;
   logic v_sync;
   logic h_sync;
+  logic [15:0] io_data;
+  logic [7:0] instruction;
+  logic [7:0] color;
   logic [7:0] ascii_code;
   logic [2:0] red;
   logic [2:0] green;
   logic [1:0] blue;
   logic video_enable;
 
+  assign io_data = {instruction, color};
   graphics_card graphics_card (
       .clk(clk),
       .rst(rst),
+      .io_data(io_data),
       .h_sync(h_sync),
       .v_sync(v_sync),
       .red(red),
@@ -25,12 +30,16 @@ module graphics_card_tb ();
   );
 
   initial begin
-    fd  = $fopen("build/trial", "w");
+    fd = $fopen("build/trial", "w");
     clk = 0;
     rst = 0;
-    #1;
     rst = 1;
+    color = 8'hFF;
+    instruction = 8'h02;  //set foreground
     #1;
+    #10;
+    color = 8'h00;
+    instruction = 8'h03;  //set background
     rst = 0;
     #20000000;
     $fclose(fd);
