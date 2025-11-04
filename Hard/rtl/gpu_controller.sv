@@ -3,32 +3,70 @@ module gpu_controller #(
     parameter CHAR_HEIGHT = 16,
     parameter BACKGROUND_COLOR = 8'h00
 ) (
+    input  logic        clk,
+    input  logic        rst,
+    input  logic [ 7:0] cpu_write_data,
+    input  logic [15:0] cpu_write_address,
     input  logic [19:0] address,
-    input  logic [ 7:0] data_in,       //ascii code
     input  logic [15:0] io_data,
     input  logic        v_sync,
-    output logic [11:0] vram_address,
+    input  logic [ 7:0] vram_read_data,      //ascii code
+    output logic [11:0] vram_read_address,
+    output logic [ 7:0] vram_write_data,
+    output logic [15:0] vram_write_address,
     output logic [ 7:0] data_out
 );
-  logic [ 7:0] data_ascii;
-  logic [11:0] ascii_address;
   logic [15:0] color_data;
+  logic clear_start, mode;
 
   io_controller io_controller (
       .v_sync(v_sync),
       .io_data(io_data),
-      .color_data(color_data)
+      .color_data(color_data),
+      .clear_start(clear_start),
+      .mode(mode)
   );
+
+  //TODO: Validate if everything is ok
+  logic line_mode;
+  assign line_mode = mode;
+
+  logic [4:0] curr_row;
+  assign curr_row = cpu_write_address[12:8];
+
+  logic clr_busy, clr_done;
+  logic [15:0] clr_waddr;
+  logic [ 7:0] clr_wdata;
+
+  clear_engine clear_engine (
+      .clk(clk),
+      .rst(rst),
+      .start(clear_start),
+      .line_mode(line_mode),
+      .line_indx(curr_row),
+      .busy(clr_busy),
+      .done(clr_done),
+      .waddr(clr_waddr),
+      .wdata(clr_wdata)
+  );
+
+  always_comb begin
+    vram_write_address = clr_busy ? clr_waddr : cpu_write_address;
+    vram_write_data = clr_busy ? clr_wdata : cpu_write_data;
+  end
+
+  logic [ 7:0] data_ascii;
+  logic [11:0] ascii_address;
 
   ascii_controller ascii_controller (
       .color_data(color_data),
-      .data_in(data_in),
+      .vram_read_data(vram_read_data),
       .address(address),
       .ascii_address(ascii_address),
       .data_ascii(data_ascii)
   );
   assign data_out = data_ascii;
-  assign vram_address = ascii_address;
+  assign vram_read_address = ascii_address;
 endmodule  //gpu_controller
 
 module ascii_controller #(
@@ -38,7 +76,7 @@ module ascii_controller #(
     parameter DISPLAY_CHAR_HEIGHT = 30
 ) (
     input  logic [15:0] color_data,
-    input  logic [ 7:0] data_in,
+    input  logic [ 7:0] vram_read_data,
     input  logic [19:0] address,
     output logic [11:0] ascii_address,
     output logic [ 7:0] data_ascii
@@ -70,7 +108,7 @@ module ascii_controller #(
   always_comb begin
     index = CHAR_WIDTH - (pixel_x % CHAR_WIDTH) - 1;
     data_ascii = (data_rom[index] === 1'b1) ? font_color : background_color;
-    char_address = data_in * CHAR_HEIGHT + pixel_y % CHAR_HEIGHT;
+    char_address = vram_read_data * CHAR_HEIGHT + pixel_y % CHAR_HEIGHT;
     ascii_address = {row, column};
   end
 endmodule  //ascii_controller
@@ -78,7 +116,10 @@ endmodule  //ascii_controller
 module io_controller (
     input logic v_sync,
     input logic [15:0] io_data,
-    output logic [15:0] color_data
+    output logic [15:0] color_data,
+    output clear_start,
+    output mode  //0 - font_color | 1 - background_color
+                 //0 - clear_screen | 1 - clear_line
 );
   logic [7:0] color;
   logic [7:0] background_color;
@@ -88,15 +129,82 @@ module io_controller (
   assign instruction = io_data[15:8];  //Higher 8 bits of instruction
   assign color       = io_data[7:0];  //Lower 8 bits of instruction
 
-  logic color_type;  //0 - font_color | 1 - background_color
-  assign color_type = instruction[1];
+  assign mode        = instruction[0];
+  assign clear_start = instruction[2];
 
   always_ff @(negedge v_sync) begin : color_register  //demux
-    if (color_type) font_color <= color;
-    else background_color <= color;
+    if (instruction[1]) begin
+      if (~mode) font_color <= color;
+      else background_color <= color;
+    end
   end : color_register
 
   assign color_data = {font_color, background_color};
+endmodule
+
+module clear_engine #(
+    parameter int COLS = 80,
+    parameter int ROWS = 30,
+    parameter logic [7:0] CLEAR_VALUE = 8'h20  //space
+) (
+    input  logic        clk,
+    input  logic        rst,
+    input  logic        start,      // 1-cycle pulse
+    input  logic        line_mode,  // 1=line, 0=full
+    input  logic [ 4:0] line_indx,  // valid when line_mode=1
+    output logic        busy,
+    output logic        done,       // 1-cycle pulse
+    output logic [15:0] waddr,      // bit15=0 => write enabled in VRAM
+    output logic [ 7:0] wdata
+);
+  logic [6:0] x;  // 0..79
+  logic [4:0] y;  // 0..29
+  logic       mode_latched;
+  logic [4:0] line_latched;
+
+  always_ff @(posedge clk or posedge rst) begin
+    if (rst) begin
+      busy <= 0;
+      done <= 0;
+      x <= '0;
+      y <= '0;
+      mode_latched <= 1;
+      line_latched <= '0;
+      waddr <= '0;
+      wdata <= CLEAR_VALUE;
+    end else begin
+      done <= 0;
+      if (!busy) begin
+        // idle: keep bit15=1
+        waddr <= 16'h8000;
+        if (start) begin
+          mode_latched <= line_mode;
+          line_latched <= line_indx;
+          x <= 0;
+          y <= line_mode ? line_indx : 0;
+          busy <= 1;
+        end
+      end else begin
+        wdata <= CLEAR_VALUE;
+        waddr <= {1'b0, 3'b000, y, x};  // bit15=0 -> write
+
+        if (x == COLS) begin
+          x <= 0;
+          if (mode_latched) begin  //if line_mode
+            busy <= 0;
+            done <= 1;
+          end else if (y == ROWS - 1) begin
+            busy <= 0;
+            done <= 1;
+          end else begin
+            y <= y + 1;
+          end
+        end else begin
+          x <= x + 1;
+        end
+      end
+    end
+  end
 endmodule
 
 
