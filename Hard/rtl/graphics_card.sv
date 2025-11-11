@@ -58,4 +58,4 @@ module graphics_card (
       .vram_write_data(vram_write_data),
       .vram_read_data(vram_read_data)
   );
-endmodule
+endmodule  //graphics_card

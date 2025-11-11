@@ -81,4 +81,4 @@ module vga_controller #(
       blue  <= data[1:0];
     end
   end : rgb_register
-endmodule  //vga
+endmodule  //vga_controller

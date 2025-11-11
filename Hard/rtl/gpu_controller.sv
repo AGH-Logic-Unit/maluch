@@ -1,8 +1,4 @@
-module gpu_controller #(
-    parameter CHAR_WIDTH = 8,
-    parameter CHAR_HEIGHT = 16,
-    parameter BACKGROUND_COLOR = 8'h00
-) (
+module gpu_controller (
     input  logic        clk,
     input  logic        rst,
     input  logic [ 7:0] cpu_write_data,
@@ -20,14 +16,13 @@ module gpu_controller #(
   logic clear_start, mode;
 
   io_controller io_controller (
-      .v_sync(v_sync),
+      .clk(clk),
+      .rst(rst),
       .io_data(io_data),
       .color_data(color_data),
       .clear_start(clear_start),
       .mode(mode)
   );
-
-  //TODO: Validate if everything is ok
   logic line_mode;
   assign line_mode = mode;
 
@@ -70,10 +65,8 @@ module gpu_controller #(
 endmodule  //gpu_controller
 
 module ascii_controller #(
-    parameter CHAR_WIDTH = 8,
-    parameter CHAR_HEIGHT = 16,
-    parameter DISPLAY_CHAR_WIDTH = 80,
-    parameter DISPLAY_CHAR_HEIGHT = 30
+    parameter logic [3:0] CHAR_WIDTH  = 8,
+    parameter logic [4:0] CHAR_HEIGHT = 16
 ) (
     input  logic [15:0] color_data,
     input  logic [ 7:0] vram_read_data,
@@ -106,15 +99,16 @@ module ascii_controller #(
 
   logic [2:0] index;
   always_comb begin
-    index = CHAR_WIDTH - (pixel_x % CHAR_WIDTH) - 1;
+    index = CHAR_WIDTH - {1'b0, pixel_x[2:0]} - 4'd1;
     data_ascii = (data_rom[index] === 1'b1) ? font_color : background_color;
-    char_address = vram_read_data * CHAR_HEIGHT + pixel_y % CHAR_HEIGHT;
+    char_address = vram_read_data * CHAR_HEIGHT + {8'b0, pixel_y[3:0]};
     ascii_address = {row, column};
   end
 endmodule  //ascii_controller
 
 module io_controller (
-    input logic v_sync,
+    input logic clk,
+    input logic rst,
     input logic [15:0] io_data,
     output logic [15:0] color_data,
     output clear_start,
@@ -132,19 +126,22 @@ module io_controller (
   assign mode        = instruction[0];
   assign clear_start = instruction[2];
 
-  always_ff @(negedge v_sync) begin : color_register  //demux
-    if (instruction[1]) begin
+  always_ff @(posedge clk or posedge rst) begin : color_register  //demux
+    if (rst) begin
+      font_color <= 0;
+      background_color <= 0;
+    end else if (instruction[1]) begin
       if (~mode) font_color <= color;
       else background_color <= color;
     end
   end : color_register
 
   assign color_data = {font_color, background_color};
-endmodule
+endmodule  //io_controller
 
 module clear_engine #(
-    parameter int COLS = 80,
-    parameter int ROWS = 30,
+    parameter logic [6:0] COLS = 80,
+    parameter logic [4:0] ROWS = 30,
     parameter logic [7:0] CLEAR_VALUE = 8'h20  //space
 ) (
     input  logic        clk,
@@ -157,25 +154,24 @@ module clear_engine #(
     output logic [15:0] waddr,      // bit15=0 => write enabled in VRAM
     output logic [ 7:0] wdata
 );
-  logic [6:0] x;  // 0..79
-  logic [4:0] y;  // 0..29
+  logic [6:0] x;
+  logic [4:0] y;
   logic       mode_latched;
   logic [4:0] line_latched;
 
-  always_ff @(posedge clk or posedge rst) begin
+  always_ff @(posedge clk or posedge rst) begin : clear_logic
     if (rst) begin
       busy <= 0;
       done <= 0;
       x <= '0;
       y <= '0;
-      mode_latched <= 1;
+      mode_latched <= 0;
       line_latched <= '0;
       waddr <= '0;
       wdata <= CLEAR_VALUE;
     end else begin
       done <= 0;
       if (!busy) begin
-        // idle: keep bit15=1
         waddr <= 16'h8000;
         if (start) begin
           mode_latched <= line_mode;
@@ -204,16 +200,20 @@ module clear_engine #(
         end
       end
     end
-  end
-endmodule
+  end : clear_logic
+endmodule  //clear_engine
 
 
-module char_rom (
+module char_rom #(
+    parameter logic [4:0] CHAR_HEIGHT = 16,
+    parameter int NUM_OF_CHARS = 256,
+    parameter int MEMORY_BYTES = $rtoi(CHAR_HEIGHT * NUM_OF_CHARS)
+) (
     input  logic [11:0] char_address,
     output logic [ 7:0] data_rom
 );
   // 256 characters × 16 rows = 4096 bytes
-  logic [7:0] font_mem[4096];
+  logic [7:0] font_mem[MEMORY_BYTES];
 
   // Load font from hex file
   initial begin

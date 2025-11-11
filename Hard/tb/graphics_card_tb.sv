@@ -2,9 +2,14 @@
 `include "graphics_card.sv"
 
 module graphics_card_tb ();
+  int data = 0;
+  logic [6:0] x;
+  logic [4:0] y;
+
   int fd;
   bit capturing;
   logic clk;
+  logic cpu_clk;
   logic rst;
   logic v_sync;
   logic h_sync;
@@ -34,6 +39,11 @@ module graphics_card_tb ();
       .cpu_write_address(cpu_write_address),
       .cpu_write_data(cpu_write_data)
   );
+
+  //Clocks
+  always #14 clk = ~clk;  //~35Mhz pixel_clock
+  always #500 cpu_clk = ~cpu_clk;  //~1 MHz cpu_clock (assumption: cpu not faster than gpu)
+
   //TASKS:
   //wait N frames
   task automatic wait_frames(int n);
@@ -49,32 +59,42 @@ module graphics_card_tb ();
     $fclose(fd);
   endtask
 
+  // CPU tasks
+  task automatic write_char(int row, int col, byte ascii_code);
+    cpu_write_address = {1'b0, 3'b000, row[4:0], col[6:0]}; // Address, bit15=0 => write
+    cpu_write_data    = ascii_code;
+    @(posedge cpu_clk);
+    cpu_write_address = 16'h8000;  // Address, bit15=1 => no_write
+  endtask
+
   task automatic set_font_color(byte c);
     color = c;
     instruction = 8'h02;
-    @(negedge v_sync);
-    instruction = 8'h00;
-  endtask
-  task automatic set_bg_color(byte c);
-    color = c;
-    instruction = 8'h03;
-    @(negedge v_sync);
+    @(posedge cpu_clk);
     instruction = 8'h00;
   endtask
 
-  //Clear_engine_tb
+  task automatic set_bg_color(byte c);
+    color = c;
+    instruction = 8'h03;
+    @(posedge cpu_clk);
+    instruction = 8'h00;
+  endtask
+
   task automatic start_clear(bit line_mode, int row_idx);
     // provide row for clear_engine
     cpu_write_address = 16'h8000 | (row_idx[4:0] << 8);
     // start pulse
     instruction = {5'b0, 1'b1, 1'b0, line_mode};  // 0x04 or 0x05
-    @(posedge clk);
+    @(posedge cpu_clk);
     instruction[2] = 1'b0;
   endtask
 
   initial begin
     // Defaults
     clk = 0;
+    cpu_clk = 0;
+
     instruction = 8'h00;
     color = 8'h00;
     cpu_write_data = 8'h00;
@@ -86,19 +106,25 @@ module graphics_card_tb ();
     repeat (4) @(posedge clk);
     rst = 0;
 
-    @(negedge v_sync);
-
     set_font_color(8'hFF);  // white font
     set_bg_color(8'h00);  // black background
 
-    wait_frames(1);
+    //VRAM character write
+    for (y = 0; y < 30; y++) begin
+      for (x = 0; x < 80; x++) begin
+        data++;
+        write_char(y, x, data[7:0]);
+      end
+    end
+
     //start_clear(0, 1);  //clear_screen
     start_clear(1, 5);  //clear_line(5)
+
+    wait_frames(4);
     capture_one_frame("build/trial");
 
     $finish;
   end
-  always #14 clk = ~clk;
 
   // Only one frame in png file
   always_ff @(posedge clk) begin : vga_out
