@@ -29,4 +29,4 @@ module io_controller (
   end : color_register
 
   assign color_data = {font_color, background_color};
-endmodule  //io_controller
+endmodule : io_controller

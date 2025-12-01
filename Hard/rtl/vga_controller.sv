@@ -1,19 +1,4 @@
-module vga_controller #(
-    // Configuration for the 640x480 resolution 60Hz refresh rate and 25.175MHz clock
-    // Period of 39.72 nanoseconds (ns)
-    // Horizontal timings [pixels]
-    parameter H_VISIBLE_AREA = 640,
-    parameter H_FRONT_PORCH  = 16,
-    parameter H_SYNC_PULSE   = 96,
-    parameter H_BACK_PORCH   = 48,
-    parameter H_WHOLE_LINE   = H_SYNC_PULSE + H_BACK_PORCH + H_VISIBLE_AREA + H_FRONT_PORCH,  //800
-    // Vertical timings [lines]
-    parameter V_VISIBLE_AREA = 480,
-    parameter V_FRONT_PORCH  = 10,
-    parameter V_SYNC_PULSE   = 2,
-    parameter V_BACK_PORCH   = 33,
-    parameter V_WHOLE_FRAME  = V_SYNC_PULSE + V_BACK_PORCH + V_VISIBLE_AREA + V_FRONT_PORCH   //525
-) (
+module vga_controller (
     input logic clk,
     input logic rst,
     // 256 colors mode
@@ -27,6 +12,21 @@ module vga_controller #(
     output logic [19:0] address,
     output logic video_enable
 );
+  // Configuration for the 640x480 resolution 60Hz refresh rate and 25.175MHz clock
+  // Period of 39.72 nanoseconds (ns)
+  // Horizontal timings [pixels]
+  localparam int H_VISIBLE_AREA = 640;
+  localparam int H_FRONT_PORCH = 16;
+  localparam int H_SYNC_PULSE = 96;
+  localparam int H_BACK_PORCH = 48;
+  localparam int H_WHOLE_LINE = H_SYNC_PULSE + H_BACK_PORCH + H_VISIBLE_AREA + H_FRONT_PORCH;  //800
+  // Vertical timings [lines]
+  localparam int V_VISIBLE_AREA = 480;
+  localparam int V_FRONT_PORCH = 10;
+  localparam int V_SYNC_PULSE = 2;
+  localparam int V_BACK_PORCH = 33;
+  localparam int V_WHOLE_FRAME  = V_SYNC_PULSE + V_BACK_PORCH + V_VISIBLE_AREA + V_FRONT_PORCH;   //525
+
   //logic video_enable;
   logic done_line;
   logic done_frame;
@@ -81,4 +81,4 @@ module vga_controller #(
       blue  <= data[1:0];
     end
   end : rgb_register
-endmodule  //vga_controller
+endmodule : vga_controller

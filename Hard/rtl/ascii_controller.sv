@@ -1,15 +1,15 @@
 `include "char_rom.sv"
 
-module ascii_controller #(
-    parameter logic [3:0] CHAR_WIDTH  = 8,
-    parameter logic [4:0] CHAR_HEIGHT = 16
-) (
+module ascii_controller (
     input  logic [15:0] color_data,
     input  logic [ 7:0] vram_read_data,
     input  logic [19:0] address,
     output logic [11:0] ascii_address,
     output logic [ 7:0] data_ascii
 );
+  localparam int CHAR_WIDTH = 8;
+  localparam int CHAR_HEIGHT = 16;
+
   logic [7:0] font_color;
   logic [7:0] background_color;
   assign font_color       = color_data[15:8];  //Higher 8 bits of color_data
@@ -40,4 +40,4 @@ module ascii_controller #(
     char_address = vram_read_data * CHAR_HEIGHT + {8'b0, pixel_y[3:0]};
     ascii_address = {row, column};
   end
-endmodule  //ascii_controller
+endmodule : ascii_controller

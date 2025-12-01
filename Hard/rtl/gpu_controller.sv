@@ -66,4 +66,4 @@ module gpu_controller (
   );
   assign data_out = data_ascii;
   assign vram_read_address = ascii_address;
-endmodule  //gpu_controller
+endmodule : gpu_controller

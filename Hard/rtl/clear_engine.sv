@@ -1,8 +1,4 @@
-module clear_engine #(
-    parameter logic [6:0] COLS = 80,
-    parameter logic [4:0] ROWS = 30,
-    parameter logic [7:0] CLEAR_VALUE = 8'h20  //space
-) (
+module clear_engine (
     input  logic        clk,
     input  logic        rst,
     input  logic        start,      // 1-cycle pulse
@@ -13,6 +9,10 @@ module clear_engine #(
     output logic [15:0] waddr,      // bit15=0 => write enabled in VRAM
     output logic [ 7:0] wdata
 );
+  localparam int COLS = 80;
+  localparam int ROWS = 30;
+  localparam int CLEAR_VALUE = 8'h20;  //space
+
   logic [6:0] x;
   logic [4:0] y;
   logic       mode_latched;
@@ -60,4 +60,4 @@ module clear_engine #(
       end
     end
   end : clear_logic
-endmodule  //clear_engine
+endmodule : clear_engine
