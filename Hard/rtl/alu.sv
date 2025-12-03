@@ -3,7 +3,6 @@
     `define TYPES
 `endif
 
-import types::csr_t;
 
 module alu(
     input logic [2:0]     alu_ctrl,

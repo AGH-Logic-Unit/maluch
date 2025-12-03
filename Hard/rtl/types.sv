@@ -6,6 +6,7 @@ package types;
         logic Overflow;
         logic Carry;
         logic Zero;
+        logic Busy;
     } csr_t;
 
     typedef struct packed {
