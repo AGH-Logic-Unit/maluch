@@ -1174,12 +1174,6 @@
 		)
 	)
 	(junction
-		(at 120.65 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1f0f9dda-f56f-4b68-b330-86d4d42b05f7")
-	)
-	(junction
 		(at 73.66 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1441,16 +1435,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 60.96) (xy 123.19 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d836e8d-3ac7-40aa-8fee-f667b28b6fc9")
-	)
-	(wire
-		(pts
 			(xy 110.49 58.42) (xy 118.11 58.42)
 		)
 		(stroke
@@ -1639,7 +1623,7 @@
 		)
 		(uuid "fea83b55-2cdf-48f6-8936-4e725289f4d2")
 	)
-	(hierarchical_label "muxnOE_n"
+	(hierarchical_label "~{OE}_MUX_n"
 		(shape output)
 		(at 121.92 111.76 0)
 		(effects
@@ -1650,18 +1634,7 @@
 		)
 		(uuid "2c4f11f2-eb85-4580-9e8f-84a55f1876dd")
 	)
-	(hierarchical_label "memory_logic_OUT"
-		(shape output)
-		(at 123.19 60.96 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "310aa608-5605-4e38-95e0-6499da5aeec3")
-	)
-	(hierarchical_label "muxnOE_p"
+	(hierarchical_label "~{OE}_MUX_p"
 		(shape input)
 		(at 62.23 111.76 180)
 		(effects
@@ -1672,7 +1645,7 @@
 		)
 		(uuid "447931ac-fcb8-4985-a9de-eab64df170f9")
 	)
-	(hierarchical_label "nWE_mem"
+	(hierarchical_label "~{WE}_mem"
 		(shape output)
 		(at 121.92 114.3 0)
 		(effects

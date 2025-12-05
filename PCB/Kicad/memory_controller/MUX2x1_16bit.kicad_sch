@@ -3429,17 +3429,6 @@
 		)
 		(uuid "ffda3ea5-95df-44d4-88dc-f47947b0d815")
 	)
-	(hierarchical_label "nOE_n"
-		(shape input)
-		(at 90.17 148.59 180)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify right)
-		)
-		(uuid "1909f1c1-c954-4b95-a011-f1255e3c0c8b")
-	)
 	(hierarchical_label "1_DATA_IN[0..15]"
 		(shape input)
 		(at 41.91 52.07 180)
@@ -3462,7 +3451,7 @@
 		)
 		(uuid "59b2f4a3-798d-4e7c-8725-74cd734b9219")
 	)
-	(hierarchical_label "nOE_n"
+	(hierarchical_label "~{OE}_n"
 		(shape input)
 		(at 88.9 93.98 180)
 		(effects
@@ -3473,7 +3462,18 @@
 		)
 		(uuid "a601a6a0-1a78-4a26-8963-5cc8b6d5c480")
 	)
-	(hierarchical_label "nOE_p"
+	(hierarchical_label "~{OE}_n"
+		(shape input)
+		(at 90.17 148.59 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "af964789-e0b4-467c-b98a-f06dc0788cfc")
+	)
+	(hierarchical_label "~{OE}_p"
 		(shape input)
 		(at 151.13 93.98 180)
 		(effects
@@ -3483,17 +3483,6 @@
 			(justify right)
 		)
 		(uuid "bab27124-ebe9-40c9-b0a7-8c96ec8dcf63")
-	)
-	(hierarchical_label "nOE_p"
-		(shape input)
-		(at 151.13 148.59 180)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify right)
-		)
-		(uuid "d49eaed4-d522-4504-ad1d-d606ee2b73bf")
 	)
 	(hierarchical_label "DATA_OUT[0..15]"
 		(shape output)
@@ -3516,6 +3505,17 @@
 			(justify left)
 		)
 		(uuid "e1a8c6c0-9769-444e-952a-4fb10a007c36")
+	)
+	(hierarchical_label "~{OE}_p"
+		(shape input)
+		(at 151.13 148.59 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "f2fa6b59-32f1-4214-ae3c-cb5b062b7c34")
 	)
 	(symbol
 		(lib_id "power:VCC")

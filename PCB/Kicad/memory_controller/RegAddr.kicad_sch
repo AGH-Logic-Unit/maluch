@@ -2175,7 +2175,7 @@
 		)
 		(uuid "eb7521dc-0a25-4641-8107-e12c433ade67")
 	)
-	(hierarchical_label "nCLKen"
+	(hierarchical_label "~{CLK_en}"
 		(shape input)
 		(at 129.54 78.74 180)
 		(effects
@@ -2185,17 +2185,6 @@
 			(justify right)
 		)
 		(uuid "20265614-cbf9-4fb4-a9db-a152e4282c81")
-	)
-	(hierarchical_label "nCLKen"
-		(shape input)
-		(at 128.27 130.81 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "372c6129-3e3c-4b58-9a1a-ea0ee641ca92")
 	)
 	(hierarchical_label "CLK"
 		(shape input)
@@ -2251,6 +2240,17 @@
 			(justify right)
 		)
 		(uuid "b6f155ad-abc2-4dab-9e69-248b7ed3114b")
+	)
+	(hierarchical_label "~{CLK_en}"
+		(shape input)
+		(at 128.27 130.81 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c94cd76c-b0e9-449d-ac85-2b0545fabc7c")
 	)
 	(symbol
 		(lib_id "74xx:74LS377")
