@@ -147,12 +147,12 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "mALUch_lib:ROM_AT28C256"
+		(symbol "mALUch_lib:ROM__AT28C256-15PU"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at 1.778 31.242 0)
+				(at 2.54 26.67 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -160,7 +160,7 @@
 				)
 			)
 			(property "Value" "AT28C256-15PU"
-				(at 9.144 28.956 0)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -177,7 +177,7 @@
 				)
 			)
 			(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/MPD/ProductDocuments/DataSheets/AT28C256-Industrial-Grade-256-Kbit-Paged-Parallel-EEPROM-Data-Sheet-DS20006386.pdf"
-				(at 1.524 -52.578 0)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -195,7 +195,7 @@
 				)
 			)
 			(property "TME" "https://www.tme.eu/pl/details/at28c256-15pu/pamieci-eeprom-rownolegle/microchip-technology/"
-				(at 1.27 -46.228 0)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -203,10 +203,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "ROM_AT28C256_1_1"
+			(symbol "ROM__AT28C256-15PU_1_1"
 				(rectangle
-					(start -10.16 26.67)
-					(end 10.16 -27.94)
+					(start -10.16 24.13)
+					(end 10.16 -30.48)
 					(stroke
 						(width 0)
 						(type solid)
@@ -216,7 +216,7 @@
 					)
 				)
 				(pin input line
-					(at -15.24 22.86 0)
+					(at -15.24 20.32 0)
 					(length 5.08)
 					(name "A0"
 						(effects
@@ -234,7 +234,7 @@
 					)
 				)
 				(pin input line
-					(at -15.24 20.32 0)
+					(at -15.24 17.78 0)
 					(length 5.08)
 					(name "A1"
 						(effects
@@ -252,7 +252,7 @@
 					)
 				)
 				(pin input line
-					(at -15.24 17.78 0)
+					(at -15.24 15.24 0)
 					(length 5.08)
 					(name "A2"
 						(effects
@@ -270,7 +270,7 @@
 					)
 				)
 				(pin input line
-					(at -15.24 15.24 0)
+					(at -15.24 12.7 0)
 					(length 5.08)
 					(name "A3"
 						(effects
@@ -288,7 +288,7 @@
 					)
 				)
 				(pin input line
-					(at -15.24 12.7 0)
+					(at -15.24 10.16 0)
 					(length 5.08)
 					(name "A4"
 						(effects
@@ -306,7 +306,7 @@
 					)
 				)
 				(pin input line
-					(at -15.24 10.16 0)
+					(at -15.24 7.62 0)
 					(length 5.08)
 					(name "A5"
 						(effects
@@ -324,7 +324,7 @@
 					)
 				)
 				(pin input line
-					(at -15.24 7.62 0)
+					(at -15.24 5.08 0)
 					(length 5.08)
 					(name "A6"
 						(effects
@@ -342,7 +342,7 @@
 					)
 				)
 				(pin input line
-					(at -15.24 5.08 0)
+					(at -15.24 2.54 0)
 					(length 5.08)
 					(name "A7"
 						(effects
@@ -360,7 +360,7 @@
 					)
 				)
 				(pin input line
-					(at -15.24 2.54 0)
+					(at -15.24 0 0)
 					(length 5.08)
 					(name "A8"
 						(effects
@@ -378,7 +378,7 @@
 					)
 				)
 				(pin input line
-					(at -15.24 0 0)
+					(at -15.24 -2.54 0)
 					(length 5.08)
 					(name "A9"
 						(effects
@@ -396,7 +396,7 @@
 					)
 				)
 				(pin input line
-					(at -15.24 -2.54 0)
+					(at -15.24 -5.08 0)
 					(length 5.08)
 					(name "A10"
 						(effects
@@ -414,7 +414,7 @@
 					)
 				)
 				(pin input line
-					(at -15.24 -5.08 0)
+					(at -15.24 -7.62 0)
 					(length 5.08)
 					(name "A11"
 						(effects
@@ -432,7 +432,7 @@
 					)
 				)
 				(pin input line
-					(at -15.24 -7.62 0)
+					(at -15.24 -10.16 0)
 					(length 5.08)
 					(name "A12"
 						(effects
@@ -450,7 +450,7 @@
 					)
 				)
 				(pin input line
-					(at -15.24 -10.16 0)
+					(at -15.24 -12.7 0)
 					(length 5.08)
 					(name "A13"
 						(effects
@@ -468,7 +468,7 @@
 					)
 				)
 				(pin input line
-					(at -15.24 -12.7 0)
+					(at -15.24 -15.24 0)
 					(length 5.08)
 					(name "A14"
 						(effects
@@ -486,7 +486,7 @@
 					)
 				)
 				(pin input inverted
-					(at -15.24 -19.05 0)
+					(at -15.24 -21.59 0)
 					(length 5.08)
 					(name "~{WE}"
 						(effects
@@ -504,7 +504,7 @@
 					)
 				)
 				(pin input inverted
-					(at -15.24 -21.59 0)
+					(at -15.24 -24.13 0)
 					(length 5.08)
 					(name "~{OE}"
 						(effects
@@ -522,7 +522,7 @@
 					)
 				)
 				(pin input inverted
-					(at -15.24 -24.13 0)
+					(at -15.24 -26.67 0)
 					(length 5.08)
 					(name "~{CE}"
 						(effects
@@ -540,7 +540,7 @@
 					)
 				)
 				(pin power_in line
-					(at 0 31.75 270)
+					(at 0 29.21 270)
 					(length 5.08)
 					(name "VCC"
 						(effects
@@ -558,7 +558,7 @@
 					)
 				)
 				(pin power_in line
-					(at 0 -33.02 90)
+					(at 0 -35.56 90)
 					(length 5.08)
 					(name "GND"
 						(effects
@@ -576,7 +576,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 15.24 22.86 180)
+					(at 15.24 20.32 180)
 					(length 5.08)
 					(name "I/O0"
 						(effects
@@ -594,7 +594,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 15.24 20.32 180)
+					(at 15.24 17.78 180)
 					(length 5.08)
 					(name "I/O1"
 						(effects
@@ -612,7 +612,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 15.24 17.78 180)
+					(at 15.24 15.24 180)
 					(length 5.08)
 					(name "I/O2"
 						(effects
@@ -630,7 +630,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 15.24 15.24 180)
+					(at 15.24 12.7 180)
 					(length 5.08)
 					(name "I/O3"
 						(effects
@@ -648,7 +648,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 15.24 12.7 180)
+					(at 15.24 10.16 180)
 					(length 5.08)
 					(name "I/O4"
 						(effects
@@ -666,7 +666,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 15.24 10.16 180)
+					(at 15.24 7.62 180)
 					(length 5.08)
 					(name "I/O5"
 						(effects
@@ -684,7 +684,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 15.24 7.62 180)
+					(at 15.24 5.08 180)
 					(length 5.08)
 					(name "I/O6"
 						(effects
@@ -702,7 +702,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 15.24 5.08 180)
+					(at 15.24 2.54 180)
 					(length 5.08)
 					(name "I/O7"
 						(effects
@@ -2984,161 +2984,6 @@
 		)
 	)
 	(symbol
-		(lib_id "mALUch_lib:ROM_AT28C256")
-		(at 104.14 60.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3a110361-ab08-4b3f-974b-666f22d45bea")
-		(property "Reference" "U25"
-			(at 106.426 29.972 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "AT28C256-15PU"
-			(at 114.554 32.258 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 104.14 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/MPD/ProductDocuments/DataSheets/AT28C256-Industrial-Grade-256-Kbit-Paged-Parallel-EEPROM-Data-Sheet-DS20006386.pdf"
-			(at 104.14 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 104.14 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "TME" "https://www.tme.eu/pl/details/at28c256-15pu/pamieci-eeprom-rownolegle/microchip-technology/"
-			(at 104.14 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "9"
-			(uuid "355019bf-c1d3-4b1b-86bc-d271c76f37fd")
-		)
-		(pin "7"
-			(uuid "01407d20-495a-41af-bed2-861e0479ae63")
-		)
-		(pin "3"
-			(uuid "38e540aa-766e-4996-aaec-b250454a9752")
-		)
-		(pin "4"
-			(uuid "c8fa41d3-f59e-4217-9cdf-06052aca806b")
-		)
-		(pin "25"
-			(uuid "44b2050c-f2f0-4f0d-a756-57bfaa40ba3c")
-		)
-		(pin "24"
-			(uuid "74ea2054-7249-4279-966f-a1b3f2f7130f")
-		)
-		(pin "21"
-			(uuid "c2b6276d-b752-4a60-8ee0-9c64a7c08f1b")
-		)
-		(pin "10"
-			(uuid "2baef604-401d-4ba8-b4cb-2a9dd5f2ea8a")
-		)
-		(pin "8"
-			(uuid "58b692b0-4ae0-4ad0-962a-59e8865c2929")
-		)
-		(pin "6"
-			(uuid "11e19e1c-cbb4-444a-b9c1-5829322b0791")
-		)
-		(pin "5"
-			(uuid "01778b64-9b86-4200-a964-36164b7189df")
-		)
-		(pin "28"
-			(uuid "1307b975-62fe-447d-aef5-a61645e0ca43")
-		)
-		(pin "26"
-			(uuid "78ac46a3-cf31-4e74-b0b9-ad7bac39a9a1")
-		)
-		(pin "27"
-			(uuid "5ccf5f6c-1e0e-46a1-8b41-2e2371f845fd")
-		)
-		(pin "23"
-			(uuid "01a7caf4-cc57-422c-85be-2e9bd95c2e10")
-		)
-		(pin "19"
-			(uuid "6e2e97a8-f77a-405b-a25f-141909b3d3fe")
-		)
-		(pin "1"
-			(uuid "76d6e066-c866-493d-a70e-56d015553b96")
-		)
-		(pin "14"
-			(uuid "0d6da9c9-7267-4e5b-8423-b4012e72f5f8")
-		)
-		(pin "16"
-			(uuid "386e0cec-c373-41a6-8cb9-091921908a5b")
-		)
-		(pin "13"
-			(uuid "c9021ffe-9f33-48d7-ae74-fc0cc19ab85b")
-		)
-		(pin "22"
-			(uuid "16e66386-8c73-41bf-a1bc-6d168b098512")
-		)
-		(pin "2"
-			(uuid "6b525b53-38ba-4097-aa58-eeede67f4d0e")
-		)
-		(pin "18"
-			(uuid "f1455486-6b56-4037-bf48-ce5639eba48b")
-		)
-		(pin "15"
-			(uuid "90efaa19-e990-4330-bf3d-72d9e5aced3c")
-		)
-		(pin "20"
-			(uuid "d1e4e3af-b2e0-4543-8909-1d4ba1ecf313")
-		)
-		(pin "17"
-			(uuid "984d66b6-aa93-41b8-9bda-1ad14015c974")
-		)
-		(pin "11"
-			(uuid "cce9e5e1-9235-4cd8-907c-37963a9e5e2d")
-		)
-		(pin "12"
-			(uuid "e780b941-fd6e-45c9-a407-b1ccb064d06d")
-		)
-		(instances
-			(project ""
-				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/3e52e97d-2d91-445f-b76b-e1b0d1dc86b1"
-					(reference "U25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 124.46 165.1 0)
 		(unit 1)
@@ -3610,6 +3455,163 @@
 		)
 	)
 	(symbol
+		(lib_id "mALUch_lib:ROM__AT28C256-15PU")
+		(at 104.14 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "abca647c-516e-4742-a9f2-df019068b90e")
+		(property "Reference" "U23"
+			(at 106.2833 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AT28C256-15PU"
+			(at 106.2833 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/MPD/ProductDocuments/DataSheets/AT28C256-Industrial-Grade-256-Kbit-Paged-Parallel-EEPROM-Data-Sheet-DS20006386.pdf"
+			(at 104.14 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 104.14 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" "https://www.tme.eu/pl/details/at28c256-15pu/pamieci-eeprom-rownolegle/microchip-technology/"
+			(at 104.14 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "ae0c216d-56f3-4390-90b1-3f5804b2793b")
+		)
+		(pin "1"
+			(uuid "b845a5dc-0d71-4d84-bb75-2c6723dd4fce")
+		)
+		(pin "25"
+			(uuid "833f8aee-8788-4a11-afbc-ceade1483873")
+		)
+		(pin "2"
+			(uuid "9bb6675e-24f3-462f-afbb-9988f66cce48")
+		)
+		(pin "23"
+			(uuid "1b26b446-26a9-4130-bd69-d3309b54395a")
+		)
+		(pin "12"
+			(uuid "01f9eb96-e0b2-4196-9eed-cc28564b679a")
+		)
+		(pin "16"
+			(uuid "9626d0e2-eb7c-482a-83ac-efb97783f7c1")
+		)
+		(pin "18"
+			(uuid "61f95dfa-ea5b-45df-9c4d-817ff657b01a")
+		)
+		(pin "27"
+			(uuid "d593da52-556b-432e-b2eb-a5120c7bda62")
+		)
+		(pin "20"
+			(uuid "eda38407-932d-4d05-ab90-d3b0c8b80b00")
+		)
+		(pin "9"
+			(uuid "d2c7d151-025c-4936-a0a6-1b0cdb08349d")
+		)
+		(pin "28"
+			(uuid "31e214b7-f8cf-48d8-8a29-682367a404dd")
+		)
+		(pin "24"
+			(uuid "df3b9856-c239-49fe-85c3-a15884a6b47e")
+		)
+		(pin "7"
+			(uuid "cd45a92e-2304-4e7a-9064-c883e56d56e4")
+		)
+		(pin "22"
+			(uuid "a503ee99-17f3-4cbe-85bf-3e93522f7d3c")
+		)
+		(pin "13"
+			(uuid "be26966e-7ada-4920-b2a5-d462c8eedad1")
+		)
+		(pin "3"
+			(uuid "44f11800-7e10-426b-b45f-994e50398a53")
+		)
+		(pin "19"
+			(uuid "9d2f172f-cf28-4ab6-9c5f-23c6dedeb16c")
+		)
+		(pin "14"
+			(uuid "ea84b6fe-ba63-4ec4-9199-713da22b0808")
+		)
+		(pin "6"
+			(uuid "7d12360f-c1da-47b1-941b-89cc7d367512")
+		)
+		(pin "8"
+			(uuid "e44baf31-7751-4154-ae82-711410d59444")
+		)
+		(pin "11"
+			(uuid "b9e60761-367d-42b8-83df-f7e9a262be1e")
+		)
+		(pin "21"
+			(uuid "7badd164-33f8-4b4d-ab36-82e142218095")
+		)
+		(pin "10"
+			(uuid "b8480065-d362-47df-85bd-58cdde4298db")
+		)
+		(pin "26"
+			(uuid "6c4aa206-e52a-4f27-92bb-a8e3f5d3eae0")
+		)
+		(pin "17"
+			(uuid "0b6461ed-2545-418d-bdc2-1a2675b350f1")
+		)
+		(pin "15"
+			(uuid "a509906b-4477-4950-8702-1e3e3cc53cde")
+		)
+		(pin "4"
+			(uuid "e1ef2f5c-76ec-440a-9784-d87ab4f89e6d")
+		)
+		(instances
+			(project ""
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/3e52e97d-2d91-445f-b76b-e1b0d1dc86b1"
+					(reference "U23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 124.46 157.48 0)
 		(unit 1)
@@ -3810,163 +3812,6 @@
 		)
 	)
 	(symbol
-		(lib_id "mALUch_lib:ROM_AT28C256")
-		(at 104.14 142.24 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d81b0279-86f5-44c9-ac63-f4b67c104a18")
-		(property "Reference" "U26"
-			(at 106.2833 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 104.14 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 104.14 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/MPD/ProductDocuments/DataSheets/AT28C256-Industrial-Grade-256-Kbit-Paged-Parallel-EEPROM-Data-Sheet-DS20006386.pdf"
-			(at 104.14 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 104.14 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "TME" "https://www.tme.eu/pl/details/at28c256-15pu/pamieci-eeprom-rownolegle/microchip-technology/"
-			(at 104.14 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "9"
-			(uuid "dbb65a1d-9098-4477-86f4-ce61f8551800")
-		)
-		(pin "7"
-			(uuid "abae8b91-b0c7-417d-a70e-6442a807cc69")
-		)
-		(pin "3"
-			(uuid "855b35a0-75fb-4e51-8251-2a2f1fb4c6c1")
-		)
-		(pin "4"
-			(uuid "c48e909f-2538-4feb-9c46-cecc9f84c6d7")
-		)
-		(pin "25"
-			(uuid "a66c6833-617a-43a8-882d-e2237508ac2c")
-		)
-		(pin "24"
-			(uuid "3c9d3dd8-b404-460a-92b4-eec18c7eabee")
-		)
-		(pin "21"
-			(uuid "7fc9e714-522e-4020-925c-447276c74b84")
-		)
-		(pin "10"
-			(uuid "8ee95fac-532c-41f7-8622-6b874037ae97")
-		)
-		(pin "8"
-			(uuid "9222b1b1-289d-473e-bd6c-fcb43083efba")
-		)
-		(pin "6"
-			(uuid "82611bda-0252-4fa1-8acd-191caffe3b98")
-		)
-		(pin "5"
-			(uuid "a1e6bed5-dfc0-4003-ac88-d60b09951f28")
-		)
-		(pin "28"
-			(uuid "6915e102-d60c-47a7-9979-ed41573b85e5")
-		)
-		(pin "26"
-			(uuid "5fd8f98e-0b15-45a1-8f55-1e5c18d668e0")
-		)
-		(pin "27"
-			(uuid "7ef70970-4465-489b-ae12-7761ba0947be")
-		)
-		(pin "23"
-			(uuid "f443199b-c8d5-4405-864a-911a1eb71de4")
-		)
-		(pin "19"
-			(uuid "f933a57c-0941-4980-93f6-389c8c361c68")
-		)
-		(pin "1"
-			(uuid "57ffe1ae-fe52-4dd7-b385-cc08984f78c5")
-		)
-		(pin "14"
-			(uuid "6aad3d4b-32e0-4156-bf34-8e821c2be3a4")
-		)
-		(pin "16"
-			(uuid "7aaf98ac-80b4-4538-b5cd-00eb1a554fd3")
-		)
-		(pin "13"
-			(uuid "eecfe342-a859-4d77-959e-92f9190ad2aa")
-		)
-		(pin "22"
-			(uuid "4f261b71-f021-4410-90ae-72072c4a55da")
-		)
-		(pin "2"
-			(uuid "a087d1a9-2e8f-404f-a966-e15bef1270e0")
-		)
-		(pin "18"
-			(uuid "05e1a096-0863-4f1c-b108-4634672fe8df")
-		)
-		(pin "15"
-			(uuid "9b32ce23-6332-4a26-ad20-0f80fcee762e")
-		)
-		(pin "20"
-			(uuid "8df4c822-0299-4ff7-a2d3-791d9c14b522")
-		)
-		(pin "17"
-			(uuid "c937db18-a134-428a-afa2-1293103dfe01")
-		)
-		(pin "11"
-			(uuid "04844a5c-643e-4451-a35f-03b21e794748")
-		)
-		(pin "12"
-			(uuid "c6ec2086-b657-4f5a-9e7e-356879b92fa1")
-		)
-		(instances
-			(project "memory_controller"
-				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/3e52e97d-2d91-445f-b76b-e1b0d1dc86b1"
-					(reference "U26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 83.82 85.09 270)
 		(unit 1)
@@ -4028,6 +3873,163 @@
 			(project "memory_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/3e52e97d-2d91-445f-b76b-e1b0d1dc86b1"
 					(reference "#PWR0123")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mALUch_lib:ROM__AT28C256-15PU")
+		(at 104.14 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e2fb6ac1-3a6a-422a-812c-d2eec2ebe23b")
+		(property "Reference" "U25"
+			(at 106.2833 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AT28C256-15PU"
+			(at 106.2833 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/MPD/ProductDocuments/DataSheets/AT28C256-Industrial-Grade-256-Kbit-Paged-Parallel-EEPROM-Data-Sheet-DS20006386.pdf"
+			(at 104.14 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 104.14 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" "https://www.tme.eu/pl/details/at28c256-15pu/pamieci-eeprom-rownolegle/microchip-technology/"
+			(at 104.14 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "d09f7e6c-aaa7-447f-a30d-ff1adfff612c")
+		)
+		(pin "25"
+			(uuid "24886749-d717-42dc-ba31-281d4b6830f9")
+		)
+		(pin "24"
+			(uuid "745efc9b-bdd5-4837-a54f-8b84680a8a00")
+		)
+		(pin "21"
+			(uuid "f242c3e6-fb56-4ed6-b3db-69afe9a9de31")
+		)
+		(pin "13"
+			(uuid "db7842f5-10d7-4446-98dc-c54b1c75a06a")
+		)
+		(pin "16"
+			(uuid "b20b4cf7-699d-408b-86d2-9e49b8d63dbb")
+		)
+		(pin "1"
+			(uuid "629d16f1-8af0-42c3-8ae8-170f326dfcfc")
+		)
+		(pin "11"
+			(uuid "62c5b328-8693-49b4-bdd5-8ff3436eb7c6")
+		)
+		(pin "4"
+			(uuid "cba8ff57-5139-4413-b064-552b864abaca")
+		)
+		(pin "10"
+			(uuid "1885ea12-37c4-4914-89f6-7fdf33e66314")
+		)
+		(pin "17"
+			(uuid "d296a929-e457-4d56-a8d0-a0cfa55ce740")
+		)
+		(pin "2"
+			(uuid "392b3d3b-ccb5-4a79-8156-d0995a6b2119")
+		)
+		(pin "19"
+			(uuid "e120686e-43bf-4751-b53a-48fcda0ac34a")
+		)
+		(pin "15"
+			(uuid "c0306980-5744-4143-b79c-e0b3d6d1cf19")
+		)
+		(pin "20"
+			(uuid "d0b1fc8a-2332-4cd1-9bb7-b4ecb1320344")
+		)
+		(pin "8"
+			(uuid "fa433916-8353-4fed-89e5-43b6efde8a63")
+		)
+		(pin "9"
+			(uuid "0234d3ca-0be0-4473-bdf9-fedd5db88e5a")
+		)
+		(pin "23"
+			(uuid "c876f3e1-b200-44c2-9283-d474dc5d8406")
+		)
+		(pin "28"
+			(uuid "3f1ecc3f-8c67-414f-8286-3db329df3d9c")
+		)
+		(pin "5"
+			(uuid "bc9b9bcd-495a-45b7-9ea6-fb5adff5fef7")
+		)
+		(pin "26"
+			(uuid "9add663c-868e-4856-a33f-d13355c33974")
+		)
+		(pin "22"
+			(uuid "99daeffd-fe9c-4eb8-85d4-c1abe846c3af")
+		)
+		(pin "18"
+			(uuid "06a22c61-1dc4-4136-b4c0-c7763c1a0bdf")
+		)
+		(pin "7"
+			(uuid "825b6418-6590-40bc-9bdc-0da4572a6f52")
+		)
+		(pin "27"
+			(uuid "e5bf3c85-8642-4909-858f-4ca3c0827bb3")
+		)
+		(pin "14"
+			(uuid "33dc8871-64d9-4d00-aa2c-504d50901369")
+		)
+		(pin "3"
+			(uuid "30836864-be02-4028-8826-fcd326822f64")
+		)
+		(pin "12"
+			(uuid "6847528c-70d2-46a4-bbb1-f9742e0ff2d4")
+		)
+		(instances
+			(project ""
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/3e52e97d-2d91-445f-b76b-e1b0d1dc86b1"
+					(reference "U25")
 					(unit 1)
 				)
 			)

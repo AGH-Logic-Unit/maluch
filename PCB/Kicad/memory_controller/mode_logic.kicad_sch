@@ -547,29 +547,24 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "mALUch_lib:6xNOT__SN74HC14DR"
-			(pin_names
-				(offset 1.016)
-			)
+		(symbol "mALUch_lib:6xNOT__SN74HC04DR"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at -12.7 16.24 0)
+				(at 0 17.78 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
-			(property "Value" "6xNOT__SN74HC14DR"
-				(at -12.7 -19.24 0)
+			(property "Value" ""
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
 			(property "Footprint" "mALUch_lib:SOIC127P600X175-14N"
@@ -578,11 +573,11 @@
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
+					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
-				(at 0 0 0)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74hc04.pdf?ts=1728464704684&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FSN74HC04%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253Dasc-null-null-GPN_EN-cpc-pf-google-wwe%2526utm_content%253DSN74HC04%2526ds_k%253DSN74HC04+Datasheet%2526DCM%253Dyes%2526gad_source%253D1%2526gclid%253DEAIaIQobChMIgYuX0viAiQMV8zsGAB3dwROmEAAYASAAEgJbSPD_BwE%2526gclsrc%253Daw.ds"
+				(at 2.032 -21.336 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -599,87 +594,16 @@
 					(hide yes)
 				)
 			)
-			(property "MF" "Texas Instruments"
-				(at 0 0 0)
+			(property "TME" "https://www.tme.eu/pl/details/sn74hc04dr/bramki-inwertery/texas-instruments/"
+				(at 0 -18.034 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Description_1" "6-ch, 2-V to 6-V inverters with Schmitt-Trigger inputs"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Package" "SOIC-14 Texas Instruments"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Price" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/SN74HC14DR/Texas+Instruments/view-part/?ref=snap"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MP" "SN74HC14DR"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Availability" "In Stock"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Check_prices" "https://www.snapeda.com/parts/SN74HC14DR/Texas+Instruments/view-part/?ref=eda"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(symbol "6xNOT__SN74HC14DR_0_0"
+			(symbol "6xNOT__SN74HC04DR_0_0"
 				(rectangle
 					(start -12.7 -15.24)
 					(end 12.7 15.24)
@@ -2346,189 +2270,6 @@
 		)
 	)
 	(symbol
-		(lib_id "mALUch_lib:6xNOT__SN74HC14DR")
-		(at 111.76 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "36a4a4f8-e2c6-4fed-aafc-c54f3c56e359")
-		(property "Reference" "U23"
-			(at 111.76 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "6xNOT__SN74HC14DR"
-			(at 111.76 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "mALUch_lib:SOIC127P600X175-14N"
-			(at 111.76 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.76 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 111.76 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Texas Instruments"
-			(at 111.76 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "6-ch, 2-V to 6-V inverters with Schmitt-Trigger inputs"
-			(at 111.76 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "SOIC-14 Texas Instruments"
-			(at 111.76 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 111.76 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SN74HC14DR/Texas+Instruments/view-part/?ref=snap"
-			(at 111.76 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "SN74HC14DR"
-			(at 111.76 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 111.76 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/SN74HC14DR/Texas+Instruments/view-part/?ref=eda"
-			(at 111.76 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "13"
-			(uuid "1d2c870b-82c4-4d69-997f-45dcd0ebb0b8")
-		)
-		(pin "8"
-			(uuid "28f06d25-6227-4399-9c9c-189cd198b7f6")
-		)
-		(pin "7"
-			(uuid "1caa1b76-29a3-4ea6-b20a-3bae1f841b78")
-		)
-		(pin "4"
-			(uuid "50b3db7b-e5d0-41a4-a485-16fa704f0d29")
-		)
-		(pin "14"
-			(uuid "4ade543c-dbbb-4311-94f3-e9a5faf8305f")
-		)
-		(pin "12"
-			(uuid "47f78e49-f482-41a2-a021-a00ee3d5c8d8")
-		)
-		(pin "3"
-			(uuid "1a0d2831-9775-4383-8678-b76366909acd")
-		)
-		(pin "2"
-			(uuid "b3b48a36-3f7e-4392-8c8b-5da9f47faa58")
-		)
-		(pin "1"
-			(uuid "6b105c6c-245f-4e1b-a6a3-92eceaa5a471")
-		)
-		(pin "5"
-			(uuid "8c505329-9488-4b49-bc7a-6627c003bed9")
-		)
-		(pin "9"
-			(uuid "0acb40e6-92ee-4151-ac33-7ff1aee4c475")
-		)
-		(pin "11"
-			(uuid "a4345e28-ec09-4f72-9f46-8b61b04d0621")
-		)
-		(pin "6"
-			(uuid "5b5de120-288e-4681-a1c4-efc5049000fb")
-		)
-		(pin "10"
-			(uuid "c76ca45b-5651-4615-b59c-73ee3ff023ec")
-		)
-		(instances
-			(project ""
-				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/567eb6ac-0bde-47ed-8069-dee677659fff"
-					(reference "U23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 129.54 73.66 0)
 		(unit 1)
@@ -2989,6 +2730,119 @@
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/567eb6ac-0bde-47ed-8069-dee677659fff"
 					(reference "#PWR0119")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mALUch_lib:6xNOT__SN74HC04DR")
+		(at 111.76 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "edceed8a-2236-41d0-b6ac-6b1749d89eae")
+		(property "Reference" "U14"
+			(at 111.76 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 111.76 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mALUch_lib:SOIC127P600X175-14N"
+			(at 111.76 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74hc04.pdf?ts=1728464704684&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FSN74HC04%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253Dasc-null-null-GPN_EN-cpc-pf-google-wwe%2526utm_content%253DSN74HC04%2526ds_k%253DSN74HC04+Datasheet%2526DCM%253Dyes%2526gad_source%253D1%2526gclid%253DEAIaIQobChMIgYuX0viAiQMV8zsGAB3dwROmEAAYASAAEgJbSPD_BwE%2526gclsrc%253Daw.ds"
+			(at 113.792 84.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 111.76 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" "https://www.tme.eu/pl/details/sn74hc04dr/bramki-inwertery/texas-instruments/"
+			(at 111.76 81.534 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "e000efac-4e82-4303-badf-1dd44329c46d")
+		)
+		(pin "1"
+			(uuid "783af553-7f5f-48e6-9d79-fdccf59b493a")
+		)
+		(pin "5"
+			(uuid "8bfd3bb7-bfbb-43e5-9771-c029af1f74bf")
+		)
+		(pin "10"
+			(uuid "684541d8-fca2-4ac3-b467-ab168fdac7ee")
+		)
+		(pin "12"
+			(uuid "27db1546-71ee-4099-9a2d-f7d3ca5c8481")
+		)
+		(pin "8"
+			(uuid "1c5f7be6-7a49-4ba8-a160-cf01dce0bd23")
+		)
+		(pin "6"
+			(uuid "e0eb0685-0eb1-4eff-aafd-71ae2e3fb4b0")
+		)
+		(pin "9"
+			(uuid "1f46ef66-5859-4a5e-ab34-3be310971d35")
+		)
+		(pin "3"
+			(uuid "2fae5786-f560-4363-900a-ca9edbf0937a")
+		)
+		(pin "11"
+			(uuid "ead43fde-47e5-455c-ad0f-fb3f6b254177")
+		)
+		(pin "7"
+			(uuid "757d8c46-1c66-47da-8f6e-489074444d2a")
+		)
+		(pin "2"
+			(uuid "201e33a4-7cb3-4d61-9b5c-e514e6f6280d")
+		)
+		(pin "14"
+			(uuid "256bca40-404d-4234-9b6f-1c6ebc049c95")
+		)
+		(pin "13"
+			(uuid "6db23c2c-eca6-4a2b-9f42-01ee14f232ee")
+		)
+		(instances
+			(project ""
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/567eb6ac-0bde-47ed-8069-dee677659fff"
+					(reference "U14")
 					(unit 1)
 				)
 			)
