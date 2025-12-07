@@ -74,6 +74,9 @@ module core(
     );
     register_file register(
         .clk,
+        ._reset,
+        .int_flags(8'b0),
+        .busy_flags(8'b0),
         .reg_w_en,
         .reg_in,
         .addr_in,
