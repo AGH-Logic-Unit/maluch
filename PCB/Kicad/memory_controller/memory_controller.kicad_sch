@@ -1704,6 +1704,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 30.48) (xy 129.54 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38729bc2-d1ab-4d12-b81f-9c58cec18b02")
+	)
+	(wire
+		(pts
 			(xy 114.3 40.64) (xy 129.54 40.64)
 		)
 		(stroke
@@ -2734,16 +2744,6 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 30.48) (xy 121.92 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4d2881b-54ff-40aa-896b-d9f3a1fcfe02")
-	)
-	(wire
-		(pts
 			(xy 49.53 191.77) (xy 118.11 191.77)
 		)
 		(stroke
@@ -3521,6 +3521,16 @@
 			(justify left bottom)
 		)
 		(uuid "e38aa8c9-2a57-453d-86ac-6b81799d87fe")
+	)
+	(label "GND_PS"
+		(at 114.3 30.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e5a4a255-e032-44f6-b313-6bafcaa11799")
 	)
 	(label "GPU_ADDR11"
 		(at 114.3 40.64 0)
@@ -4309,72 +4319,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 121.92 30.48 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4d271436-3bd9-412d-86e8-3fd29231a879")
-		(property "Reference" "#PWR0142"
-			(at 115.57 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 119.126 29.464 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 121.92 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 121.92 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 121.92 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4f7085a5-87e9-40c3-a267-3d94f5416377")
-		)
-		(instances
-			(project "memory_controller"
-				(path "/dccec861-b967-466c-843e-d6d1ad6064ce"
-					(reference "#PWR0142")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "mALUch_lib:2x20_2.54_Horizontal")
 		(at 78.74 52.07 0)
 		(unit 1)
@@ -4571,7 +4515,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "781daf39-b319-4e4b-a831-247d2f341293")
-		(property "Reference" "gpu2"
+		(property "Reference" "gpu1"
 			(at 135.636 25.146 0)
 			(effects
 				(font
@@ -4678,7 +4622,7 @@
 		(instances
 			(project "memory_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce"
-					(reference "gpu2")
+					(reference "gpu1")
 					(unit 1)
 				)
 			)
@@ -4948,7 +4892,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a1de1063-8b3b-48db-b933-590de2db7b24")
-		(property "Reference" "gpu3"
+		(property "Reference" "gpu2"
 			(at 135.636 55.626 0)
 			(effects
 				(font
@@ -5055,7 +4999,7 @@
 		(instances
 			(project "memory_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce"
-					(reference "gpu3")
+					(reference "gpu2")
 					(unit 1)
 				)
 			)
