@@ -685,6 +685,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "THIS ENTIRE THING IS TO BE VERIFIED ONCE I GET ACCESS TO THE KEYBOARD AGAIN"
+		(exclude_from_sim no)
+		(at 101.6 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "10889971-fe83-4254-9bf3-91c080049279")
+	)
 	(text "figure out what these outputs are\n"
 		(exclude_from_sim no)
 		(at 273.685 -0.635 0)
@@ -695,8 +705,22 @@
 		)
 		(uuid "5b5677db-2213-4e67-ae38-c818c9604245")
 	)
+	(no_connect
+		(at 177.8 51.435)
+		(uuid "7e0e40e6-818c-4c7e-b34e-d96d0bd6a4c9")
+	)
+	(wire
+		(pts
+			(xy 160.655 74.93) (xy 180.34 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab954baf-a8c1-42dd-ab0c-7f856b514c10")
+	)
 	(label "ascii2"
-		(at 122.555 64.77 180)
+		(at 135.255 62.23 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -706,7 +730,7 @@
 		(uuid "03840350-496e-419a-9946-26fe8226bc42")
 	)
 	(label "keyaval"
-		(at 122.555 77.47 180)
+		(at 135.255 74.93 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -716,7 +740,7 @@
 		(uuid "0aeb3593-fffd-42be-bf9d-79bfd28a9d0c")
 	)
 	(label "ascii5"
-		(at 122.555 72.39 180)
+		(at 135.255 69.85 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -726,7 +750,7 @@
 		(uuid "2b31bd85-3b65-4e4a-a5b2-ab96865bafac")
 	)
 	(label "ascii0"
-		(at 122.555 59.69 180)
+		(at 135.255 57.15 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -736,7 +760,7 @@
 		(uuid "55cd5266-d071-4e47-81a8-59576704cb2c")
 	)
 	(label "keyout4"
-		(at 147.955 69.85 0)
+		(at 160.655 67.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -746,7 +770,7 @@
 		(uuid "6b17c09e-8353-46c7-9fe1-46196226dc58")
 	)
 	(label "keyout2"
-		(at 147.955 64.77 0)
+		(at 160.655 62.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -756,7 +780,7 @@
 		(uuid "767841af-5697-4448-9c1b-6779fb290af0")
 	)
 	(label "keyout6"
-		(at 147.955 74.93 0)
+		(at 160.655 72.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -766,7 +790,7 @@
 		(uuid "7c3f029c-90b7-4689-a9f4-d02e29d36d64")
 	)
 	(label "ascii3"
-		(at 122.555 67.31 180)
+		(at 135.255 64.77 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -776,7 +800,7 @@
 		(uuid "7e50be4c-8245-4a7c-acff-cfd44edce263")
 	)
 	(label "ascii4"
-		(at 122.555 69.85 180)
+		(at 135.255 67.31 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -786,7 +810,7 @@
 		(uuid "8cabe4d8-0bc1-47c9-9fe5-165cea2f3622")
 	)
 	(label "keyout1"
-		(at 147.955 62.23 0)
+		(at 160.655 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -796,7 +820,7 @@
 		(uuid "8dc5441e-ca14-4b90-8582-22fb4a297fa6")
 	)
 	(label "ascii1"
-		(at 122.555 62.23 180)
+		(at 135.255 59.69 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -806,7 +830,7 @@
 		(uuid "98330913-ee10-4b89-a0ef-5386e7130af7")
 	)
 	(label "keyout5"
-		(at 147.955 72.39 0)
+		(at 160.655 69.85 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -816,7 +840,7 @@
 		(uuid "a221c324-de8c-4540-b35b-d069c32828bb")
 	)
 	(label "keyout0"
-		(at 147.955 59.69 0)
+		(at 160.655 57.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -826,7 +850,7 @@
 		(uuid "b2634662-4cb0-45ca-a394-81fe1451f7d3")
 	)
 	(label "keypres"
-		(at 147.955 77.47 0)
+		(at 160.655 74.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -836,7 +860,7 @@
 		(uuid "c2b9e71c-e366-4aff-a8f5-3ba77b1acaab")
 	)
 	(label "ascii6"
-		(at 122.555 74.93 180)
+		(at 135.255 72.39 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -846,7 +870,7 @@
 		(uuid "dccfd1f2-d6c8-4c32-a065-9e63baf78f17")
 	)
 	(label "keyout3"
-		(at 147.955 67.31 0)
+		(at 160.655 64.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -855,19 +879,20 @@
 		)
 		(uuid "ee1cf08d-08a7-4bd7-8c1b-2b6705001de0")
 	)
-	(label "clk"
-		(at 122.555 82.55 180)
+	(hierarchical_label "ps2clk"
+		(shape input)
+		(at 34.925 66.04 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify right)
 		)
-		(uuid "ff617710-40eb-493e-b915-795e55bf0b20")
+		(uuid "0a3e5b31-6643-4973-b9f4-dbd6a33353ee")
 	)
 	(hierarchical_label "keyout[0..7]"
 		(shape output)
-		(at 175.895 60.325 0)
+		(at 177.8 51.435 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -876,9 +901,31 @@
 		)
 		(uuid "29076e88-20a0-4fd9-9c56-c5e50802a617")
 	)
+	(hierarchical_label "clk"
+		(shape input)
+		(at 77.47 59.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5f4d59a1-cdde-4d1e-9d80-f7135a667bd1")
+	)
+	(hierarchical_label "clk"
+		(shape input)
+		(at 135.255 80.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "639fbd6f-a223-4a99-a357-f6abdf93e028")
+	)
 	(hierarchical_label "keyboardclk_en"
 		(shape input)
-		(at 122.555 85.09 180)
+		(at 135.255 82.55 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -889,7 +936,7 @@
 	)
 	(hierarchical_label "keypres"
 		(shape output)
-		(at 175.895 54.61 0)
+		(at 180.34 74.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -898,9 +945,31 @@
 		)
 		(uuid "9c163478-c653-4070-870a-47a9e005046c")
 	)
+	(hierarchical_label "clk"
+		(shape input)
+		(at 34.925 62.23 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e2fc5c95-f01c-40e3-b8fe-3bd275e86466")
+	)
+	(hierarchical_label "ps2data"
+		(shape input)
+		(at 34.925 70.485 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ffc21d93-3c09-48f1-86ea-47859abd06a3")
+	)
 	(symbol
 		(lib_id "power:GND")
-		(at 135.255 92.71 0)
+		(at 147.955 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -909,7 +978,7 @@
 		(fields_autoplaced yes)
 		(uuid "2c8b7f16-532a-42e3-8945-088b176722f7")
 		(property "Reference" "#PWR0117"
-			(at 135.255 99.06 0)
+			(at 147.955 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -918,7 +987,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 135.255 97.79 0)
+			(at 147.955 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -926,7 +995,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.255 92.71 0)
+			(at 147.955 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -935,7 +1004,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.255 92.71 0)
+			(at 147.955 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -944,7 +1013,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 135.255 92.71 0)
+			(at 147.955 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -966,7 +1035,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 135.255 52.07 0)
+		(at 147.955 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -975,7 +1044,7 @@
 		(fields_autoplaced yes)
 		(uuid "3957779e-a119-4a4d-8e59-3894748d5727")
 		(property "Reference" "#PWR0118"
-			(at 135.255 55.88 0)
+			(at 147.955 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -984,7 +1053,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 135.255 46.99 0)
+			(at 147.955 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -992,7 +1061,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.255 52.07 0)
+			(at 147.955 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1001,7 +1070,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.255 52.07 0)
+			(at 147.955 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1010,7 +1079,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 135.255 52.07 0)
+			(at 147.955 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1032,7 +1101,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS377")
-		(at 135.255 72.39 0)
+		(at 147.955 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1041,7 +1110,7 @@
 		(fields_autoplaced yes)
 		(uuid "55fde12c-8edc-4434-aa3d-6873637c98b1")
 		(property "Reference" "U33"
-			(at 137.3983 52.705 0)
+			(at 150.0983 50.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1050,7 +1119,7 @@
 			)
 		)
 		(property "Value" "74LS377"
-			(at 137.3983 55.245 0)
+			(at 150.0983 52.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1059,7 +1128,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.255 72.39 0)
+			(at 147.955 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1068,7 +1137,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS377"
-			(at 135.255 72.39 0)
+			(at 147.955 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1077,7 +1146,7 @@
 			)
 		)
 		(property "Description" "8-bit Register"
-			(at 135.255 72.39 0)
+			(at 147.955 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1155,7 +1224,7 @@
 		)
 	)
 	(sheet
-		(at 21.59 19.05)
+		(at 34.925 56.515)
 		(size 20.32 16.51)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1171,7 +1240,7 @@
 		)
 		(uuid "0ffa1722-ab10-4eb0-82cb-a32c99f5fe08")
 		(property "Sheetname" "keyboard_input"
-			(at 21.59 18.3384 0)
+			(at 34.925 55.8034 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1180,7 +1249,7 @@
 			)
 		)
 		(property "Sheetfile" "keyboard_input.kicad_sch"
-			(at 21.59 36.1446 0)
+			(at 34.925 73.6096 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1189,7 +1258,7 @@
 			)
 		)
 		(pin "clk" input
-			(at 21.59 24.765 180)
+			(at 34.925 62.23 180)
 			(uuid "6d50ba9e-b99c-4c05-b8f0-1976a3c50033")
 			(effects
 				(font
@@ -1199,7 +1268,7 @@
 			)
 		)
 		(pin "lowerout[0..7]" output
-			(at 41.91 24.13 0)
+			(at 55.245 61.595 0)
 			(uuid "607b73d0-8ac4-49e1-b23e-40d5c3f4d8a6")
 			(effects
 				(font
@@ -1209,7 +1278,7 @@
 			)
 		)
 		(pin "ps2clk" input
-			(at 21.59 28.575 180)
+			(at 34.925 66.04 180)
 			(uuid "e0e2fc45-3a28-4d3f-bad0-751aa38c975e")
 			(effects
 				(font
@@ -1219,7 +1288,7 @@
 			)
 		)
 		(pin "ps2data" input
-			(at 21.59 33.02 180)
+			(at 34.925 70.485 180)
 			(uuid "cebc6b0c-44ac-4388-8f00-920ef68806ff")
 			(effects
 				(font
@@ -1229,7 +1298,7 @@
 			)
 		)
 		(pin "upperout[0..7]" output
-			(at 41.91 30.48 0)
+			(at 55.245 67.945 0)
 			(uuid "1420d0b6-b40f-4b62-b415-151eef730129")
 			(effects
 				(font
@@ -1239,7 +1308,7 @@
 			)
 		)
 		(pin "rdy" output
-			(at 41.91 27.305 0)
+			(at 55.245 64.77 0)
 			(uuid "3e4ac065-2837-46d5-9230-c418dd5d0d21")
 			(effects
 				(font
@@ -1257,7 +1326,7 @@
 		)
 	)
 	(sheet
-		(at 20.32 51.435)
+		(at 77.47 53.975)
 		(size 24.765 19.05)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1273,7 +1342,7 @@
 		)
 		(uuid "cdce8258-6f61-49f0-a86c-d3dbc2324092")
 		(property "Sheetname" "keyboard_decoder"
-			(at 20.32 50.7234 0)
+			(at 77.47 53.2634 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1282,7 +1351,7 @@
 			)
 		)
 		(property "Sheetfile" "keyboard_decoder.kicad_sch"
-			(at 20.32 71.0696 0)
+			(at 77.47 73.6096 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1291,7 +1360,7 @@
 			)
 		)
 		(pin "clk" input
-			(at 20.32 57.15 180)
+			(at 77.47 59.69 180)
 			(uuid "f54cf1a0-ff8d-46bd-aeed-a49c1ed8c95e")
 			(effects
 				(font
@@ -1301,7 +1370,7 @@
 			)
 		)
 		(pin "lower[0..7]" input
-			(at 20.32 60.325 180)
+			(at 77.47 62.865 180)
 			(uuid "55791a1f-6d85-44c2-9ba5-8cc9bda6aeb3")
 			(effects
 				(font
@@ -1311,7 +1380,7 @@
 			)
 		)
 		(pin "out" output
-			(at 45.085 60.325 0)
+			(at 102.235 62.865 0)
 			(uuid "6bab7eae-c023-4b09-af21-27af97cdd318")
 			(effects
 				(font
@@ -1321,7 +1390,7 @@
 			)
 		)
 		(pin "upper[0..7]" input
-			(at 20.32 64.135 180)
+			(at 77.47 66.675 180)
 			(uuid "26186fdc-3990-439a-acd3-8afb1e6255c5")
 			(effects
 				(font
@@ -1331,7 +1400,7 @@
 			)
 		)
 		(pin "ascii[0..6]" output
-			(at 45.085 57.15 0)
+			(at 102.235 59.69 0)
 			(uuid "46371ec3-b012-48a4-869a-6ada55f0e5a9")
 			(effects
 				(font
