@@ -1,0 +1,13 @@
+* 7408 model
+ 
+.subckt 7408 A0 B0 Y0 A1 B1 Y1 GND A2 B2 Y2 A3 B3 Y3 VCC 
+
+a0 [A0 B0] Y0 d_and1
+a1 [A1 B1] Y1 d_and1
+a2 [A2 B2] Y2 d_and1
+a3 [A3 B3] Y3 d_and1
+
+.model d_and1 d_and (rise_delay=1.0e-6 fall_delay=2.0e-6
++                    input_load=1.0e-12)
+
+.ends
