@@ -1,0 +1,62 @@
+* 74195 model
+ 
+.subckt 74195 nMR J nK P0 P1 P2 P3 GND nPE CP nQ3 Q3 Q2 Q1 Q0 VCC
+
+*necessary for proper output calculations
+Ro0  Q0 GND 1G
+Ro1  Q1 GND 1G
+Ro2  Q2 GND 1G
+Ro3  Q3 GND 1G
+Ro4 nQ3 GND 1G
+
+*input inversions
+ai0 nPE PE inv
+ai1 nMR MR inv
+
+*DFF0 input
+ad00 [nPE  J    nQ0 ] so00  and
+ad01 [nPE  nK    Q0 ] so01  and
+ad02 [ PE        P0 ] so02  and
+
+ad09 [so00 so01 so02] d0    or
+
+*DFF1 input
+ad10 [nPE        Q0 ] so10  and
+ad11 [ PE        P1 ] so11  and
+
+ad19 [so10 so11     ] d1    or
+
+*DFF2 input
+ad20 [nPE        Q1 ] so20  and
+ad21 [ PE        P2 ] so21  and
+
+ad29 [so20 so21     ] d2    or
+
+*DFF3 input
+ad30 [nPE        Q2 ] so30  and
+ad31 [ PE        P3 ] so31  and
+
+ad39 [so30 so31     ] d3    or
+
+*    d  c  as  ar q  nq
+adf0 d0 CP GND MR Q0 nQ0  dff
+adf1 d1 CP GND MR Q1 null dff
+adf2 d2 CP GND MR Q2 null dff
+adf3 d3 CP GND MR Q3 nQ3  dff
+
+
+.model and  d_and       (rise_delay=1.0e-6 fall_delay=2.0e-6
++                        input_load=1.0e-12)
+
+.model or   d_or        (rise_delay=1.0e-6 fall_delay=2.0e-6
++                        input_load=1.0e-12)
+
+.model inv  d_inverter  (rise_delay=1.0e-6 fall_delay=2.0e-6
++                        input_load=1.0e-12)
+
+.model dff  d_dff       (clk_delay = 13.0e-9 set_delay = 25.0e-9
++                        reset_delay = 27.0e-9 ic = 2 rise_delay = 10.0e-9
++                        fall_delay = 3e-9)
+
+
+.ends

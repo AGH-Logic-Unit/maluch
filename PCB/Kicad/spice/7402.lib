@@ -1,0 +1,20 @@
+* 7402 model
+ 
+.subckt 7402 Y0 A0 B0 Y1 A1 B1 GND A2 B2 Y2 A3 B3 Y3 VCC
+
+*necessary for proper output calculations
+Ro0  Y0 GND 1G
+Ro1  Y1 GND 1G
+Ro2  Y2 GND 1G
+Ro3  Y3 GND 1G
+
+*gates
+a0 [A0 B0] Y0 nor
+a1 [A1 B1] Y1 nor
+a2 [A2 B2] Y2 nor
+a3 [A3 B3] Y3 nor
+
+.model nor d_nor (rise_delay=1.0e-6 fall_delay=2.0e-6
++                 input_load=1.0e-12)
+
+.ends
