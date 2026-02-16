@@ -1,0 +1,668 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "dccec861-b967-466c-843e-d6d1ad6064ce")
+	(paper "A4")
+	(lib_symbols)
+	(text "KEYBOARD IS TO BE VERIFIED"
+		(exclude_from_sim no)
+		(at 77.47 18.415 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a1017ad0-5274-422b-b7f3-2f9659a37817")
+	)
+	(no_connect
+		(at 88.9 74.93)
+		(uuid "acc1cbe4-5665-40f8-9403-f1fa850886cd")
+	)
+	(label "~{out_gpu}"
+		(at 165.1 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "010d93b9-7771-4c9e-ab83-27838850cea2")
+	)
+	(label "timer_int"
+		(at 63.5 64.77 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "04e2737e-faeb-499c-9e90-0cdcfbd522ee")
+	)
+	(label "iobus[0..15]"
+		(at 114.3 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0688e6f4-f9bc-4496-9f5e-bd8b9f878da0")
+	)
+	(label "clk"
+		(at 114.3 102.87 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "08c4a7ba-86f5-4161-9dda-5fed8e370772")
+	)
+	(label "iocmd[0..1]"
+		(at 63.5 74.295 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "30d6f575-a959-4260-91f5-32cab7520b53")
+	)
+	(label "~{led_clk_en}"
+		(at 114.3 105.41 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "311d5667-1832-45d3-82a2-e8246ab5eac2")
+	)
+	(label "keyout[0..15]"
+		(at 165.1 82.55 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "35fec3cb-6272-4483-aa04-ae9fc9cc813a")
+	)
+	(label "clk"
+		(at 114.3 27.305 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3e2952a1-c991-4bd0-8f58-58b50816ea88")
+	)
+	(label "~{timer_read}"
+		(at 114.3 38.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6217fe39-1e6c-4dba-8358-d74ae480deac")
+	)
+	(label "timer_int"
+		(at 139.7 29.845 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6eeb28c5-3b8a-4bc0-b55c-a40e1239f8aa")
+	)
+	(label "~{out_key}"
+		(at 165.1 85.09 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "89d5ef72-2ef8-4e0a-a662-7880b391e6cc")
+	)
+	(label "timer_clk_en"
+		(at 114.3 29.845 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8b6843ee-664e-4e10-89cb-2961adfd294b")
+	)
+	(label "~{out_gpu}"
+		(at 88.9 86.995 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bd1bf7b3-62e5-415c-ba1c-e35a19295491")
+	)
+	(label "~{out_key}"
+		(at 88.9 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "be69d643-d20c-4d15-9979-ced7fdeb4d39")
+	)
+	(label "~{led_clk_en}"
+		(at 88.9 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "caaf15f0-8660-4789-8553-f4a0d4bd9026")
+	)
+	(label "ioid[0..2]"
+		(at 63.5 78.105 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cd6a8340-8f79-411c-8718-71181edb5be9")
+	)
+	(label "iobus[0..15]"
+		(at 190.5 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dbc29043-6d6f-401b-af77-8997be881838")
+	)
+	(label "~{timer_read}"
+		(at 88.9 67.945 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e650e367-c35d-4b4f-8b4c-f751bf8772ab")
+	)
+	(label "timer_clk_en"
+		(at 88.9 65.405 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f76e5387-0310-45d7-ba27-e072127ecb5f")
+	)
+	(label "gpuout[0..15]"
+		(at 165.1 68.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fa37bc70-e734-4229-91a5-d8754bad7c0f")
+	)
+	(sheet
+		(at 63.5 63.5)
+		(size 25.4 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7889a309-dbe1-4a3b-a691-b2c761732dff")
+		(property "Sheetname" "decoder"
+			(at 63.5 62.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "decoder.kicad_sch"
+			(at 63.5 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "iocmd[0..1]" input
+			(at 63.5 74.295 180)
+			(uuid "532fbd33-c79c-487d-bfe7-68f970600b67")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ioid[0..2]" input
+			(at 63.5 78.105 180)
+			(uuid "bd783544-b9ff-4d22-b2a8-be5258a6b776")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "timerint" input
+			(at 63.5 64.77 180)
+			(uuid "65b6f9cd-2fb9-4d86-8ced-78936dc1caeb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{timer_read}" output
+			(at 88.9 67.945 0)
+			(uuid "219cbc26-11ea-4f02-a9ca-d0b8add1cc0d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "key_read" output
+			(at 88.9 74.93 0)
+			(uuid "01768014-97e7-4f4a-b8ef-c014407060ac")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "timerclk_en" output
+			(at 88.9 65.405 0)
+			(uuid "1eebe865-f775-46f4-8b62-b4e6164349ff")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "~{gpu_out}" output
+			(at 88.9 86.995 0)
+			(uuid "01d35424-c04d-485d-862b-750a7b0fb186")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "~{key_out}" output
+			(at 88.9 77.47 0)
+			(uuid "64a7f9d0-c1c4-41eb-9f71-b8ebfeb6d3c0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "~{led_clk_en}" output
+			(at 88.9 83.82 0)
+			(uuid "c18b4964-db92-416c-8ba1-79e665b89ca2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "keyaval" input
+			(at 63.5 67.945 180)
+			(uuid "5f3a4a99-0f43-402e-b7a8-9863bbfc4595")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "keypresent" input
+			(at 63.5 71.12 180)
+			(uuid "a113dcca-c01f-4c4c-aab8-57b4f76c5fed")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 114.3 63.5)
+		(size 25.4 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a781ceef-a774-4f98-8bab-9bcf43d29cf5")
+		(property "Sheetname" "keyboard"
+			(at 114.3 62.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "keyboard.kicad_sch"
+			(at 114.3 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 114.3 26.035)
+		(size 25.4 24.765)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b2a66210-0f57-47f7-af2e-0fa71fd479f3")
+		(property "Sheetname" "timer"
+			(at 114.3 25.3234 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "timer.kicad_sch"
+			(at 114.3 51.3846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "clk" input
+			(at 114.3 27.305 180)
+			(uuid "cf94d42e-c0ec-4817-bd91-1664251a0f68")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "clkint_en" input
+			(at 114.3 29.845 180)
+			(uuid "f16f3b7a-2ec3-498a-bca2-e4931968de42")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "int" output
+			(at 139.7 29.845 0)
+			(uuid "cd3bc38e-99e3-40f6-9fbf-9a77899e479f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "~{read}" input
+			(at 114.3 38.1 180)
+			(uuid "47610c78-b36d-4474-8a5a-6dfb48c7161b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 114.3 101.6)
+		(size 25.4 24.765)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e2518a9a-b613-4998-b6ac-d4af2f779151")
+		(property "Sheetname" "LEDs"
+			(at 114.3 100.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "leds.kicad_sch"
+			(at 114.3 126.9496 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "clk" input
+			(at 114.3 102.87 180)
+			(uuid "bb9c36ae-b926-451d-9b41-17c2e6acfe77")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "iobus[0..15]" input
+			(at 114.3 114.3 180)
+			(uuid "d6888761-aed3-46e2-b7d5-4c6187e34f3b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{clk_en}" input
+			(at 114.3 105.41 180)
+			(uuid "81c58924-eb7e-4d55-87cb-d878d3480708")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 165.1 63.5)
+		(size 25.4 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "fba438e3-72b6-4de1-833f-e4b9f3f1d00d")
+		(property "Sheetname" "output_buffer"
+			(at 165.1 62.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "output_buffer.kicad_sch"
+			(at 165.1 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "gpuout[0..15]" input
+			(at 165.1 68.58 180)
+			(uuid "3dc1b84a-888b-499a-a681-2bf3bdee43a4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "keyboardout[0..15]" input
+			(at 165.1 82.55 180)
+			(uuid "fec7c502-6e6b-4778-875a-ba8125cb9033")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "out[0..15]" output
+			(at 190.5 76.2 0)
+			(uuid "a13f0087-6a33-47b8-906d-b77ab81a847c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "~{out_gpu}" input
+			(at 165.1 66.04 180)
+			(uuid "cae1f44b-0bb4-403f-a62c-ecdb71e620e6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{out_key}" input
+			(at 165.1 85.09 180)
+			(uuid "2edd1cad-0fdf-405a-98e8-355fe8715c66")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

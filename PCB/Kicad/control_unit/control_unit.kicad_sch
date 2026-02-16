@@ -1,0 +1,66 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "dccec861-b967-466c-843e-d6d1ad6064ce")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 135.255 83.82)
+		(size 22.86 20.955)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a601307c-be83-4128-aa2e-f19df4dff19c")
+		(property "Sheetname" "ControlUnit"
+			(at 135.255 83.1084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ControlUnit.kicad_sch"
+			(at 135.255 105.3596 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "aluop[3..0]" input
+			(at 135.255 90.17 180)
+			(uuid "6adbacfe-9fc0-4860-bc94-369a5a139ff2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "control_unit"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
