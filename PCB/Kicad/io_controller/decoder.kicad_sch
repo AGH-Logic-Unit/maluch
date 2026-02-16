@@ -4,6 +4,15 @@
 	(generator_version "9.0")
 	(uuid "fa726e95-0fc1-4a52-a1bc-b39cd781f029")
 	(paper "A4")
+	(title_block
+		(title "Decoder")
+		(date "2026-02-16")
+		(rev "1")
+		(company "AGH Logic Unit")
+		(comment 1 "NOT Spice checked")
+		(comment 2 "review: Maciej Rogóż")
+		(comment 3 "author: Hubert Wójcik")
+	)
 	(lib_symbols
 		(symbol "74xx:74LS02"
 			(pin_names
@@ -1943,6 +1952,452 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -2171,8 +2626,8 @@
 		)
 	)
 	(rectangle
-		(start 99.06 113.03)
-		(end 187.325 155.575)
+		(start 260.35 12.7)
+		(end 285.115 57.15)
 		(stroke
 			(width 0)
 			(type default)
@@ -2180,37 +2635,81 @@
 		(fill
 			(type none)
 		)
-		(uuid 25154edb-abb6-407a-8cf9-17d7b6eba73e)
+		(uuid 59655f14-9477-4234-9e81-014107be2b8f)
 	)
-	(text "NOTE: 7402 has different pinout than 7436 but it's the same otherwise"
+	(rectangle
+		(start 19.05 12.7)
+		(end 260.35 57.15)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid a76ca59c-448e-487f-99d4-32274ff13057)
+	)
+	(rectangle
+		(start 158.75 57.15)
+		(end 285.115 88.9)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid b0e6370f-eeea-47c6-a963-d84cc289805f)
+	)
+	(text "logic"
 		(exclude_from_sim no)
-		(at 51.435 59.69 0)
+		(at 22.225 58.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "18c6b8c8-ba23-402c-9584-9e22a9955f36")
+		(uuid "02df1e51-af23-4c33-bf23-1acd5642dd0a")
 	)
-	(text "U11B appears to be connected incorrectly in logisim; to be checked"
+	(text "status LEDs\n"
 		(exclude_from_sim no)
-		(at 99.06 77.47 0)
+		(at 165.1 58.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "9b93c6a3-e288-4a45-8d94-e241ee9f6be0")
+		(uuid "2e7b0cb3-6ebb-452e-9ab8-bcf5a9bd0158")
 	)
-	(text "this part of timer differs from logisim, verify whether it makes sense"
+	(text "spare"
 		(exclude_from_sim no)
-		(at 140.97 115.57 0)
+		(at 263.525 13.97 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "dddd5072-67e9-4593-8cbf-839ce9259b2d")
+		(uuid "92d3d1f9-9178-4376-a2d1-a0251378acea")
+	)
+	(text "decoupling caps"
+		(exclude_from_sim no)
+		(at 167.005 13.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a0cc30f9-685e-4ac4-b3d6-09e45ee7670a")
+	)
+	(text "power\n"
+		(exclude_from_sim no)
+		(at 22.225 13.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f09e2ce4-8f12-4548-8eb1-a3e0f13ae684")
 	)
 	(junction
 		(at 95.25 163.195)
@@ -2285,7 +2784,7 @@
 		(uuid "cb1011fe-3a0a-4b0f-822e-5f6759d9c0db")
 	)
 	(junction
-		(at 269.24 21.59)
+		(at 265.43 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cbf140c4-b053-4e19-9bb0-ba040fcaddd7")
@@ -2325,7 +2824,7 @@
 		(uuid "4cf833f9-9b81-4147-9414-319a1b643ff3")
 	)
 	(no_connect
-		(at 284.48 24.13)
+		(at 280.67 35.56)
 		(uuid "9b222dc1-fd04-40fb-b271-0e08b62620f5")
 	)
 	(no_connect
@@ -2444,17 +2943,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 137.795) (xy 193.675 137.795)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1cd3b2c6-cd53-4596-a183-740e463882c6")
-	)
-	(wire
-		(pts
-			(xy 269.24 21.59) (xy 269.24 26.67)
+			(xy 265.43 33.02) (xy 265.43 38.1)
 		)
 		(stroke
 			(width 0)
@@ -2531,6 +3020,16 @@
 			(type default)
 		)
 		(uuid "3320889a-d265-4c08-89f6-119535e6b6ea")
+	)
+	(polyline
+		(pts
+			(xy 158.75 12.7) (xy 158.75 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33a3a55e-6c3d-4ee1-85e3-13447e57acce")
 	)
 	(wire
 		(pts
@@ -3172,16 +3671,6 @@
 		)
 		(uuid "25c4ff1d-c56c-47b7-a329-35920f47376f")
 	)
-	(label "keypresent"
-		(at 200.66 137.795 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "27da3da7-3d7c-4127-808d-663ae46ba13e")
-	)
 	(label "~{ioid2}"
 		(at 204.47 97.79 180)
 		(effects
@@ -3221,16 +3710,6 @@
 			(justify right bottom)
 		)
 		(uuid "4a9d73e3-867a-498b-8cca-f2d043609770")
-	)
-	(label "keyaval"
-		(at 187.325 159.385 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4e537618-b560-4c0b-8e55-e34fb274775e")
 	)
 	(label "~{ioid1}"
 		(at 52.07 100.33 0)
@@ -3322,6 +3801,26 @@
 		)
 		(uuid "7fd129b6-9a38-4804-8dce-da867e8628bb")
 	)
+	(label "re"
+		(at 165.1 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8f8a7a94-9aed-4fa5-bec3-49ca21c9d3fe")
+	)
+	(label "we"
+		(at 177.165 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a0f5d961-8274-4cae-9326-451c1a2d7b14")
+	)
 	(label "ioid1"
 		(at 33.02 97.79 180)
 		(effects
@@ -3331,6 +3830,16 @@
 			(justify right bottom)
 		)
 		(uuid "a3333688-2448-48b8-a3f7-6253536667dd")
+	)
+	(label "isgpu"
+		(at 215.9 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a4d945a7-0500-44c5-9b55-04aa0242476e")
 	)
 	(label "ioid1"
 		(at 22.225 165.735 180)
@@ -3372,6 +3881,16 @@
 		)
 		(uuid "c2e9ea93-33e1-445a-8a1e-58f024c1610e")
 	)
+	(label "iskeyboard"
+		(at 202.565 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c3caa1ae-2c03-4b70-ae25-06e724073507")
+	)
 	(label "~{keyboardclk_en}"
 		(at 248.285 132.715 0)
 		(effects
@@ -3401,6 +3920,16 @@
 			(justify right bottom)
 		)
 		(uuid "c62f62cd-9041-4302-bbb2-abfb4600b244")
+	)
+	(label "isled"
+		(at 228.6 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c7ff1cdd-0df7-4dd0-a505-3c0f2344ee35")
 	)
 	(label "~{ioid1}"
 		(at 76.2 140.335 180)
@@ -3462,6 +3991,16 @@
 		)
 		(uuid "eb6adf2e-22f0-41bf-a936-ef58ae3d7083")
 	)
+	(label "isclk"
+		(at 190.5 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f3c7a359-b154-418a-8e03-8ff4c5ff1d75")
+	)
 	(label "~{ioid0}"
 		(at 52.07 85.09 0)
 		(effects
@@ -3505,7 +4044,18 @@
 		)
 		(uuid "4074cef1-8fdf-40ee-bba1-d830e9bd2a59")
 	)
-	(hierarchical_label "timerpulse"
+	(hierarchical_label "keypresent"
+		(shape input)
+		(at 193.675 137.795 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4a690ac1-83ae-48ac-957a-29a907e5b2bc")
+	)
+	(hierarchical_label "timerint"
 		(shape input)
 		(at 128.905 130.175 180)
 		(effects
@@ -3560,6 +4110,17 @@
 		)
 		(uuid "9cb44a7e-17e1-4efa-af0c-7be0cd8dc411")
 	)
+	(hierarchical_label "keyaval"
+		(shape input)
+		(at 187.325 159.385 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dfa6e068-ef1a-4976-a124-460a1a9f3f55")
+	)
 	(hierarchical_label "key_read"
 		(shape output)
 		(at 269.24 146.05 0)
@@ -3574,14 +4135,14 @@
 	(symbol
 		(lib_id "74xx:74LS08")
 		(at 160.02 140.335 0)
-		(unit 2)
+		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "03c0cbd8-7075-43af-8acf-80e3f420480e")
-		(property "Reference" "U37"
+		(property "Reference" "Ud6"
 			(at 160.0117 132.08 0)
 			(effects
 				(font
@@ -3597,7 +4158,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 160.02 140.335 0)
 			(effects
 				(font
@@ -3606,7 +4167,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
+		(property "Datasheet" "https://www.tme.eu/pl/en/details/74hc08dbj/gates-inverters/toshiba/74hc08d-bj/"
 			(at 160.02 140.335 0)
 			(effects
 				(font
@@ -3616,6 +4177,42 @@
 			)
 		)
 		(property "Description" "Quad And2"
+			(at 160.02 140.335 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7408.lib"
+			(at 160.02 140.335 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7408"
+			(at 160.02 140.335 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 160.02 140.335 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
 			(at 160.02 140.335 0)
 			(effects
 				(font
@@ -3669,8 +4266,8 @@
 		(instances
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U37")
-					(unit 2)
+					(reference "Ud6")
+					(unit 3)
 				)
 			)
 		)
@@ -3685,7 +4282,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "06b317f8-769a-4046-91b4-76c5e2d0f6ce")
-		(property "Reference" "U10"
+		(property "Reference" "Ud5"
 			(at 49.5217 176.53 0)
 			(effects
 				(font
@@ -3701,7 +4298,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 49.53 185.42 0)
 			(effects
 				(font
@@ -3710,7 +4307,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
+		(property "Datasheet" "https://www.tme.eu/pl/en/details/74hc08dbj/gates-inverters/toshiba/74hc08d-bj/"
 			(at 49.53 185.42 0)
 			(effects
 				(font
@@ -3720,6 +4317,42 @@
 			)
 		)
 		(property "Description" "Quad And2"
+			(at 49.53 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7408.lib"
+			(at 49.53 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7408"
+			(at 49.53 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 49.53 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
 			(at 49.53 185.42 0)
 			(effects
 				(font
@@ -3773,8 +4406,87 @@
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U10")
+					(reference "Ud5")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 190.5 67.31 90)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0aec0f98-a0e6-4259-ab32-4fa8ac2f738e")
+		(property "Reference" "Dd3"
+			(at 194.31 67.6274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "yellow"
+			(at 194.31 70.1674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 190.5 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.5 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 190.5 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 190.5 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3c09f923-717b-4fe4-859c-9c2b10133edd")
+		)
+		(pin "1"
+			(uuid "2b4d4db7-7f71-4437-ad06-aac0c2b7d372")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "Dd3")
+					(unit 1)
 				)
 			)
 		)
@@ -3782,14 +4494,14 @@
 	(symbol
 		(lib_id "74xx:74LS08")
 		(at 87.63 163.195 0)
-		(unit 1)
+		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0bfde5bb-ec2d-4fa3-a8fd-89bbe499b03c")
-		(property "Reference" "U37"
+		(property "Reference" "Ud5"
 			(at 87.6217 154.94 0)
 			(effects
 				(font
@@ -3805,7 +4517,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 87.63 163.195 0)
 			(effects
 				(font
@@ -3814,7 +4526,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
+		(property "Datasheet" "https://www.tme.eu/pl/en/details/74hc08dbj/gates-inverters/toshiba/74hc08d-bj/"
 			(at 87.63 163.195 0)
 			(effects
 				(font
@@ -3824,6 +4536,42 @@
 			)
 		)
 		(property "Description" "Quad And2"
+			(at 87.63 163.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7408.lib"
+			(at 87.63 163.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7408"
+			(at 87.63 163.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 87.63 163.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
 			(at 87.63 163.195 0)
 			(effects
 				(font
@@ -3877,8 +4625,8 @@
 		(instances
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U37")
-					(unit 1)
+					(reference "Ud5")
+					(unit 4)
 				)
 			)
 		)
@@ -3886,15 +4634,15 @@
 	(symbol
 		(lib_id "74xx:74LS02")
 		(at 140.97 150.495 0)
-		(unit 3)
+		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0c7e2b0f-2346-422c-8fb3-6c33b2f6f8a7")
-		(property "Reference" "U34"
-			(at 140.97 141.605 0)
+		(property "Reference" "Ud2"
+			(at 140.97 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3902,14 +4650,14 @@
 			)
 		)
 		(property "Value" "74LS02"
-			(at 140.97 144.145 0)
+			(at 140.97 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 140.97 150.495 0)
 			(effects
 				(font
@@ -3928,6 +4676,42 @@
 			)
 		)
 		(property "Description" "quad 2-input NOR gate"
+			(at 140.97 150.495 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7402.lib"
+			(at 140.97 150.495 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7402"
+			(at 140.97 150.495 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 140.97 150.495 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=Y0 2=A0 3=B0 4=Y1 5=A1 6=B1 7=GND 8=A2 9=B2 10=Y2 11=A3 12=B3 13=Y3 14=VCC"
 			(at 140.97 150.495 0)
 			(effects
 				(font
@@ -3981,8 +4765,78 @@
 		(instances
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U34")
-					(unit 3)
+					(reference "Ud2")
+					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 177.165 74.93 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "111f8ba5-a6b2-4e1b-94a5-8dc88c307ed1")
+		(property "Reference" "Rd2"
+			(at 179.705 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470"
+			(at 179.705 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 175.387 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 177.165 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 177.165 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4f533b80-8b27-4e21-8ebd-d845f654c7f5")
+		)
+		(pin "2"
+			(uuid "d1d722a1-5e24-4c4a-addc-f77521a0b0b6")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "Rd2")
+					(unit 1)
 				)
 			)
 		)
@@ -3990,14 +4844,14 @@
 	(symbol
 		(lib_id "74xx:74LS02")
 		(at 44.45 85.09 0)
-		(unit 3)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a33d1db-9956-45d7-ad8e-f799bcf5d1f8")
-		(property "Reference" "U9"
+		(property "Reference" "Ud1"
 			(at 44.45 76.2 0)
 			(effects
 				(font
@@ -4013,7 +4867,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 44.45 85.09 0)
 			(effects
 				(font
@@ -4022,7 +4876,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74ls02"
+		(property "Datasheet" "https://www.tme.eu/pl/en/details/sn74hc02dr/gates-inverters/texas-instruments/"
 			(at 44.45 85.09 0)
 			(effects
 				(font
@@ -4032,6 +4886,42 @@
 			)
 		)
 		(property "Description" "quad 2-input NOR gate"
+			(at 44.45 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7402.lib"
+			(at 44.45 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7402"
+			(at 44.45 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 44.45 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=Y0 2=A0 3=B0 4=Y1 5=A1 6=B1 7=GND 8=A2 9=B2 10=Y2 11=A3 12=B3 13=Y3 14=VCC"
 			(at 44.45 85.09 0)
 			(effects
 				(font
@@ -4085,32 +4975,112 @@
 		(instances
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U9")
-					(unit 3)
+					(reference "Ud1")
+					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "74xx:74LS08")
-		(at 83.82 137.795 0)
-		(unit 2)
+		(lib_id "Device:LED")
+		(at 215.9 67.31 90)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1c0b5417-d1ad-4e2a-b61c-94e64686e99f")
+		(property "Reference" "Dd5"
+			(at 219.71 67.6274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "yellow"
+			(at 219.71 70.1674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 215.9 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 215.9 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 215.9 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 215.9 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "699f0b9b-569b-407f-b5a4-9eda734042e3")
+		)
+		(pin "1"
+			(uuid "b1e752a7-66c4-4f46-8d03-80d27ea97332")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "Dd5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 190.5 35.56 0)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "274b7994-75f6-4b2d-8ad3-d7319d25cd8e")
-		(property "Reference" "U11"
-			(at 83.8117 128.905 0)
+		(uuid "1cdd66ec-73af-4996-8497-477c96770270")
+		(property "Reference" "#PWR0133"
+			(at 190.5 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Value" "74LS08"
-			(at 83.8117 131.445 0)
+		(property "Value" "GND"
+			(at 190.5 40.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4118,6 +5088,203 @@
 			)
 		)
 		(property "Footprint" ""
+			(at 190.5 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 190.5 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "016eda19-7790-4b52-9b55-599a8422429c")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "#PWR0133")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 165.1 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f285484-b3a3-43aa-8710-a231cfeb8a26")
+		(property "Reference" "#PWR0107"
+			(at 165.1 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 165.1 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 165.1 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "391b2375-ad8d-4635-8cfb-67d68a2a4e9d")
+		)
+		(instances
+			(project ""
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "#PWR0107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 229.235 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1ffb912d-f8a6-4d87-89cf-d3751a25a6cb")
+		(property "Reference" "#PWR0139"
+			(at 229.235 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 229.235 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.235 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.235 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 229.235 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "606a8309-a87a-4f61-9f63-dd760c5dc5f3")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "#PWR0139")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74LS08")
+		(at 83.82 137.795 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "274b7994-75f6-4b2d-8ad3-d7319d25cd8e")
+		(property "Reference" "Ud6"
+			(at 83.8117 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LS08"
+			(at 83.8117 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 83.82 137.795 0)
 			(effects
 				(font
@@ -4126,7 +5293,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
+		(property "Datasheet" "https://www.tme.eu/pl/en/details/74hc08dbj/gates-inverters/toshiba/74hc08d-bj/"
 			(at 83.82 137.795 0)
 			(effects
 				(font
@@ -4136,6 +5303,42 @@
 			)
 		)
 		(property "Description" "Quad And2"
+			(at 83.82 137.795 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7408.lib"
+			(at 83.82 137.795 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7408"
+			(at 83.82 137.795 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 83.82 137.795 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
 			(at 83.82 137.795 0)
 			(effects
 				(font
@@ -4189,8 +5392,8 @@
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U11")
-					(unit 2)
+					(reference "Ud6")
+					(unit 1)
 				)
 			)
 		)
@@ -4198,15 +5401,15 @@
 	(symbol
 		(lib_id "74xx:74LS02")
 		(at 82.55 106.68 0)
-		(unit 1)
+		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "27676dda-01c6-4b92-95a8-8eec8feea221")
-		(property "Reference" "U36"
-			(at 82.55 98.425 0)
+		(property "Reference" "Ud1"
+			(at 82.55 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4214,14 +5417,14 @@
 			)
 		)
 		(property "Value" "74LS02"
-			(at 82.55 100.965 0)
+			(at 82.55 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 82.55 106.68 0)
 			(effects
 				(font
@@ -4230,7 +5433,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74ls02"
+		(property "Datasheet" "https://www.tme.eu/pl/en/details/sn74hc02dr/gates-inverters/texas-instruments/"
 			(at 82.55 106.68 0)
 			(effects
 				(font
@@ -4240,6 +5443,42 @@
 			)
 		)
 		(property "Description" "quad 2-input NOR gate"
+			(at 82.55 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7402.lib"
+			(at 82.55 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7402"
+			(at 82.55 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 82.55 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=Y0 2=A0 3=B0 4=Y1 5=A1 6=B1 7=GND 8=A2 9=B2 10=Y2 11=A3 12=B3 13=Y3 14=VCC"
 			(at 82.55 106.68 0)
 			(effects
 				(font
@@ -4293,24 +5532,24 @@
 		(instances
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U36")
-					(unit 1)
+					(reference "Ud1")
+					(unit 4)
 				)
 			)
 		)
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 132.08 20.32 0)
+		(at 178.435 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "286bc495-290e-466b-a21d-06d9c066c2d8")
-		(property "Reference" "#PWR0126"
-			(at 132.08 24.13 0)
+		(uuid "27ac732e-dd66-4a6e-ba21-5194e4fe5c94")
+		(property "Reference" "#PWR0123"
+			(at 178.435 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4319,7 +5558,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 132.08 15.875 0)
+			(at 178.435 23.495 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4327,7 +5566,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 132.08 20.32 0)
+			(at 178.435 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4336,7 +5575,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 20.32 0)
+			(at 178.435 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4345,7 +5584,73 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 132.08 20.32 0)
+			(at 178.435 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "354310a4-10fc-4934-877b-6ed1fd744524")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "#PWR0123")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 102.235 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "286bc495-290e-466b-a21d-06d9c066c2d8")
+		(property "Reference" "#PWR0126"
+			(at 102.235 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 102.235 15.875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.235 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.235 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 102.235 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4368,15 +5673,15 @@
 	(symbol
 		(lib_id "74xx:74LS02")
 		(at 139.7 130.175 0)
-		(unit 2)
+		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3550f59c-6426-402d-802c-45f2fd5b3f21")
-		(property "Reference" "U8"
-			(at 139.7 121.285 0)
+		(property "Reference" "Ud2"
+			(at 139.7 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4384,14 +5689,14 @@
 			)
 		)
 		(property "Value" "74LS02"
-			(at 139.7 123.825 0)
+			(at 139.7 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 139.7 130.175 0)
 			(effects
 				(font
@@ -4410,6 +5715,42 @@
 			)
 		)
 		(property "Description" "quad 2-input NOR gate"
+			(at 139.7 130.175 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7402.lib"
+			(at 139.7 130.175 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7402"
+			(at 139.7 130.175 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 139.7 130.175 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=Y0 2=A0 3=B0 4=Y1 5=A1 6=B1 7=GND 8=A2 9=B2 10=Y2 11=A3 12=B3 13=Y3 14=VCC"
 			(at 139.7 130.175 0)
 			(effects
 				(font
@@ -4463,8 +5804,8 @@
 		(instances
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U8")
-					(unit 2)
+					(reference "Ud2")
+					(unit 3)
 				)
 			)
 		)
@@ -4472,14 +5813,14 @@
 	(symbol
 		(lib_id "74xx:74LS02")
 		(at 44.45 100.33 0)
-		(unit 4)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "37ffed67-0de5-4ff3-bb00-ffce027a7150")
-		(property "Reference" "U9"
+		(property "Reference" "Ud1"
 			(at 44.45 91.44 0)
 			(effects
 				(font
@@ -4495,7 +5836,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 44.45 100.33 0)
 			(effects
 				(font
@@ -4504,7 +5845,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74ls02"
+		(property "Datasheet" "https://www.tme.eu/pl/en/details/sn74hc02dr/gates-inverters/texas-instruments/"
 			(at 44.45 100.33 0)
 			(effects
 				(font
@@ -4514,6 +5855,42 @@
 			)
 		)
 		(property "Description" "quad 2-input NOR gate"
+			(at 44.45 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7402.lib"
+			(at 44.45 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7402"
+			(at 44.45 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 44.45 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=Y0 2=A0 3=B0 4=Y1 5=A1 6=B1 7=GND 8=A2 9=B2 10=Y2 11=A3 12=B3 13=Y3 14=VCC"
 			(at 44.45 100.33 0)
 			(effects
 				(font
@@ -4567,8 +5944,8 @@
 		(instances
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U9")
-					(unit 4)
+					(reference "Ud1")
+					(unit 2)
 				)
 			)
 		)
@@ -4576,14 +5953,14 @@
 	(symbol
 		(lib_id "74xx:74LS02")
 		(at 260.35 121.285 0)
-		(unit 4)
+		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "39be97bc-ada0-4644-95d3-0b9a08240bf5")
-		(property "Reference" "U8"
+		(property "Reference" "Ud3"
 			(at 260.35 113.03 0)
 			(effects
 				(font
@@ -4599,7 +5976,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 260.35 121.285 0)
 			(effects
 				(font
@@ -4618,6 +5995,42 @@
 			)
 		)
 		(property "Description" "quad 2-input NOR gate"
+			(at 260.35 121.285 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7402.lib"
+			(at 260.35 121.285 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7402"
+			(at 260.35 121.285 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 260.35 121.285 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=Y0 2=A0 3=B0 4=Y1 5=A1 6=B1 7=GND 8=A2 9=B2 10=Y2 11=A3 12=B3 13=Y3 14=VCC"
 			(at 260.35 121.285 0)
 			(effects
 				(font
@@ -4671,8 +6084,8 @@
 		(instances
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U8")
-					(unit 4)
+					(reference "Ud3")
+					(unit 3)
 				)
 			)
 		)
@@ -4680,14 +6093,14 @@
 	(symbol
 		(lib_id "74xx:74LS08")
 		(at 229.87 106.68 0)
-		(unit 1)
+		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ad604fa-6125-4aa1-be42-0c4bfff8cc18")
-		(property "Reference" "U11"
+		(property "Reference" "Ud7"
 			(at 229.8617 97.79 0)
 			(effects
 				(font
@@ -4703,7 +6116,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 229.87 106.68 0)
 			(effects
 				(font
@@ -4712,7 +6125,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
+		(property "Datasheet" "https://www.tme.eu/pl/en/details/74hc08dbj/gates-inverters/toshiba/74hc08d-bj/"
 			(at 229.87 106.68 0)
 			(effects
 				(font
@@ -4722,6 +6135,42 @@
 			)
 		)
 		(property "Description" "Quad And2"
+			(at 229.87 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7408.lib"
+			(at 229.87 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7408"
+			(at 229.87 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 229.87 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
 			(at 229.87 106.68 0)
 			(effects
 				(font
@@ -4775,8 +6224,8 @@
 		(instances
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U11")
-					(unit 1)
+					(reference "Ud7")
+					(unit 3)
 				)
 			)
 		)
@@ -4791,8 +6240,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3e18f1f3-2d6a-4fd6-8968-9455b81f90d2")
-		(property "Reference" "U10"
-			(at 51.4267 151.765 0)
+		(property "Reference" "Ud4"
+			(at 51.4267 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4800,14 +6249,14 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 51.4267 154.305 0)
+			(at 51.4267 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 51.435 160.655 0)
 			(effects
 				(font
@@ -4816,7 +6265,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
+		(property "Datasheet" "https://www.tme.eu/pl/en/details/74hc08dbj/gates-inverters/toshiba/74hc08d-bj/"
 			(at 51.435 160.655 0)
 			(effects
 				(font
@@ -4826,6 +6275,42 @@
 			)
 		)
 		(property "Description" "Quad And2"
+			(at 51.435 160.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7408.lib"
+			(at 51.435 160.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7408"
+			(at 51.435 160.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 51.435 160.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
 			(at 51.435 160.655 0)
 			(effects
 				(font
@@ -4879,8 +6364,144 @@
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U10")
+					(reference "Ud4")
 					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 215.9 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3ef1d07b-accb-4353-ab9e-cf367c6c8a96")
+		(property "Reference" "#PWR0146"
+			(at 215.9 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 215.9 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 215.9 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "33bed450-313c-4042-bbfd-b578c3ce0c55")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "#PWR0146")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 215.9 74.93 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "413f13ca-295b-402a-b2ae-3f07fd4a585f")
+		(property "Reference" "Rd5"
+			(at 218.44 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470"
+			(at 218.44 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 214.122 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 215.9 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 215.9 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c9567b98-cbf2-4439-93d5-e8844495bfa8")
+		)
+		(pin "2"
+			(uuid "3b60b85c-fcd8-46db-86cb-80b2137000f7")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "Rd5")
+					(unit 1)
 				)
 			)
 		)
@@ -4888,14 +6509,14 @@
 	(symbol
 		(lib_id "74xx:74LS08")
 		(at 216.535 136.525 0)
-		(unit 3)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "42ad9b98-086f-414f-860b-8af9c6c3d4d4")
-		(property "Reference" "U35"
+		(property "Reference" "Ud7"
 			(at 216.5267 128.27 0)
 			(effects
 				(font
@@ -4911,7 +6532,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 216.535 136.525 0)
 			(effects
 				(font
@@ -4920,7 +6541,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
+		(property "Datasheet" "https://www.tme.eu/pl/en/details/74hc08dbj/gates-inverters/toshiba/74hc08d-bj/"
 			(at 216.535 136.525 0)
 			(effects
 				(font
@@ -4930,6 +6551,42 @@
 			)
 		)
 		(property "Description" "Quad And2"
+			(at 216.535 136.525 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7408.lib"
+			(at 216.535 136.525 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7408"
+			(at 216.535 136.525 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 216.535 136.525 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
 			(at 216.535 136.525 0)
 			(effects
 				(font
@@ -4983,15 +6640,15 @@
 		(instances
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U35")
-					(unit 3)
+					(reference "Ud7")
+					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 269.24 21.59 0)
+		(at 265.43 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5000,7 +6657,7 @@
 		(fields_autoplaced yes)
 		(uuid "44bf80bb-433e-4fde-a09f-f27efa389040")
 		(property "Reference" "#PWR0128"
-			(at 269.24 25.4 0)
+			(at 265.43 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5009,7 +6666,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 269.24 16.51 0)
+			(at 265.43 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5017,7 +6674,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 269.24 21.59 0)
+			(at 265.43 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5026,7 +6683,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 269.24 21.59 0)
+			(at 265.43 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5035,7 +6692,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 269.24 21.59 0)
+			(at 265.43 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5065,8 +6722,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "46f6a531-2203-48bf-b91d-75a1819a1c67")
-		(property "Reference" "U35"
-			(at 216.5267 147.955 0)
+		(property "Reference" "Ud6"
+			(at 216.5267 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5074,14 +6731,14 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 216.5267 150.495 0)
+			(at 216.5267 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 216.535 156.845 0)
 			(effects
 				(font
@@ -5090,7 +6747,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
+		(property "Datasheet" "https://www.tme.eu/pl/en/details/74hc08dbj/gates-inverters/toshiba/74hc08d-bj/"
 			(at 216.535 156.845 0)
 			(effects
 				(font
@@ -5100,6 +6757,42 @@
 			)
 		)
 		(property "Description" "Quad And2"
+			(at 216.535 156.845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7408.lib"
+			(at 216.535 156.845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7408"
+			(at 216.535 156.845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 216.535 156.845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
 			(at 216.535 156.845 0)
 			(effects
 				(font
@@ -5153,15 +6846,151 @@
 		(instances
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U35")
+					(reference "Ud6")
 					(unit 4)
 				)
 			)
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 177.165 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "487f6d35-5c0e-41d9-9bea-4a4bee9d6855")
+		(property "Reference" "#PWR0143"
+			(at 177.165 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 177.165 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.165 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.165 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 177.165 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "52de9642-f72d-4b2a-b877-a5d39578c80c")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "#PWR0143")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 165.1 31.75 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4a893d9d-1ebb-4290-a5f6-7e6d6088381c")
+		(property "Reference" "Cd1"
+			(at 168.91 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 168.91 33.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 166.0652 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 165.1 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f998539d-bc64-4adb-9246-a43a050cdbe1")
+		)
+		(pin "1"
+			(uuid "4a1552a8-a0ed-4f20-b7f4-852d0dd15cbd")
+		)
+		(instances
+			(project ""
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "Cd1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74LS08")
-		(at 132.08 33.02 0)
+		(at 102.235 33.02 0)
 		(unit 5)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5169,8 +6998,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4d292a79-267c-425d-aff5-04dbb2e4c87e")
-		(property "Reference" "U37"
-			(at 139.065 31.7499 0)
+		(property "Reference" "Ud5"
+			(at 108.585 31.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5179,7 +7008,7 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 139.065 34.2899 0)
+			(at 108.585 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5187,8 +7016,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 132.08 33.02 0)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 102.235 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5196,8 +7025,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 132.08 33.02 0)
+		(property "Datasheet" "https://www.tme.eu/pl/en/details/74hc08dbj/gates-inverters/toshiba/74hc08d-bj/"
+			(at 102.235 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5206,7 +7035,43 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 132.08 33.02 0)
+			(at 102.235 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7408.lib"
+			(at 102.235 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7408"
+			(at 102.235 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 102.235 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
+			(at 102.235 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5259,15 +7124,213 @@
 		(instances
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U37")
+					(reference "Ud5")
 					(unit 5)
 				)
 			)
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 215.9 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4fa98b29-e5d4-40cf-9b8f-202814520c74")
+		(property "Reference" "#PWR0136"
+			(at 215.9 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 215.9 23.495 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 215.9 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d3dba23e-b7d6-4157-b281-5b7088852769")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "#PWR0136")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 228.6 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4fbe771e-f3cc-4065-b254-8df945e39a97")
+		(property "Reference" "#PWR0147"
+			(at 228.6 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 228.6 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 228.6 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "df594de8-d762-454d-bc75-ce66ad864a6d")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "#PWR0147")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 203.835 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ff471ad-c8b7-4709-b342-10edbcfddad2")
+		(property "Reference" "#PWR0135"
+			(at 203.835 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 203.835 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 203.835 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.835 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 203.835 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6eb1fa84-2ac0-45f2-a9f9-45a2a3741435")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "#PWR0135")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74LS08")
-		(at 55.88 33.02 0)
+		(at 140.335 33.02 0)
 		(unit 5)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5275,8 +7338,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "545972b1-854b-432a-9da1-ea7183818b58")
-		(property "Reference" "U11"
-			(at 62.23 31.7499 0)
+		(property "Reference" "Ud7"
+			(at 146.685 31.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5285,7 +7348,7 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 62.23 34.2899 0)
+			(at 146.685 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5293,8 +7356,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 55.88 33.02 0)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 140.335 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5302,8 +7365,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 55.88 33.02 0)
+		(property "Datasheet" "https://www.tme.eu/pl/en/details/74hc08dbj/gates-inverters/toshiba/74hc08d-bj/"
+			(at 140.335 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5312,7 +7375,43 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 55.88 33.02 0)
+			(at 140.335 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7408.lib"
+			(at 140.335 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7408"
+			(at 140.335 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 140.335 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
+			(at 140.335 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5365,7 +7464,7 @@
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U11")
+					(reference "Ud7")
 					(unit 5)
 				)
 			)
@@ -5373,7 +7472,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 276.86 24.13 0)
+		(at 273.05 35.56 0)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5381,8 +7480,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "593d1efe-ec1d-448e-992d-512a0b171b76")
-		(property "Reference" "U37"
-			(at 276.8517 15.24 0)
+		(property "Reference" "Ud7"
+			(at 273.0417 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5390,15 +7489,15 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 276.8517 17.78 0)
+			(at 273.0417 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 276.86 24.13 0)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 273.05 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5406,8 +7505,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 276.86 24.13 0)
+		(property "Datasheet" "https://www.tme.eu/pl/en/details/74hc08dbj/gates-inverters/toshiba/74hc08d-bj/"
+			(at 273.05 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5416,7 +7515,43 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 276.86 24.13 0)
+			(at 273.05 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7408.lib"
+			(at 273.05 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7408"
+			(at 273.05 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 273.05 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
+			(at 273.05 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5469,7 +7604,7 @@
 		(instances
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U37")
+					(reference "Ud7")
 					(unit 4)
 				)
 			)
@@ -5485,7 +7620,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5d75476e-6441-438e-af47-595eaed9b7f9")
-		(property "Reference" "U35"
+		(property "Reference" "Ud4"
 			(at 83.1767 82.55 0)
 			(effects
 				(font
@@ -5501,7 +7636,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 83.185 90.805 0)
 			(effects
 				(font
@@ -5510,7 +7645,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
+		(property "Datasheet" "https://www.tme.eu/pl/en/details/74hc08dbj/gates-inverters/toshiba/74hc08d-bj/"
 			(at 83.185 90.805 0)
 			(effects
 				(font
@@ -5520,6 +7655,42 @@
 			)
 		)
 		(property "Description" "Quad And2"
+			(at 83.185 90.805 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7408.lib"
+			(at 83.185 90.805 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7408"
+			(at 83.185 90.805 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 83.185 90.805 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
 			(at 83.185 90.805 0)
 			(effects
 				(font
@@ -5573,7 +7744,77 @@
 		(instances
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U35")
+					(reference "Ud4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 190.5 31.75 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5f5742d1-4f2c-41b8-a887-da936e69e75d")
+		(property "Reference" "Cd3"
+			(at 194.31 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 194.31 33.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 191.4652 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.5 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 190.5 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4a5e9edb-f043-4558-9fd2-66a4e13f8b3b")
+		)
+		(pin "1"
+			(uuid "6d5e6e88-3fa7-4dc0-bb66-9154bbd053fa")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "Cd3")
 					(unit 1)
 				)
 			)
@@ -5581,7 +7822,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 132.08 45.72 0)
+		(at 102.235 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5590,7 +7831,7 @@
 		(fields_autoplaced yes)
 		(uuid "627572eb-ffb2-4e23-982e-cc4262e2e408")
 		(property "Reference" "#PWR0127"
-			(at 132.08 52.07 0)
+			(at 102.235 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5599,7 +7840,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 132.08 50.165 0)
+			(at 102.235 50.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5607,7 +7848,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 132.08 45.72 0)
+			(at 102.235 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5616,7 +7857,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 45.72 0)
+			(at 102.235 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5625,7 +7866,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 132.08 45.72 0)
+			(at 102.235 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5648,14 +7889,14 @@
 	(symbol
 		(lib_id "74xx:74LS02")
 		(at 44.45 115.57 0)
-		(unit 1)
+		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "67e7b575-0250-41a5-86b4-70c8721546c3")
-		(property "Reference" "U9"
+		(property "Reference" "Ud1"
 			(at 44.45 106.68 0)
 			(effects
 				(font
@@ -5671,7 +7912,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 44.45 115.57 0)
 			(effects
 				(font
@@ -5680,7 +7921,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74ls02"
+		(property "Datasheet" "https://www.tme.eu/pl/en/details/sn74hc02dr/gates-inverters/texas-instruments/"
 			(at 44.45 115.57 0)
 			(effects
 				(font
@@ -5690,6 +7931,42 @@
 			)
 		)
 		(property "Description" "quad 2-input NOR gate"
+			(at 44.45 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7402.lib"
+			(at 44.45 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7402"
+			(at 44.45 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 44.45 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=Y0 2=A0 3=B0 4=Y1 5=A1 6=B1 7=GND 8=A2 9=B2 10=Y2 11=A3 12=B3 13=Y3 14=VCC"
 			(at 44.45 115.57 0)
 			(effects
 				(font
@@ -5743,15 +8020,15 @@
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U9")
-					(unit 1)
+					(reference "Ud1")
+					(unit 3)
 				)
 			)
 		)
 	)
 	(symbol
 		(lib_id "74xx:74LS02")
-		(at 113.03 33.02 0)
+		(at 64.135 33.02 0)
 		(unit 5)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5759,8 +8036,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "691fd51f-b739-440d-8bb2-2b4495ac798d")
-		(property "Reference" "U36"
-			(at 119.38 31.7499 0)
+		(property "Reference" "Ud3"
+			(at 70.485 31.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5769,7 +8046,7 @@
 			)
 		)
 		(property "Value" "74LS02"
-			(at 119.38 34.2899 0)
+			(at 70.485 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5777,8 +8054,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 113.03 33.02 0)
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
+			(at 64.135 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5787,7 +8064,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74ls02"
-			(at 113.03 33.02 0)
+			(at 64.135 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5796,7 +8073,43 @@
 			)
 		)
 		(property "Description" "quad 2-input NOR gate"
-			(at 113.03 33.02 0)
+			(at 64.135 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7402.lib"
+			(at 64.135 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7402"
+			(at 64.135 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 64.135 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=Y0 2=A0 3=B0 4=Y1 5=A1 6=B1 7=GND 8=A2 9=B2 10=Y2 11=A3 12=B3 13=Y3 14=VCC"
+			(at 64.135 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5849,7 +8162,7 @@
 		(instances
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U36")
+					(reference "Ud3")
 					(unit 5)
 				)
 			)
@@ -5857,7 +8170,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 36.83 20.32 0)
+		(at 121.285 20.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5866,7 +8179,7 @@
 		(fields_autoplaced yes)
 		(uuid "6e3bc4b8-50e6-4fcd-9cc3-b6eae7da6c13")
 		(property "Reference" "#PWR020"
-			(at 36.83 24.13 0)
+			(at 121.285 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5875,7 +8188,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 36.83 15.24 0)
+			(at 121.285 15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5883,7 +8196,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.83 20.32 0)
+			(at 121.285 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5892,7 +8205,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 20.32 0)
+			(at 121.285 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5901,7 +8214,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 36.83 20.32 0)
+			(at 121.285 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5922,8 +8235,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 215.9 31.75 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "703666fc-fb5d-48c2-a453-54ca9a26d07e")
+		(property "Reference" "Cd5"
+			(at 219.71 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 219.71 33.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 216.8652 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 215.9 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 215.9 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "464869d0-7955-452b-914e-11b3928be190")
+		)
+		(pin "1"
+			(uuid "2229e42d-f077-412e-bca6-8390a09cb8ef")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "Cd5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
-		(at 113.03 20.32 0)
+		(at 64.135 20.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5932,7 +8315,7 @@
 		(fields_autoplaced yes)
 		(uuid "77c2f7a8-ae28-4369-a10e-b941e3b3ce29")
 		(property "Reference" "#PWR0124"
-			(at 113.03 24.13 0)
+			(at 64.135 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5941,7 +8324,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 113.03 15.875 0)
+			(at 64.135 15.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5949,7 +8332,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 20.32 0)
+			(at 64.135 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5958,7 +8341,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 20.32 0)
+			(at 64.135 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5967,7 +8350,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 113.03 20.32 0)
+			(at 64.135 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5988,16 +8371,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 228.6 74.93 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "79b60fa3-8675-48ed-aed7-0bff1a190da4")
+		(property "Reference" "Rd6"
+			(at 231.14 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470"
+			(at 231.14 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 226.822 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 228.6 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "42039db3-b40a-4d4b-bcf2-2cb38d66ef59")
+		)
+		(pin "2"
+			(uuid "528c5fd4-2fee-4a2f-b68a-0e46f63292f6")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "Rd6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74LS02")
 		(at 93.345 185.42 0)
-		(unit 2)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7bd52b0b-c149-450e-b27f-56836da26bd2")
-		(property "Reference" "U36"
+		(property "Reference" "Ud2"
 			(at 93.345 176.53 0)
 			(effects
 				(font
@@ -6013,7 +8466,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 93.345 185.42 0)
 			(effects
 				(font
@@ -6032,6 +8485,42 @@
 			)
 		)
 		(property "Description" "quad 2-input NOR gate"
+			(at 93.345 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7402.lib"
+			(at 93.345 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7402"
+			(at 93.345 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 93.345 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=Y0 2=A0 3=B0 4=Y1 5=A1 6=B1 7=GND 8=A2 9=B2 10=Y2 11=A3 12=B3 13=Y3 14=VCC"
 			(at 93.345 185.42 0)
 			(effects
 				(font
@@ -6085,15 +8574,15 @@
 		(instances
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U36")
-					(unit 2)
+					(reference "Ud2")
+					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 93.98 33.02 0)
+		(at 83.185 33.02 0)
 		(unit 5)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6101,8 +8590,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7be61e70-45f7-40db-a2ef-640e1250e81a")
-		(property "Reference" "U35"
-			(at 100.33 31.7499 0)
+		(property "Reference" "Ud4"
+			(at 89.535 31.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6111,7 +8600,7 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 100.33 34.2899 0)
+			(at 89.535 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6119,8 +8608,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 93.98 33.02 0)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 83.185 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6128,8 +8617,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 93.98 33.02 0)
+		(property "Datasheet" "https://www.tme.eu/pl/en/details/74hc08dbj/gates-inverters/toshiba/74hc08d-bj/"
+			(at 83.185 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6138,7 +8627,43 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 93.98 33.02 0)
+			(at 83.185 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 83.185 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7408.lib"
+			(at 83.185 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7408"
+			(at 83.185 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
+			(at 83.185 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6191,7 +8716,7 @@
 		(instances
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U35")
+					(reference "Ud4")
 					(unit 5)
 				)
 			)
@@ -6200,15 +8725,15 @@
 	(symbol
 		(lib_id "74xx:74LS02")
 		(at 201.295 154.305 0)
-		(unit 4)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7f7eb793-e309-46a9-85e2-5232ffe2a363")
-		(property "Reference" "U34"
-			(at 201.295 145.415 0)
+		(property "Reference" "U3"
+			(at 201.295 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6216,7 +8741,7 @@
 			)
 		)
 		(property "Value" "74LS02"
-			(at 201.295 147.955 0)
+			(at 201.295 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6242,6 +8767,42 @@
 			)
 		)
 		(property "Description" "quad 2-input NOR gate"
+			(at 201.295 154.305 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7402.lib"
+			(at 201.295 154.305 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7402"
+			(at 201.295 154.305 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 201.295 154.305 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=Y0 2=A0 3=B0 4=Y1 5=A1 6=B1 7=GND 8=A2 9=B2 10=Y2 11=A3 12=B3 13=Y3 14=VCC"
 			(at 201.295 154.305 0)
 			(effects
 				(font
@@ -6295,8 +8856,280 @@
 		(instances
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U34")
-					(unit 4)
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 178.435 31.75 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "803cb90a-e263-4f45-a9ab-a34b663217fb")
+		(property "Reference" "Cd2"
+			(at 182.245 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 182.245 33.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 179.4002 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 178.435 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 178.435 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6e59e758-bb23-4d93-b7a8-feb93c1dcce0")
+		)
+		(pin "1"
+			(uuid "fe217bfc-afc7-47d9-b142-19fc41ead182")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "Cd2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 202.565 74.93 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "815486b4-096f-4638-afec-a30bf93ef767")
+		(property "Reference" "Rd4"
+			(at 205.105 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470"
+			(at 205.105 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 200.787 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 202.565 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 202.565 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4777535e-f7ca-43b9-b7e9-e0b4d0292d7a")
+		)
+		(pin "2"
+			(uuid "2131112f-18c4-400a-a315-930560d9be76")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "Rd4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 165.1 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "830b9593-97cd-4745-ab0b-0b4c7faef23f")
+		(property "Reference" "#PWR0142"
+			(at 165.1 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 165.1 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 165.1 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fb1040cf-8e1c-4be9-a400-6342966f6f7b")
+		)
+		(instances
+			(project ""
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "#PWR0142")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 178.435 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8406a55e-1db7-4750-9b8a-ccc8f3dc0372")
+		(property "Reference" "#PWR0129"
+			(at 178.435 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 178.435 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 178.435 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 178.435 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 178.435 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "58bceccc-0f33-431e-a946-ab6ef56d9574")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "#PWR0129")
+					(unit 1)
 				)
 			)
 		)
@@ -6304,14 +9137,14 @@
 	(symbol
 		(lib_id "74xx:74LS08")
 		(at 212.09 109.22 0)
-		(unit 3)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "85431878-3053-41ab-9983-f84fbcd64fb4")
-		(property "Reference" "U11"
+		(property "Reference" "Ud7"
 			(at 212.0817 100.33 0)
 			(effects
 				(font
@@ -6327,7 +9160,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 212.09 109.22 0)
 			(effects
 				(font
@@ -6336,7 +9169,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
+		(property "Datasheet" "https://www.tme.eu/pl/en/details/74hc08dbj/gates-inverters/toshiba/74hc08d-bj/"
 			(at 212.09 109.22 0)
 			(effects
 				(font
@@ -6346,6 +9179,42 @@
 			)
 		)
 		(property "Description" "Quad And2"
+			(at 212.09 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7408.lib"
+			(at 212.09 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7408"
+			(at 212.09 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 212.09 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
 			(at 212.09 109.22 0)
 			(effects
 				(font
@@ -6399,8 +9268,74 @@
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U11")
-					(unit 3)
+					(reference "Ud7")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 190.5 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "887e3754-af4e-475e-bef9-ce78be213f15")
+		(property "Reference" "#PWR0144"
+			(at 190.5 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 190.5 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 190.5 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a7c6af1d-6b88-47c8-9270-dc962f1a94fa")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "#PWR0144")
+					(unit 1)
 				)
 			)
 		)
@@ -6415,7 +9350,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8e6a5a79-e261-4a77-8c53-c1c954c27a72")
-		(property "Reference" "U35"
+		(property "Reference" "Ud4"
 			(at 101.5917 95.25 0)
 			(effects
 				(font
@@ -6431,7 +9366,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 101.6 104.14 0)
 			(effects
 				(font
@@ -6440,7 +9375,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
+		(property "Datasheet" "https://www.tme.eu/pl/en/details/74hc08dbj/gates-inverters/toshiba/74hc08d-bj/"
 			(at 101.6 104.14 0)
 			(effects
 				(font
@@ -6450,6 +9385,42 @@
 			)
 		)
 		(property "Description" "Quad And2"
+			(at 101.6 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7408.lib"
+			(at 101.6 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7408"
+			(at 101.6 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 101.6 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
 			(at 101.6 104.14 0)
 			(effects
 				(font
@@ -6503,7 +9474,7 @@
 		(instances
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U35")
+					(reference "Ud4")
 					(unit 2)
 				)
 			)
@@ -6511,7 +9482,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 74.93 20.32 0)
+		(at 45.085 20.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6520,7 +9491,7 @@
 		(fields_autoplaced yes)
 		(uuid "9435e039-4adf-412b-b85b-5293d828a52c")
 		(property "Reference" "#PWR0119"
-			(at 74.93 24.13 0)
+			(at 45.085 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6529,7 +9500,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 74.93 15.875 0)
+			(at 45.085 15.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6537,7 +9508,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 20.32 0)
+			(at 45.085 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6546,7 +9517,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 20.32 0)
+			(at 45.085 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6555,7 +9526,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 74.93 20.32 0)
+			(at 45.085 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6576,15 +9547,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 203.835 31.75 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "95011047-ff28-48ea-bda9-adbec3170763")
+		(property "Reference" "Cd4"
+			(at 207.645 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 207.645 33.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 204.8002 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 203.835 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 203.835 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "14c39e77-eb4e-4b49-be1e-b8586bf9a169")
+		)
+		(pin "1"
+			(uuid "801d6e1b-ae6b-49ba-8f73-03696b7ebf7a")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "Cd4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74LS08")
 		(at 111.76 142.875 0)
-		(unit 4)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "950db160-26d6-4b71-a3c3-dcbcfb291d61")
-		(property "Reference" "U11"
+		(property "Reference" "Ud6"
 			(at 111.76 133.985 0)
 			(effects
 				(font
@@ -6600,7 +9641,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 111.76 142.875 0)
 			(effects
 				(font
@@ -6609,7 +9650,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
+		(property "Datasheet" "https://www.tme.eu/pl/en/details/74hc08dbj/gates-inverters/toshiba/74hc08d-bj/"
 			(at 111.76 142.875 0)
 			(effects
 				(font
@@ -6619,6 +9660,42 @@
 			)
 		)
 		(property "Description" "Quad And2"
+			(at 111.76 142.875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7408.lib"
+			(at 111.76 142.875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7408"
+			(at 111.76 142.875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 111.76 142.875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
 			(at 111.76 142.875 0)
 			(effects
 				(font
@@ -6672,8 +9749,74 @@
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U11")
-					(unit 4)
+					(reference "Ud6")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 190.5 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a0dfa466-fe86-41d7-b0e3-b8299329967b")
+		(property "Reference" "#PWR0130"
+			(at 190.5 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 190.5 23.495 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 190.5 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a604c598-8ffb-43a7-abfb-7e43340de620")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "#PWR0130")
+					(unit 1)
 				)
 			)
 		)
@@ -6688,8 +9831,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a3075c5d-5861-4c4d-aa2f-3176e831ff8f")
-		(property "Reference" "U37"
-			(at 78.0967 177.165 0)
+		(property "Reference" "Ud5"
+			(at 78.0967 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6697,14 +9840,14 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 78.0967 179.705 0)
+			(at 78.0967 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 78.105 185.42 0)
 			(effects
 				(font
@@ -6713,7 +9856,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
+		(property "Datasheet" "https://www.tme.eu/pl/en/details/74hc08dbj/gates-inverters/toshiba/74hc08d-bj/"
 			(at 78.105 185.42 0)
 			(effects
 				(font
@@ -6723,6 +9866,42 @@
 			)
 		)
 		(property "Description" "Quad And2"
+			(at 78.105 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7408.lib"
+			(at 78.105 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7408"
+			(at 78.105 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 78.105 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
 			(at 78.105 185.42 0)
 			(effects
 				(font
@@ -6776,7 +9955,7 @@
 		(instances
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U37")
+					(reference "Ud5")
 					(unit 3)
 				)
 			)
@@ -6792,8 +9971,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a4b9857d-846c-4cf9-8f70-359a1bddc8df")
-		(property "Reference" "U10"
-			(at 32.3767 149.225 0)
+		(property "Reference" "Ud4"
+			(at 32.3767 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6801,14 +9980,14 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 32.3767 151.765 0)
+			(at 32.3767 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 32.385 158.115 0)
 			(effects
 				(font
@@ -6817,7 +9996,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
+		(property "Datasheet" "https://www.tme.eu/pl/en/details/74hc08dbj/gates-inverters/toshiba/74hc08d-bj/"
 			(at 32.385 158.115 0)
 			(effects
 				(font
@@ -6827,6 +10006,42 @@
 			)
 		)
 		(property "Description" "Quad And2"
+			(at 32.385 158.115 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7408.lib"
+			(at 32.385 158.115 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7408"
+			(at 32.385 158.115 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 32.385 158.115 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
 			(at 32.385 158.115 0)
 			(effects
 				(font
@@ -6880,15 +10095,217 @@
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U10")
+					(reference "Ud4")
 					(unit 3)
 				)
 			)
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 241.3 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7bf9a9a-4a7c-4c03-bd2b-7b026b37eefa")
+		(property "Reference" "#PWR0141"
+			(at 241.3 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 241.3 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 241.3 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 241.3 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 241.3 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7396b821-912e-4ca0-9400-40204a8bfe77")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "#PWR0141")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 241.3 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af4eba86-5080-49cb-b9a7-fe76681d4f45")
+		(property "Reference" "#PWR0140"
+			(at 241.3 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 241.3 23.495 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 241.3 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 241.3 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 241.3 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ebbeba77-ff05-4d2f-97fe-367f35104877")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "#PWR0140")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 165.1 74.93 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b23414bd-3c8b-4c74-82fb-4215b4d467b9")
+		(property "Reference" "Rd1"
+			(at 167.64 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470"
+			(at 167.64 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 163.322 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 165.1 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e72e220e-ff32-43c1-ae8e-32a0cf0bd6b1")
+		)
+		(pin "2"
+			(uuid "37adcaad-576f-42fe-87b4-e0f905d34410")
+		)
+		(instances
+			(project ""
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "Rd1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74LS02")
-		(at 74.93 33.02 0)
+		(at 45.085 33.02 0)
 		(unit 5)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6896,8 +10313,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b9cd7d48-1913-4a2c-9288-07736617d968")
-		(property "Reference" "U34"
-			(at 81.28 31.7499 0)
+		(property "Reference" "Ud2"
+			(at 51.435 31.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6906,7 +10323,7 @@
 			)
 		)
 		(property "Value" "74LS02"
-			(at 81.28 34.2899 0)
+			(at 51.435 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6914,8 +10331,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 74.93 33.02 0)
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
+			(at 45.085 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6924,7 +10341,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74ls02"
-			(at 74.93 33.02 0)
+			(at 45.085 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6933,7 +10350,43 @@
 			)
 		)
 		(property "Description" "quad 2-input NOR gate"
-			(at 74.93 33.02 0)
+			(at 45.085 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7402.lib"
+			(at 45.085 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7402"
+			(at 45.085 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 45.085 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=Y0 2=A0 3=B0 4=Y1 5=A1 6=B1 7=GND 8=A2 9=B2 10=Y2 11=A3 12=B3 13=Y3 14=VCC"
+			(at 45.085 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6986,15 +10439,94 @@
 		(instances
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U34")
+					(reference "Ud2")
 					(unit 5)
 				)
 			)
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 165.1 67.31 90)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bc231a5c-fa79-40aa-bd01-94cbb4cfad73")
+		(property "Reference" "Dd1"
+			(at 168.91 67.6274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "yellow"
+			(at 168.91 70.1674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 165.1 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 165.1 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 165.1 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "16ae1e7b-c680-4f61-9751-87a2ebbb6d4f")
+		)
+		(pin "1"
+			(uuid "74a7bd29-50bb-441a-b2b1-41ea47e04a81")
+		)
+		(instances
+			(project ""
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "Dd1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 17.78 45.72 0)
+		(at 26.035 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7003,7 +10535,7 @@
 		(fields_autoplaced yes)
 		(uuid "c3f2b83c-49de-4ed4-8088-ad22d3a5283d")
 		(property "Reference" "#PWR018"
-			(at 17.78 52.07 0)
+			(at 26.035 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7012,7 +10544,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 17.78 50.8 0)
+			(at 26.035 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7020,7 +10552,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 17.78 45.72 0)
+			(at 26.035 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7029,7 +10561,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 17.78 45.72 0)
+			(at 26.035 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7038,7 +10570,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 17.78 45.72 0)
+			(at 26.035 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7060,7 +10592,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 55.88 20.32 0)
+		(at 140.335 20.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7069,7 +10601,7 @@
 		(fields_autoplaced yes)
 		(uuid "c3fe1f08-444d-434e-b4a5-3c1be14347c3")
 		(property "Reference" "#PWR021"
-			(at 55.88 24.13 0)
+			(at 140.335 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7078,7 +10610,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 55.88 15.24 0)
+			(at 140.335 15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7086,7 +10618,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 55.88 20.32 0)
+			(at 140.335 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7095,7 +10627,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 20.32 0)
+			(at 140.335 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7104,7 +10636,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 55.88 20.32 0)
+			(at 140.335 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7125,8 +10657,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 177.165 67.31 90)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c4d49e48-8395-4438-9b1f-311e45049a08")
+		(property "Reference" "Dd2"
+			(at 180.975 67.6274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "yellow"
+			(at 180.975 70.1674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 177.165 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 177.165 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 177.165 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 177.165 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c69079b6-8544-45e1-b997-69092119669e")
+		)
+		(pin "1"
+			(uuid "492f93ab-a110-47c5-9bb2-529f430cb935")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "Dd2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 36.83 45.72 0)
+		(at 121.285 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7135,7 +10746,7 @@
 		(fields_autoplaced yes)
 		(uuid "c503c697-d559-4a52-bd5a-50538ab1c731")
 		(property "Reference" "#PWR022"
-			(at 36.83 52.07 0)
+			(at 121.285 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7144,7 +10755,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 36.83 50.8 0)
+			(at 121.285 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7152,7 +10763,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.83 45.72 0)
+			(at 121.285 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7161,7 +10772,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 45.72 0)
+			(at 121.285 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7170,7 +10781,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 36.83 45.72 0)
+			(at 121.285 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7192,7 +10803,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 93.98 20.32 0)
+		(at 83.185 20.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7201,7 +10812,7 @@
 		(fields_autoplaced yes)
 		(uuid "c5082fb2-89d5-457f-93e1-d311269436c9")
 		(property "Reference" "#PWR0122"
-			(at 93.98 24.13 0)
+			(at 83.185 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7210,7 +10821,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 93.98 15.875 0)
+			(at 83.185 15.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7218,7 +10829,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 93.98 20.32 0)
+			(at 83.185 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7227,7 +10838,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 20.32 0)
+			(at 83.185 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7236,7 +10847,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 93.98 20.32 0)
+			(at 83.185 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7258,7 +10869,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS02")
-		(at 17.78 33.02 0)
+		(at 26.035 33.02 0)
 		(unit 5)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7266,8 +10877,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c7b66228-4bce-4079-9c32-5fed60a3496d")
-		(property "Reference" "U9"
-			(at 24.13 31.7499 0)
+		(property "Reference" "Ud1"
+			(at 32.385 31.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7276,7 +10887,7 @@
 			)
 		)
 		(property "Value" "74LS02"
-			(at 24.13 34.2899 0)
+			(at 32.385 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7284,8 +10895,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 17.78 33.02 0)
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
+			(at 26.035 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7293,8 +10904,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74ls02"
-			(at 17.78 33.02 0)
+		(property "Datasheet" "https://www.tme.eu/pl/en/details/sn74hc02dr/gates-inverters/texas-instruments/"
+			(at 26.035 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7303,7 +10914,43 @@
 			)
 		)
 		(property "Description" "quad 2-input NOR gate"
-			(at 17.78 33.02 0)
+			(at 26.035 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 26.035 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7402.lib"
+			(at 26.035 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7402"
+			(at 26.035 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=Y0 2=A0 3=B0 4=Y1 5=A1 6=B1 7=GND 8=A2 9=B2 10=Y2 11=A3 12=B3 13=Y3 14=VCC"
+			(at 26.035 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7356,7 +11003,7 @@
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U9")
+					(reference "Ud1")
 					(unit 5)
 				)
 			)
@@ -7365,15 +11012,15 @@
 	(symbol
 		(lib_id "74xx:74LS02")
 		(at 261.62 146.05 0)
-		(unit 1)
+		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c85e3283-6e7b-448c-bea6-b89e7f0bf5ac")
-		(property "Reference" "U34"
-			(at 261.62 137.795 0)
+		(property "Reference" "Ud3"
+			(at 261.62 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7381,14 +11028,14 @@
 			)
 		)
 		(property "Value" "74LS02"
-			(at 261.62 140.335 0)
+			(at 261.62 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 261.62 146.05 0)
 			(effects
 				(font
@@ -7407,6 +11054,42 @@
 			)
 		)
 		(property "Description" "quad 2-input NOR gate"
+			(at 261.62 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7402.lib"
+			(at 261.62 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7402"
+			(at 261.62 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 261.62 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=Y0 2=A0 3=B0 4=Y1 5=A1 6=B1 7=GND 8=A2 9=B2 10=Y2 11=A3 12=B3 13=Y3 14=VCC"
 			(at 261.62 146.05 0)
 			(effects
 				(font
@@ -7460,7 +11143,209 @@
 		(instances
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U34")
+					(reference "Ud3")
+					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 190.5 74.93 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9d13ab7-6004-4a47-becf-adc03778ebc0")
+		(property "Reference" "Rd3"
+			(at 193.04 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470"
+			(at 193.04 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 188.722 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.5 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 190.5 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "54e3cbc2-29d1-4ba3-b2ee-0133eb8eb270")
+		)
+		(pin "2"
+			(uuid "c42d9b3b-e81b-471b-a3d9-488295ea1324")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "Rd3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 215.9 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ca66b1fa-e3b4-4d67-9aa4-162c37f4d59b")
+		(property "Reference" "#PWR0137"
+			(at 215.9 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 215.9 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 215.9 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "82d4fde7-8f5f-4148-972b-469f85267707")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "#PWR0137")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 229.235 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb56a125-64d6-44cc-83a7-08b81644b42f")
+		(property "Reference" "#PWR0138"
+			(at 229.235 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 229.235 23.495 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.235 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.235 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 229.235 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "43568f50-623b-4dc7-9a69-904ebc8b35f8")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "#PWR0138")
 					(unit 1)
 				)
 			)
@@ -7476,8 +11361,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d051a38d-6ad2-42c8-b14e-80bd018a5a85")
-		(property "Reference" "U34"
-			(at 236.22 137.795 0)
+		(property "Reference" "Ud3"
+			(at 236.22 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7485,14 +11370,14 @@
 			)
 		)
 		(property "Value" "74LS02"
-			(at 236.22 140.335 0)
+			(at 236.22 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 236.22 146.05 0)
 			(effects
 				(font
@@ -7511,6 +11396,42 @@
 			)
 		)
 		(property "Description" "quad 2-input NOR gate"
+			(at 236.22 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7402.lib"
+			(at 236.22 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7402"
+			(at 236.22 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 236.22 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=Y0 2=A0 3=B0 4=Y1 5=A1 6=B1 7=GND 8=A2 9=B2 10=Y2 11=A3 12=B3 13=Y3 14=VCC"
 			(at 236.22 146.05 0)
 			(effects
 				(font
@@ -7564,24 +11485,94 @@
 		(instances
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U34")
+					(reference "Ud3")
 					(unit 2)
 				)
 			)
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 229.235 31.75 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d1ccf8da-4e13-438b-a9c0-76ec224dd99d")
+		(property "Reference" "Cd6"
+			(at 233.045 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 233.045 33.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 230.2002 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 229.235 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 229.235 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1ecbd390-ef56-4956-8082-78a263e7b33d")
+		)
+		(pin "1"
+			(uuid "546a0989-8b28-4cf4-8309-2d4ff54902f2")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "Cd6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 74.93 45.72 0)
+		(at 202.565 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d5715156-a3bd-49a5-984b-219f742ba656")
-		(property "Reference" "#PWR0120"
-			(at 74.93 52.07 0)
+		(uuid "d400668a-fde5-4d5a-9390-2cfa3228ebfb")
+		(property "Reference" "#PWR0145"
+			(at 202.565 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7590,7 +11581,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 74.93 50.165 0)
+			(at 202.565 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7598,7 +11589,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 45.72 0)
+			(at 202.565 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7607,7 +11598,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 45.72 0)
+			(at 202.565 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7616,7 +11607,73 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 74.93 45.72 0)
+			(at 202.565 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d8eb0810-4a8a-42af-8bb8-468ace6da963")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "#PWR0145")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 45.085 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d5715156-a3bd-49a5-984b-219f742ba656")
+		(property "Reference" "#PWR0120"
+			(at 45.085 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 45.085 50.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.085 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.085 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 45.085 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7638,7 +11695,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 17.78 20.32 0)
+		(at 26.035 20.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7647,7 +11704,7 @@
 		(fields_autoplaced yes)
 		(uuid "d8081fd3-5620-457b-8655-fde1f4dc60d4")
 		(property "Reference" "#PWR015"
-			(at 17.78 24.13 0)
+			(at 26.035 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7656,7 +11713,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 17.78 15.24 0)
+			(at 26.035 15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7664,7 +11721,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 17.78 20.32 0)
+			(at 26.035 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7673,7 +11730,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 17.78 20.32 0)
+			(at 26.035 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7682,7 +11739,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 17.78 20.32 0)
+			(at 26.035 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7704,7 +11761,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 36.83 33.02 0)
+		(at 121.285 33.02 0)
 		(unit 5)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7712,8 +11769,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d8f00dd9-6d19-4472-b56d-f339449670ff")
-		(property "Reference" "U10"
-			(at 43.18 31.7499 0)
+		(property "Reference" "Ud6"
+			(at 127.635 31.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7722,7 +11779,7 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 43.18 34.2899 0)
+			(at 127.635 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7730,8 +11787,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 36.83 33.02 0)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 121.285 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7739,8 +11796,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 36.83 33.02 0)
+		(property "Datasheet" "https://www.tme.eu/pl/en/details/74hc08dbj/gates-inverters/toshiba/74hc08d-bj/"
+			(at 121.285 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7749,7 +11806,43 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 36.83 33.02 0)
+			(at 121.285 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7408.lib"
+			(at 121.285 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7408"
+			(at 121.285 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 121.285 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
+			(at 121.285 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7802,8 +11895,87 @@
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U10")
+					(reference "Ud6")
 					(unit 5)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 202.565 67.31 90)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da390d46-c314-4159-894b-84539e02211c")
+		(property "Reference" "Dd4"
+			(at 206.375 67.6274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "yellow"
+			(at 206.375 70.1674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 202.565 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 202.565 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 202.565 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 202.565 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "665d650f-095a-4247-95de-16c0aecd655e")
+		)
+		(pin "1"
+			(uuid "b1da8c35-1bcc-4d74-a206-e0c050f5b933")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "Dd4")
+					(unit 1)
 				)
 			)
 		)
@@ -7818,7 +11990,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e0e4e2c4-f48b-4a62-9124-a2c466466055")
-		(property "Reference" "U10"
+		(property "Reference" "Ud5"
 			(at 33.0117 173.99 0)
 			(effects
 				(font
@@ -7834,7 +12006,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 33.02 182.88 0)
 			(effects
 				(font
@@ -7843,7 +12015,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
+		(property "Datasheet" "https://www.tme.eu/pl/en/details/74hc08dbj/gates-inverters/toshiba/74hc08d-bj/"
 			(at 33.02 182.88 0)
 			(effects
 				(font
@@ -7853,6 +12025,42 @@
 			)
 		)
 		(property "Description" "Quad And2"
+			(at 33.02 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7408.lib"
+			(at 33.02 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7408"
+			(at 33.02 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 33.02 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
 			(at 33.02 182.88 0)
 			(effects
 				(font
@@ -7906,7 +12114,77 @@
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U10")
+					(reference "Ud5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 241.3 31.75 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e4f00f8b-b9ce-4af8-8623-9195a7c1f7e8")
+		(property "Reference" "Cd7"
+			(at 245.11 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 245.11 33.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 242.2652 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 241.3 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 241.3 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2b12f2cd-01f6-460e-b73b-bbcfed532123")
+		)
+		(pin "1"
+			(uuid "6d341399-e454-4564-a466-7dbbc321e3f2")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "Cd7")
 					(unit 1)
 				)
 			)
@@ -7914,7 +12192,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 113.03 45.72 0)
+		(at 64.135 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7923,7 +12201,7 @@
 		(fields_autoplaced yes)
 		(uuid "ee6193c6-7b65-467e-828b-64dfdb6a700e")
 		(property "Reference" "#PWR0125"
-			(at 113.03 52.07 0)
+			(at 64.135 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7932,7 +12210,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 113.03 50.165 0)
+			(at 64.135 50.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7940,7 +12218,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 45.72 0)
+			(at 64.135 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7949,7 +12227,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 45.72 0)
+			(at 64.135 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7958,7 +12236,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 113.03 45.72 0)
+			(at 64.135 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7980,7 +12258,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 55.88 45.72 0)
+		(at 140.335 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7989,7 +12267,7 @@
 		(fields_autoplaced yes)
 		(uuid "f521a1aa-7b15-4e29-99b6-3f59cc6c9487")
 		(property "Reference" "#PWR023"
-			(at 55.88 52.07 0)
+			(at 140.335 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7998,7 +12276,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 55.88 50.8 0)
+			(at 140.335 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8006,7 +12284,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 55.88 45.72 0)
+			(at 140.335 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8015,7 +12293,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 45.72 0)
+			(at 140.335 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8024,7 +12302,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 55.88 45.72 0)
+			(at 140.335 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8046,7 +12324,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 93.98 45.72 0)
+		(at 83.185 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8055,7 +12333,7 @@
 		(fields_autoplaced yes)
 		(uuid "f9d097a4-ce34-4ee9-84b8-c12513788cbf")
 		(property "Reference" "#PWR0121"
-			(at 93.98 52.07 0)
+			(at 83.185 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8064,7 +12342,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 93.98 50.165 0)
+			(at 83.185 50.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8072,7 +12350,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 93.98 45.72 0)
+			(at 83.185 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8081,7 +12359,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 45.72 0)
+			(at 83.185 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8090,7 +12368,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 93.98 45.72 0)
+			(at 83.185 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8111,16 +12389,161 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 203.835 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fad8e79d-db89-4b4a-82b7-b3e279bf3a8b")
+		(property "Reference" "#PWR0134"
+			(at 203.835 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 203.835 23.495 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 203.835 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.835 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 203.835 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "10360331-131f-41d7-92b0-e75aacdcaaa7")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "#PWR0134")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 228.6 67.31 90)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fb3b4c5b-8d97-4b1c-ab85-867945df1e0b")
+		(property "Reference" "Dd6"
+			(at 232.41 67.6274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "yellow"
+			(at 232.41 70.1674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 228.6 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 228.6 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 228.6 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2514a773-ed14-47ef-98bc-5cacb64888e2")
+		)
+		(pin "1"
+			(uuid "be147c05-6c4d-49b5-903f-1032d59c53a1")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "Dd6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74LS02")
 		(at 102.87 163.195 0)
-		(unit 3)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe300185-8b8f-41ad-affb-48f2d53b872d")
-		(property "Reference" "U36"
+		(property "Reference" "Ud2"
 			(at 102.87 154.94 0)
 			(effects
 				(font
@@ -8136,7 +12559,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 102.87 163.195 0)
 			(effects
 				(font
@@ -8155,6 +12578,42 @@
 			)
 		)
 		(property "Description" "quad 2-input NOR gate"
+			(at 102.87 163.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7402.lib"
+			(at 102.87 163.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7402"
+			(at 102.87 163.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 102.87 163.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=Y0 2=A0 3=B0 4=Y1 5=A1 6=B1 7=GND 8=A2 9=B2 10=Y2 11=A3 12=B3 13=Y3 14=VCC"
 			(at 102.87 163.195 0)
 			(effects
 				(font
@@ -8208,8 +12667,74 @@
 		(instances
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
-					(reference "U36")
-					(unit 3)
+					(reference "Ud2")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 165.1 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ffc6448e-2d57-46bb-9f1f-2083504ecd21")
+		(property "Reference" "#PWR0106"
+			(at 165.1 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 165.1 23.495 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 165.1 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ffb80f28-a4ce-4441-ab7c-c24e0b158cbe")
+		)
+		(instances
+			(project ""
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/7889a309-dbe1-4a3b-a691-b2c761732dff"
+					(reference "#PWR0106")
+					(unit 1)
 				)
 			)
 		)

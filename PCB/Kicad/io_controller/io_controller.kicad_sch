@@ -29,6 +29,16 @@
 		)
 		(uuid "010d93b9-7771-4c9e-ab83-27838850cea2")
 	)
+	(label "timer_int"
+		(at 63.5 64.77 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "04e2737e-faeb-499c-9e90-0cdcfbd522ee")
+	)
 	(label "iobus[0..15]"
 		(at 114.3 114.3 180)
 		(effects
@@ -100,7 +110,7 @@
 		(uuid "6217fe39-1e6c-4dba-8358-d74ae480deac")
 	)
 	(label "timer_int"
-		(at 139.7 40.005 0)
+		(at 139.7 29.845 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -149,16 +159,6 @@
 		)
 		(uuid "be69d643-d20c-4d15-9979-ced7fdeb4d39")
 	)
-	(label "timer_pulse"
-		(at 139.7 36.195 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c4ba36cf-fb72-4d76-82d8-f8d2922cc2b5")
-	)
 	(label "~{led_clk_en}"
 		(at 88.9 83.82 0)
 		(effects
@@ -198,16 +198,6 @@
 			(justify left bottom)
 		)
 		(uuid "e650e367-c35d-4b4f-8b4c-f751bf8772ab")
-	)
-	(label "timer_pulse"
-		(at 63.5 64.77 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f0a4380c-d73d-4f80-b412-52d5ead72d46")
 	)
 	(label "timer_clk_en"
 		(at 88.9 65.405 0)
@@ -283,7 +273,7 @@
 				(justify left)
 			)
 		)
-		(pin "timerpulse" input
+		(pin "timerint" input
 			(at 63.5 64.77 180)
 			(uuid "65b6f9cd-2fb9-4d86-8ced-78936dc1caeb")
 			(effects
@@ -351,6 +341,26 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "keyaval" input
+			(at 63.5 67.945 180)
+			(uuid "5f3a4a99-0f43-402e-b7a8-9863bbfc4595")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "keypresent" input
+			(at 63.5 71.12 180)
+			(uuid "a113dcca-c01f-4c4c-aab8-57b4f76c5fed")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -458,18 +468,8 @@
 			)
 		)
 		(pin "int" output
-			(at 139.7 40.005 0)
+			(at 139.7 29.845 0)
 			(uuid "cd3bc38e-99e3-40f6-9fbf-9a77899e479f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "pulse" output
-			(at 139.7 36.195 0)
-			(uuid "6a3b52c7-7f93-4a47-afb4-d8fdb5241eab")
 			(effects
 				(font
 					(size 1.27 1.27)
