@@ -1,0 +1,98 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "475eb64b-867f-4bed-9d62-af259a724ab3")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 52.07 62.23)
+		(size 21.59 55.88)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3e575795-37a7-4072-b655-3b2eacc33008")
+		(property "Sheetname" "VGA Synchronization"
+			(at 52.07 61.5184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "untitled.kicad_sch"
+			(at 52.07 118.6946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "gpu"
+				(path "/475eb64b-867f-4bed-9d62-af259a724ab3"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 97.282 82.55)
+		(size 20.574 36.322)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "fafa88de-292f-4568-8087-14214de578c3")
+		(property "Sheetname" "commands"
+			(at 97.282 81.8384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "commands.kicad_sch"
+			(at 97.282 119.4566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "gpu"
+				(path "/475eb64b-867f-4bed-9d62-af259a724ab3"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
