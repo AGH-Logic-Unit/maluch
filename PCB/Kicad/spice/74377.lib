@@ -1,0 +1,90 @@
+* 74377 model
+ 
+.subckt 74377 nE Q0 D0 D1 Q1 Q2 D2 D3 Q3 GND CP Q4 D4 D5 Q5 Q6 D6 D7 Q7 VCC
+
+*necessary for proper output calculations
+Ro0  Q0 GND 1G
+Ro1  Q1 GND 1G
+Ro2  Q2 GND 1G
+Ro3  Q3 GND 1G
+Ro4  Q4 GND 1G
+Ro5  Q5 GND 1G
+Ro6  Q6 GND 1G
+Ro7  Q7 GND 1G
+
+*input inversions
+ai0 nE E inv
+
+*DFF0 input
+ad00 [ E  D0 ] s00  and
+ad01 [nE  Q0 ] s01  and
+
+ad02 [s00 s01] in0  or
+
+*DFF1 input
+ad10 [ E  D1 ] s10  and
+ad11 [nE  Q1 ] s11  and
+
+ad12 [s10 s11] in1  or
+
+*DFF2 input
+ad20 [ E  D2 ] s20  and
+ad21 [nE  Q2 ] s21  and
+
+ad22 [s20 s21] in2  or
+
+*DFF3 input
+ad30 [ E  D3 ] s30  and
+ad31 [nE  Q3 ] s31  and
+
+ad32 [s30 s31] in3  or
+
+*DFF4 input
+ad40 [ E  D4 ] s40  and
+ad41 [nE  Q4 ] s41  and
+
+ad42 [s40 s41] in4  or
+
+*DFF5 input
+ad50 [ E  D5 ] s50  and
+ad51 [nE  Q5 ] s51  and
+
+ad52 [s50 s51] in5  or
+
+*DFF6 input
+ad60 [ E  D6 ] s60  and
+ad61 [nE  Q6 ] s61  and
+
+ad62 [s60 s61] in6  or
+
+*DFF7 input
+ad70 [ E  D7 ] s70  and
+ad71 [nE  Q7 ] s71  and
+
+ad72 [s70 s71] in7  or
+
+*    d   c  as  ar  q  nq
+adf0 in0 CP GND GND Q0 null dff
+adf1 in1 CP GND GND Q1 null dff
+adf2 in2 CP GND GND Q2 null dff
+adf3 in3 CP GND GND Q3 null dff
+adf4 in4 CP GND GND Q4 null dff
+adf5 in5 CP GND GND Q5 null dff
+adf6 in6 CP GND GND Q6 null dff
+adf7 in7 CP GND GND Q7 null dff
+
+.model and  d_and       (rise_delay=1.0e-6 fall_delay=2.0e-6
++                        input_load=1.0e-12)
+
+.model or   d_or        (rise_delay=1.0e-6 fall_delay=2.0e-6
++                        input_load=1.0e-12)
+
+.model inv  d_inverter  (rise_delay=1.0e-6 fall_delay=2.0e-6
++                        input_load=1.0e-12)
+
+.model dff  d_dff       (clk_delay = 13.0e-9 set_delay = 25.0e-9
++                        reset_delay = 27.0e-9 ic = 2 rise_delay = 10.0e-9
++                        fall_delay = 3e-9)
+
+
+.ends

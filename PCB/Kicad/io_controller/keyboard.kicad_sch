@@ -705,9 +705,105 @@
 		)
 		(uuid "5b5677db-2213-4e67-ae38-c818c9604245")
 	)
+	(junction
+		(at 120.015 62.865)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "947ad76f-6a62-4e90-9c7e-ba9b17f5c8bc")
+	)
 	(no_connect
 		(at 177.8 51.435)
 		(uuid "7e0e40e6-818c-4c7e-b34e-d96d0bd6a4c9")
+	)
+	(wire
+		(pts
+			(xy 102.235 62.865) (xy 120.015 62.865)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d7d1ed6-9be7-4e5e-9aca-8134de0b7bf8")
+	)
+	(wire
+		(pts
+			(xy 55.245 64.77) (xy 62.23 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24277361-0158-4e95-8061-3f352e05ac86")
+	)
+	(wire
+		(pts
+			(xy 62.23 64.77) (xy 62.23 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d17ea74-dc3e-4ca4-9007-0d28c1475d88")
+	)
+	(bus
+		(pts
+			(xy 55.245 67.945) (xy 65.405 67.945)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59b55bf5-9050-43d8-86fe-9f353e822133")
+	)
+	(bus
+		(pts
+			(xy 65.405 62.865) (xy 77.47 62.865)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67cec16f-1f47-4ced-834f-12736cdbce63")
+	)
+	(bus
+		(pts
+			(xy 77.47 66.675) (xy 65.405 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b5bf9b5-026a-4b0e-8b4e-7f57470d8102")
+	)
+	(wire
+		(pts
+			(xy 135.255 74.93) (xy 120.015 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e5b6bdc-8be0-46ca-bcce-ce34575a3b88")
+	)
+	(wire
+		(pts
+			(xy 120.015 62.865) (xy 120.015 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5761012-7b47-4a86-9fd8-c12c6c8be9ef")
+	)
+	(bus
+		(pts
+			(xy 55.245 61.595) (xy 65.405 61.595)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7ef05a8-582f-4daa-a12d-fecdf7503bd1")
 	)
 	(wire
 		(pts
@@ -719,6 +815,46 @@
 		)
 		(uuid "ab954baf-a8c1-42dd-ab0c-7f856b514c10")
 	)
+	(wire
+		(pts
+			(xy 120.015 74.93) (xy 120.015 62.865)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0f4159b-77ad-41ed-bf5c-569ce4ac88de")
+	)
+	(bus
+		(pts
+			(xy 65.405 66.675) (xy 65.405 67.945)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcab1b53-c883-4eb0-bae4-d69a59c86412")
+	)
+	(wire
+		(pts
+			(xy 62.23 57.15) (xy 77.47 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee795464-177f-402d-8680-4c805ff81f32")
+	)
+	(bus
+		(pts
+			(xy 65.405 61.595) (xy 65.405 62.865)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4eeccfe-e82d-43ee-942d-c313066702dc")
+	)
 	(label "ascii2"
 		(at 135.255 62.23 180)
 		(effects
@@ -729,15 +865,15 @@
 		)
 		(uuid "03840350-496e-419a-9946-26fe8226bc42")
 	)
-	(label "keyaval"
-		(at 135.255 74.93 180)
+	(label "keyout7"
+		(at 177.8 64.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "0aeb3593-fffd-42be-bf9d-79bfd28a9d0c")
+		(uuid "130fbc57-e58d-42bb-b316-b064353f456b")
 	)
 	(label "ascii5"
 		(at 135.255 69.85 180)
@@ -748,6 +884,16 @@
 			(justify right bottom)
 		)
 		(uuid "2b31bd85-3b65-4e4a-a5b2-ab96865bafac")
+	)
+	(label "~{rst}"
+		(at 77.47 70.485 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3812f3b4-db43-4809-bdf9-bdcd8eeb9bc8")
 	)
 	(label "ascii0"
 		(at 135.255 57.15 180)
@@ -778,6 +924,26 @@
 			(justify left bottom)
 		)
 		(uuid "767841af-5697-4448-9c1b-6779fb290af0")
+	)
+	(label "~{rst}"
+		(at 34.925 59.055 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "78e24c59-6059-42ea-a782-fd07e3f6631a")
+	)
+	(label "ascii[0..6]"
+		(at 102.235 59.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7a06edf0-0965-4606-8637-c673e11644a0")
 	)
 	(label "keyout6"
 		(at 160.655 72.39 0)
@@ -900,6 +1066,17 @@
 			(justify left)
 		)
 		(uuid "29076e88-20a0-4fd9-9c56-c5e50802a617")
+	)
+	(hierarchical_label "keyaval"
+		(shape output)
+		(at 120.015 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4905c94d-789c-421a-84aa-58d61024d67e")
 	)
 	(hierarchical_label "clk"
 		(shape input)
@@ -1223,6 +1400,72 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "power:GND")
+		(at 177.8 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a2c3a51e-7f46-4a00-aa31-40cd45f0a64a")
+		(property "Reference" "#PWR0167"
+			(at 177.8 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 177.8 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 177.8 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4b1ee903-0939-415c-ab00-4b1b96e250f7")
+		)
+		(instances
+			(project ""
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5"
+					(reference "#PWR0167")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(sheet
 		(at 34.925 56.515)
 		(size 20.32 16.51)
@@ -1307,7 +1550,7 @@
 				(justify right)
 			)
 		)
-		(pin "rdy" output
+		(pin "rdyout" output
 			(at 55.245 64.77 0)
 			(uuid "3e4ac065-2837-46d5-9230-c418dd5d0d21")
 			(effects
@@ -1315,6 +1558,16 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "~{rst}" input
+			(at 34.925 59.055 180)
+			(uuid "fc191114-95ff-4803-beb9-e9cf03d851ce")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -1407,6 +1660,26 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "rdy" input
+			(at 77.47 57.15 180)
+			(uuid "12bb5ac9-1c5b-4673-9888-63f71110cc8e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{rst}" input
+			(at 77.47 70.485 180)
+			(uuid "e4abc50c-ce7b-4716-813c-9a51bd4a702d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

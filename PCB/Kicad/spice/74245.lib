@@ -1,0 +1,52 @@
+* 74245 model
+ 
+.subckt 74245 dir A1 A2 A3 A4 A5 A6 A7 A8 GND B8 B7 B6 B5 B4 B3 B2 B1 nOE VCC
+
+*necessary for proper output calculations
+Ro01 A1 GND 1G
+Ro02 A2 GND 1G
+Ro03 A3 GND 1G
+Ro04 A4 GND 1G
+Ro05 A5 GND 1G
+Ro06 A6 GND 1G
+Ro07 A7 GND 1G
+Ro08 A8 GND 1G
+Ro11 B1 GND 1G
+Ro12 B2 GND 1G
+Ro13 B3 GND 1G
+Ro14 B4 GND 1G
+Ro15 B5 GND 1G
+Ro16 B6 GND 1G
+Ro17 B7 GND 1G
+Ro18 B8 GND 1G
+
+*decode logic
+a01 [ dir ~nOE] lab and
+a02 [~dir ~nOE] lba and
+
+*buffers
+a11 A1 lab B1 tri
+a12 A2 lab B2 tri
+a13 A3 lab B3 tri
+a14 A4 lab B4 tri
+a15 A5 lab B5 tri
+a16 A6 lab B6 tri
+a17 A7 lab B7 tri
+a18 A8 lab B8 tri
+
+a21 B1 lba A1 tri
+a22 B2 lba A2 tri
+a23 B3 lba A3 tri
+a24 B4 lba A4 tri
+a25 B5 lba A5 tri
+a26 B6 lba A6 tri
+a27 B7 lba A7 tri
+a28 B8 lba A8 tri
+
+.model and  d_and       (rise_delay=1.0e-6 fall_delay=2.0e-6
++                        input_load=1.0e-12)
+
+.model tri  d_tristate  (rise_delay=1.0e-6 fall_delay=2.0e-6
++                        input_load=1.0e-12)
+
+.ends
