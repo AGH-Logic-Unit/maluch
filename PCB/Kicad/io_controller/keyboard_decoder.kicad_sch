@@ -2405,6 +2405,145 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "mALUch_lib:ROM__AT28C256-15PU"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3586,6 +3725,16 @@
 	)
 	(polyline
 		(pts
+			(xy 127 132.715) (xy 127 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2460c604-f731-4212-a6cb-af049260886c")
+	)
+	(polyline
+		(pts
 			(xy 203.835 165.1) (xy 203.835 132.715)
 		)
 		(stroke
@@ -3613,16 +3762,6 @@
 			(type default)
 		)
 		(uuid "2cc3ace8-8168-4b10-8038-fd38ac38e946")
-	)
-	(polyline
-		(pts
-			(xy 127 132.08) (xy 127 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2f1a1eec-b2a8-4cfd-b281-735b4fd9f444")
 	)
 	(wire
 		(pts
@@ -5120,7 +5259,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 66.675 50.8 0)
 			(effects
 				(font
@@ -5260,7 +5399,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 141.605 58.42 0)
 			(effects
 				(font
@@ -5400,7 +5539,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 31.75 167.64 0)
 			(effects
 				(font
@@ -5515,6 +5654,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 118.11 64.135 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0eb2e4c4-7d64-4366-87e9-3cd274bb3e0c")
+		(property "Reference" "Ckd5"
+			(at 121.92 62.8649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 121.92 65.4049 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 119.0752 67.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 118.11 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b55a1021-3c9a-4f10-abc5-676850789df0")
+		)
+		(pin "2"
+			(uuid "3b75744a-9bcf-4e6a-8093-561cf0687b56")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
+					(reference "Ckd5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 247.015 91.44 0)
 		(unit 1)
@@ -5606,7 +5815,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 141.605 40.005 0)
 			(effects
 				(font
@@ -5746,7 +5955,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 78.74 132.715 0)
 			(effects
 				(font
@@ -5952,7 +6161,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 189.865 146.05 0)
 			(effects
 				(font
@@ -6092,7 +6301,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 135.89 177.165 0)
 			(effects
 				(font
@@ -6234,7 +6443,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 86.995 50.8 0)
 			(effects
 				(font
@@ -6374,7 +6583,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 53.975 121.92 0)
 			(effects
 				(font
@@ -6489,6 +6698,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 53.975 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f100e5a-e5e0-4fac-a520-b1aad03e0e2a")
+		(property "Reference" "#PWR0214"
+			(at 53.975 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 53.975 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.975 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.975 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 53.975 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1d8eb227-5bd4-4277-bb06-1d0f1a56b789")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
+					(reference "#PWR0214")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74LS08")
 		(at 151.765 125.095 0)
 		(unit 4)
@@ -6514,7 +6789,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 151.765 125.095 0)
 			(effects
 				(font
@@ -6629,6 +6904,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 95.25 64.135 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2037eccd-67a0-448d-82fb-fa4720a717b7")
+		(property "Reference" "Ckd4"
+			(at 99.06 62.8649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 99.06 65.4049 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 96.2152 67.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 95.25 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8bc36a99-c7d1-4e0f-af9d-7a908da0fc8f")
+		)
+		(pin "2"
+			(uuid "76b79a24-2cf3-4883-ad77-cdb2f0e23d95")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
+					(reference "Ckd4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74LS08")
 		(at 26.035 50.8 0)
 		(unit 5)
@@ -6655,7 +7000,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 26.035 50.8 0)
 			(effects
 				(font
@@ -6770,6 +7115,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 266.065 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "23191115-b036-4324-a7dc-37e6e0d16297")
+		(property "Reference" "#PWR0224"
+			(at 266.065 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 266.065 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 266.065 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.065 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 266.065 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7da45439-443c-421c-aee5-0cf544271125")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
+					(reference "#PWR0224")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74LS02")
 		(at 31.75 133.985 0)
 		(unit 2)
@@ -6795,7 +7206,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 31.75 133.985 0)
 			(effects
 				(font
@@ -6935,7 +7346,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 135.255 146.05 0)
 			(effects
 				(font
@@ -7075,7 +7486,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 111.76 135.255 0)
 			(effects
 				(font
@@ -7190,6 +7601,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 74.295 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "26c12243-9c35-4e74-a84e-00b7bd0fb8ad")
+		(property "Reference" "#PWR0216"
+			(at 74.295 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 74.295 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 74.295 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.295 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 74.295 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "397a2542-ba65-4c92-a13f-ac926fba6fbd")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
+					(reference "#PWR0216")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74LS08")
 		(at 31.115 149.86 0)
 		(unit 1)
@@ -7214,7 +7691,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 31.115 149.86 0)
 			(effects
 				(font
@@ -7330,6 +7807,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 74.295 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "34dadbae-b454-4cb4-ac33-de58ad608fab")
+		(property "Reference" "#PWR0217"
+			(at 74.295 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 74.295 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 74.295 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.295 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 74.295 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e2d4ec15-8bee-40da-b01d-a6d030dabf8c")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
+					(reference "#PWR0217")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 109.855 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7396,6 +7939,142 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 53.975 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3d46d117-d72e-44e6-abbb-fd7c9f45630a")
+		(property "Reference" "#PWR0215"
+			(at 53.975 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 53.975 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.975 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.975 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 53.975 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "54e1868f-04ed-47a4-b888-6999ea5acd19")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
+					(reference "#PWR0215")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 219.71 70.485 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "460c7b2e-79fb-424e-8d05-856d59c5028a")
+		(property "Reference" "Ckd6"
+			(at 223.52 69.2149 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 223.52 71.7549 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 220.6752 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 219.71 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 219.71 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d5e090b1-9879-475f-8d63-b2be0fa81a25")
+		)
+		(pin "2"
+			(uuid "4bb1d4d2-bb65-46e2-be24-21efe8151f0d")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
+					(reference "Ckd6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 86.995 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7455,6 +8134,72 @@
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
 					(reference "#PWR098")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 266.065 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4d9fbede-bdde-4935-9fb0-cc0fdd743886")
+		(property "Reference" "#PWR0225"
+			(at 266.065 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 266.065 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 266.065 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.065 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 266.065 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "92f8f928-8c60-49b7-89e4-f3c7fd79489b")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
+					(reference "#PWR0225")
 					(unit 1)
 				)
 			)
@@ -7553,7 +8298,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 46.355 50.8 0)
 			(effects
 				(font
@@ -7825,7 +8570,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 136.525 122.555 0)
 			(effects
 				(font
@@ -7965,7 +8710,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 48.26 158.115 0)
 			(effects
 				(font
@@ -8146,6 +8891,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 53.975 64.77 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "76b20f08-2a26-44fb-a1ed-df0d0e7d8805")
+		(property "Reference" "Ckd2"
+			(at 57.785 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 57.785 66.0399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 54.9402 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 53.975 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 53.975 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "72f8b34d-5c44-4543-a0a9-6a520d81c72a")
+		)
+		(pin "2"
+			(uuid "5dc166f5-aae3-485f-a039-4a035b9f15af")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
+					(reference "Ckd2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 46.355 38.1 0)
 		(unit 1)
@@ -8213,6 +9028,72 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
+		(at 257.175 149.225 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7fcf4932-4085-4da9-8fe7-90a7489e2d35")
+		(property "Reference" "#PWR0226"
+			(at 257.175 153.035 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 257.175 144.145 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 257.175 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 257.175 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 257.175 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cdf385ce-47b9-478e-853b-af958c0ed9ce")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
+					(reference "#PWR0226")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
 		(at 86.995 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8221,7 +9102,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "837b7e7c-1baa-412b-aa8e-c52e0a30ab22")
-		(property "Reference" "#PWR096"
+		(property "Reference" "#PWR0174"
 			(at 86.995 41.91 0)
 			(effects
 				(font
@@ -8271,7 +9152,7 @@
 		(instances
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
-					(reference "#PWR096")
+					(reference "#PWR0174")
 					(unit 1)
 				)
 			)
@@ -8305,7 +9186,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 109.855 50.8 0)
 			(effects
 				(font
@@ -8420,6 +9301,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 118.11 67.945 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "848baf87-fa8f-45d9-b117-7d9fd85fecb8")
+		(property "Reference" "#PWR0221"
+			(at 118.11 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 118.11 73.025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 67.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 67.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 118.11 67.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a3e34119-a169-4def-9707-37f20bba51b1")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
+					(reference "#PWR0221")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74LS02")
 		(at 32.385 110.49 0)
 		(unit 1)
@@ -8445,7 +9392,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 32.385 110.49 0)
 			(effects
 				(font
@@ -8626,6 +9573,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 257.175 156.845 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8c44a38e-6bc9-4a78-a6ae-9744b67089a4")
+		(property "Reference" "#PWR0227"
+			(at 257.175 163.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 257.175 161.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 257.175 156.845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 257.175 156.845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 257.175 156.845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dee9366e-14c0-4010-b60e-39e2d8c48170")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
+					(reference "#PWR0227")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74LS02")
 		(at 154.94 161.925 0)
 		(unit 2)
@@ -8651,7 +9664,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 154.94 161.925 0)
 			(effects
 				(font
@@ -8791,7 +9804,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 111.76 156.21 0)
 			(effects
 				(font
@@ -8906,6 +9919,208 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 266.065 78.74 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "97e2b23f-4762-407e-9321-d2245665360d")
+		(property "Reference" "Ckd7"
+			(at 269.875 77.4699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 269.875 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 267.0302 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 266.065 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 266.065 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "334f4422-fa29-4ce1-832b-7dda9082440c")
+		)
+		(pin "2"
+			(uuid "8030260a-560b-45b9-9616-d56da5ea880e")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
+					(reference "Ckd7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 33.02 62.865 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9eb16c02-6367-4a23-b29d-6b46151a69b9")
+		(property "Reference" "#PWR0212"
+			(at 33.02 66.675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 33.02 57.785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 33.02 62.865 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.02 62.865 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 33.02 62.865 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "27596411-69e0-4e1c-8a47-9cf6b0584917")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
+					(reference "#PWR0212")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 118.11 60.325 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9ef9704d-d98d-43ee-a69b-02314a571136")
+		(property "Reference" "#PWR0220"
+			(at 118.11 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 118.11 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 60.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 60.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 118.11 60.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b6d20d74-a981-4116-92da-29b889e75661")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
+					(reference "#PWR0220")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 226.695 143.51 270)
 		(unit 1)
@@ -9000,7 +10215,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SSOP-20_5.3x7.2mm_P0.65mm"
 			(at 208.915 48.26 0)
 			(effects
 				(font
@@ -9199,6 +10414,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 219.71 66.675 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad9c4994-a19f-4bf4-9b72-d5c03bd2fef3")
+		(property "Reference" "#PWR0222"
+			(at 219.71 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 219.71 61.595 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 219.71 66.675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 219.71 66.675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 219.71 66.675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "41123659-a1fa-4316-a1b6-d387efaa3fd5")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
+					(reference "#PWR0222")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 26.035 63.5 0)
 		(unit 1)
@@ -9208,7 +10489,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b0c24c5e-dbb1-429c-bafe-f5375aaba915")
-		(property "Reference" "#PWR097"
+		(property "Reference" "#PWR0240"
 			(at 26.035 69.85 0)
 			(effects
 				(font
@@ -9258,7 +10539,7 @@
 		(instances
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
-					(reference "#PWR097")
+					(reference "#PWR0240")
 					(unit 1)
 				)
 			)
@@ -9356,7 +10637,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 156.845 146.05 0)
 			(effects
 				(font
@@ -9496,7 +10777,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 172.72 148.59 0)
 			(effects
 				(font
@@ -9606,6 +10887,72 @@
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
 					(reference "Ukd3")
 					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 219.71 74.295 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b2d718f3-b243-47b5-a1c5-3a2d388d2204")
+		(property "Reference" "#PWR0223"
+			(at 219.71 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 219.71 79.375 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 219.71 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 219.71 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 219.71 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f51a9881-a3b1-474a-b036-359c67e19738")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
+					(reference "#PWR0223")
+					(unit 1)
 				)
 			)
 		)
@@ -9743,6 +11090,212 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 95.25 67.945 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bcc5e20f-4589-4edc-9cf2-524d550fb775")
+		(property "Reference" "#PWR0219"
+			(at 95.25 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 95.25 73.025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 67.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 67.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 95.25 67.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b18bc751-6998-4952-8481-a29b68688d65")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
+					(reference "#PWR0219")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 33.02 66.675 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c0d59418-f26f-4579-8070-5fbd2b16248b")
+		(property "Reference" "Ckd1"
+			(at 36.83 65.4049 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 36.83 67.9449 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 33.9852 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 33.02 66.675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 33.02 66.675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7aeb6919-3c69-472a-b5d7-fdf75baf69c4")
+		)
+		(pin "2"
+			(uuid "29997766-35dc-4297-b66e-9129b7adcb14")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
+					(reference "Ckd1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 74.295 64.77 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c5dac87a-8cde-44f2-b2be-071296cd3ff5")
+		(property "Reference" "Ckd3"
+			(at 78.105 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 78.105 66.0399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 75.2602 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 74.295 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 74.295 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0b765cf5-efa2-4e3d-a93a-22a02b069c68")
+		)
+		(pin "2"
+			(uuid "e7251801-a022-4ba8-be13-6993072d50c8")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
+					(reference "Ckd3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "mALUch_lib:ROM__AT28C256-15PU")
 		(at 247.015 55.88 0)
 		(unit 1)
@@ -9770,7 +11323,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-28_W15.24mm_Socket"
 			(at 247.015 55.88 0)
 			(effects
 				(font
@@ -9990,7 +11543,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 166.37 46.99 0)
 			(effects
 				(font
@@ -10106,6 +11659,72 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
+		(at 95.25 60.325 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d1514319-af6f-4a1f-b5f4-9706065d4d7f")
+		(property "Reference" "#PWR0218"
+			(at 95.25 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 95.25 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 60.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 60.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 95.25 60.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "76cda693-d789-4b19-845f-111f31dafe00")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
+					(reference "#PWR0218")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
 		(at 231.775 77.47 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10196,7 +11815,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 167.005 125.095 0)
 			(effects
 				(font
@@ -10311,6 +11930,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 33.02 70.485 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e64db57d-f937-4d68-bab4-7d526c87e360")
+		(property "Reference" "#PWR0213"
+			(at 33.02 76.835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 33.02 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 33.02 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.02 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 33.02 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "13abed54-9c06-4151-8e65-38541c38093f")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
+					(reference "#PWR0213")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 109.855 38.1 0)
 		(unit 1)
@@ -10404,7 +12089,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SSOP-20_5.3x7.2mm_P0.65mm"
 			(at 239.395 130.81 0)
 			(effects
 				(font
@@ -10537,6 +12222,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 257.175 153.035 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fb9fe63d-b0e7-4e8b-aae8-b55c15fb2abe")
+		(property "Reference" "Ckd8"
+			(at 260.985 151.7649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 260.985 154.3049 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 258.1402 156.845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 257.175 153.035 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 257.175 153.035 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1ce8ed85-efa8-4264-9691-3db2ac3a7800")
+		)
+		(pin "2"
+			(uuid "79ac16c8-2250-48d8-bd6f-9036a20e442f")
+		)
+		(instances
+			(project "io_controller"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
+					(reference "Ckd8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 26.035 38.1 0)
 		(unit 1)
@@ -10546,7 +12301,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fbb6e27e-dac3-4c1f-b7eb-2e278a78336e")
-		(property "Reference" "#PWR095"
+		(property "Reference" "#PWR0239"
 			(at 26.035 41.91 0)
 			(effects
 				(font
@@ -10596,7 +12351,7 @@
 		(instances
 			(project "io_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a781ceef-a774-4f98-8bab-9bcf43d29cf5/cdce8258-6f61-49f0-a86c-d3dbc2324092"
-					(reference "#PWR095")
+					(reference "#PWR0239")
 					(unit 1)
 				)
 			)

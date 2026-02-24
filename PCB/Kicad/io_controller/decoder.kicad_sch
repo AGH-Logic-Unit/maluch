@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Decoder")
-		(date "2026-02-16")
+		(date "2026-02-24")
 		(rev "1")
 		(company "AGH Logic Unit")
 		(comment 1 "NOT Spice checked")
@@ -2627,7 +2627,7 @@
 	)
 	(rectangle
 		(start 260.35 12.7)
-		(end 285.115 57.15)
+		(end 285.115 88.9)
 		(stroke
 			(width 0)
 			(type default)
@@ -2651,7 +2651,7 @@
 	)
 	(rectangle
 		(start 158.75 57.15)
-		(end 285.115 88.9)
+		(end 260.35 88.9)
 		(stroke
 			(width 0)
 			(type default)
@@ -2736,28 +2736,34 @@
 		(uuid "2eaf682a-2a23-42ea-8a60-c6e2ce6906a3")
 	)
 	(junction
+		(at 265.43 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "467a5b64-60dc-432f-83ad-308daf7c1c32")
+	)
+	(junction
+		(at 265.43 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4c690eb4-c711-4ec0-aea2-a98a1e6f4da9")
+	)
+	(junction
 		(at 41.91 158.115)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6b343780-31e8-41ac-b7e3-5b6ad720ae4e")
 	)
 	(junction
-		(at 227.33 136.525)
+		(at 265.43 37.465)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "75071445-c855-4dec-b1fc-98f952e0032a")
+		(uuid "8695c5df-b7fb-43ab-9725-c9abcd235ce5")
 	)
 	(junction
-		(at 254 146.05)
+		(at 265.43 28.575)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7e8a175e-42da-4ef0-b578-5de0f210d657")
-	)
-	(junction
-		(at 252.73 121.285)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "88b0fa13-7c5d-48b3-977a-e505bb3a4829")
+		(uuid "8c5ac2c6-7492-429f-9ecd-94a7681ea855")
 	)
 	(junction
 		(at 68.58 160.655)
@@ -2766,10 +2772,16 @@
 		(uuid "8ddd55b8-f507-4d54-82ba-9ab17a606574")
 	)
 	(junction
-		(at 193.675 151.765)
+		(at 265.43 42.545)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "aaab1862-19d8-4445-9d4f-696f7ea4af65")
+		(uuid "aa502116-319b-4462-a4e7-6ef0c5a413c6")
+	)
+	(junction
+		(at 254.635 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b7bec1cd-ea93-49da-a610-b17ecd933712")
 	)
 	(junction
 		(at 36.83 82.55)
@@ -2784,7 +2796,7 @@
 		(uuid "cb1011fe-3a0a-4b0f-822e-5f6759d9c0db")
 	)
 	(junction
-		(at 265.43 33.02)
+		(at 265.43 23.495)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cbf140c4-b053-4e19-9bb0-ba040fcaddd7")
@@ -2808,24 +2820,42 @@
 		(uuid "df29ac01-5522-46ae-9438-fea71acfde50")
 	)
 	(junction
+		(at 259.08 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e43564b4-a01e-4428-8f95-bea1ad1de2bd")
+	)
+	(junction
 		(at 132.08 130.175)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e919f421-5024-401a-8c2b-c2fa1308647d")
 	)
 	(junction
-		(at 248.285 146.05)
+		(at 265.43 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f39b4dc7-eefa-45aa-b731-d2b2818ff658")
+		(uuid "f62f089d-9376-42ea-8a62-f9bb664b8a39")
 	)
 	(no_connect
 		(at 29.21 69.85)
 		(uuid "4cf833f9-9b81-4147-9414-319a1b643ff3")
 	)
 	(no_connect
-		(at 280.67 35.56)
+		(at 280.67 40.005)
+		(uuid "52f821d4-162f-4080-bd4b-4ca27cd270f1")
+	)
+	(no_connect
+		(at 280.67 54.61)
+		(uuid "8376c4d5-c9ed-4fa7-b6b2-f5de882a29d8")
+	)
+	(no_connect
+		(at 280.67 26.035)
 		(uuid "9b222dc1-fd04-40fb-b271-0e08b62620f5")
+	)
+	(no_connect
+		(at 280.67 68.58)
+		(uuid "9fdbb80c-1234-4f36-a962-495d37692d54")
 	)
 	(no_connect
 		(at 29.21 66.675)
@@ -2853,13 +2883,13 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 118.745) (xy 252.73 121.285)
+			(xy 265.43 28.575) (xy 265.43 37.465)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "058ce1b4-7914-409f-b165-3a01d3a78524")
+		(uuid "06485607-33cc-46c0-ba53-0858db7e7d0e")
 	)
 	(wire
 		(pts
@@ -2913,6 +2943,16 @@
 	)
 	(wire
 		(pts
+			(xy 265.43 37.465) (xy 265.43 42.545)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18a421ff-f3a6-40f4-af56-be958609b066")
+	)
+	(wire
+		(pts
 			(xy 85.725 182.88) (xy 85.725 185.42)
 		)
 		(stroke
@@ -2943,7 +2983,7 @@
 	)
 	(wire
 		(pts
-			(xy 265.43 33.02) (xy 265.43 38.1)
+			(xy 265.43 23.495) (xy 265.43 28.575)
 		)
 		(stroke
 			(width 0)
@@ -2953,7 +2993,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.675 151.765) (xy 193.675 156.845)
+			(xy 259.08 121.92) (xy 259.08 124.46)
 		)
 		(stroke
 			(width 0)
@@ -2970,16 +3010,6 @@
 			(type default)
 		)
 		(uuid "23947a7a-0f23-4f5a-9b86-704b7c892d49")
-	)
-	(wire
-		(pts
-			(xy 224.155 156.845) (xy 227.33 156.845)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23e4a7fe-0ade-4d68-94ff-aa773afddbb0")
 	)
 	(wire
 		(pts
@@ -3000,26 +3030,6 @@
 			(type default)
 		)
 		(uuid "3097bfd2-e4e8-4fb3-9bb7-6645b9cfa90b")
-	)
-	(wire
-		(pts
-			(xy 193.675 137.795) (xy 193.675 151.765)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "30c37dc6-eca4-4bc7-b899-a7607442b7f5")
-	)
-	(wire
-		(pts
-			(xy 206.375 133.985) (xy 206.375 116.205)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3320889a-d265-4c08-89f6-119535e6b6ea")
 	)
 	(polyline
 		(pts
@@ -3073,26 +3083,6 @@
 	)
 	(wire
 		(pts
-			(xy 254 146.05) (xy 254 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f623d7b-ade4-4ace-aeb5-1d031ca1fb1e")
-	)
-	(wire
-		(pts
-			(xy 252.73 121.285) (xy 227.33 121.285)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "44ab6176-bb4e-432b-8425-0bcb66d5a38e")
-	)
-	(wire
-		(pts
 			(xy 22.225 160.655) (xy 24.765 160.655)
 		)
 		(stroke
@@ -3100,6 +3090,16 @@
 			(type default)
 		)
 		(uuid "46745815-b2c4-4f98-9232-bc57851c37d4")
+	)
+	(wire
+		(pts
+			(xy 265.43 42.545) (xy 265.43 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54e66549-c2b7-44b5-ad79-abbc01d916d1")
 	)
 	(wire
 		(pts
@@ -3123,16 +3123,6 @@
 	)
 	(wire
 		(pts
-			(xy 224.155 136.525) (xy 227.33 136.525)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "649fac23-85b6-4632-9bfa-5fdc2b0a222b")
-	)
-	(wire
-		(pts
 			(xy 147.32 130.175) (xy 147.32 137.795)
 		)
 		(stroke
@@ -3153,16 +3143,6 @@
 	)
 	(wire
 		(pts
-			(xy 248.285 132.715) (xy 248.285 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "697b876c-bbc3-4a4c-ad76-f22a28bbe6d5")
-	)
-	(wire
-		(pts
 			(xy 41.91 158.115) (xy 43.815 158.115)
 		)
 		(stroke
@@ -3170,16 +3150,6 @@
 			(type default)
 		)
 		(uuid "69d8d62e-3946-4e23-974e-7ed1b95d5600")
-	)
-	(wire
-		(pts
-			(xy 227.33 156.845) (xy 227.33 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ec4cc30-3fb2-4c00-9748-ee30a4c5d290")
 	)
 	(wire
 		(pts
@@ -3203,13 +3173,13 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 121.285) (xy 227.33 136.525)
+			(xy 224.155 136.525) (xy 224.155 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "81168105-cca1-49f6-9ba7-80aafbf813c2")
+		(uuid "80e635b8-3993-47bc-b13e-1272dfd33633")
 	)
 	(wire
 		(pts
@@ -3223,16 +3193,6 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 121.285) (xy 252.73 123.825)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "868bb2a1-9fcb-4cbf-8ebb-839dfa303484")
-	)
-	(wire
-		(pts
 			(xy 41.91 190.5) (xy 41.91 187.96)
 		)
 		(stroke
@@ -3240,6 +3200,16 @@
 			(type default)
 		)
 		(uuid "949b6f3e-9cd8-4a84-b82f-3beb35a5c637")
+	)
+	(wire
+		(pts
+			(xy 259.08 124.46) (xy 259.08 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94e22bd4-f161-481a-b64f-9064eb3fb045")
 	)
 	(wire
 		(pts
@@ -3303,26 +3273,6 @@
 	)
 	(wire
 		(pts
-			(xy 248.285 146.05) (xy 254 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d2aeb37-57ef-43cb-a1c7-fa8b51dbbd36")
-	)
-	(wire
-		(pts
-			(xy 227.33 143.51) (xy 228.6 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9f184c28-f23d-4d9f-83c9-fcb99571d832")
-	)
-	(wire
-		(pts
 			(xy 40.005 165.735) (xy 40.005 163.195)
 		)
 		(stroke
@@ -3330,6 +3280,16 @@
 			(type default)
 		)
 		(uuid "a2452455-58c4-4a6e-b2a7-9e3af1c54aa2")
+	)
+	(wire
+		(pts
+			(xy 254.635 124.46) (xy 259.08 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2a4dcf6-a8c1-4641-92fe-f4259c2dfdbd")
 	)
 	(wire
 		(pts
@@ -3343,16 +3303,6 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 136.525) (xy 227.33 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab570f55-c697-4e18-996c-6d8912def22e")
-	)
-	(wire
-		(pts
 			(xy 68.58 160.655) (xy 80.01 160.655)
 		)
 		(stroke
@@ -3363,16 +3313,6 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 146.05) (xy 248.285 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0a7ae0f-48c7-4735-bcb1-3be3b36453db")
-	)
-	(wire
-		(pts
 			(xy 73.025 106.68) (xy 74.93 106.68)
 		)
 		(stroke
@@ -3380,6 +3320,16 @@
 			(type default)
 		)
 		(uuid "b9e3814b-e461-469c-928e-58fd0ef35f9a")
+	)
+	(wire
+		(pts
+			(xy 265.43 52.07) (xy 265.43 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bea627cd-9d82-4cf6-acb6-4adb9865e97c")
 	)
 	(wire
 		(pts
@@ -3413,6 +3363,36 @@
 	)
 	(wire
 		(pts
+			(xy 254.635 110.49) (xy 254.635 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cca23daa-2140-420c-a69d-fb19d41e5fcb")
+	)
+	(wire
+		(pts
+			(xy 265.43 57.15) (xy 265.43 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd97006b-f8a5-4a0e-a92b-9e812a042ddc")
+	)
+	(wire
+		(pts
+			(xy 224.155 127) (xy 237.49 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce335fcd-6c2e-4750-8131-4b3a78cb150d")
+	)
+	(wire
+		(pts
 			(xy 132.08 127.635) (xy 132.08 130.175)
 		)
 		(stroke
@@ -3420,26 +3400,6 @@
 			(type default)
 		)
 		(uuid "ce590103-9f75-4d48-804e-b3364822e948")
-	)
-	(wire
-		(pts
-			(xy 187.325 159.385) (xy 208.915 159.385)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cffa23ed-8498-4fb6-9612-065a57dfd185")
-	)
-	(wire
-		(pts
-			(xy 227.33 148.59) (xy 228.6 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d127c057-ac76-4b8f-9187-59c7673aca78")
 	)
 	(wire
 		(pts
@@ -3463,7 +3423,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.665 116.205) (xy 240.665 106.68)
+			(xy 237.49 106.68) (xy 237.49 121.92)
 		)
 		(stroke
 			(width 0)
@@ -3483,13 +3443,13 @@
 	)
 	(wire
 		(pts
-			(xy 254 143.51) (xy 254 146.05)
+			(xy 252.73 124.46) (xy 254.635 124.46)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dda276ad-a4d1-44c4-bd85-c109d520b401")
+		(uuid "dce059bf-bc9f-48ab-b9ed-540857abda3b")
 	)
 	(wire
 		(pts
@@ -3563,17 +3523,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.665 106.68) (xy 237.49 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ebf1bdbf-82df-483e-8414-a450fc5e7576")
-	)
-	(wire
-		(pts
-			(xy 206.375 133.985) (xy 208.915 133.985)
+			(xy 208.28 133.985) (xy 208.915 133.985)
 		)
 		(stroke
 			(width 0)
@@ -3593,6 +3543,16 @@
 	)
 	(wire
 		(pts
+			(xy 266.7 110.49) (xy 254.635 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef531e8e-39ad-4b1a-884e-4b98b341c951")
+	)
+	(wire
+		(pts
 			(xy 97.155 137.795) (xy 101.6 137.795)
 		)
 		(stroke
@@ -3600,16 +3560,6 @@
 			(type default)
 		)
 		(uuid "f088a7da-ab58-4425-8be8-f21dfdea959e")
-	)
-	(wire
-		(pts
-			(xy 206.375 116.205) (xy 240.665 116.205)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f177d59c-ee8e-4acb-a11f-fb19d2427d0c")
 	)
 	(wire
 		(pts
@@ -3630,6 +3580,16 @@
 			(type default)
 		)
 		(uuid "f7594dbb-fc79-45a9-bbbb-577aaaa3ffdc")
+	)
+	(wire
+		(pts
+			(xy 265.43 66.04) (xy 265.43 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc16fbeb-c070-4911-9d3f-f162c1fff6e5")
 	)
 	(wire
 		(pts
@@ -3662,7 +3622,7 @@
 		(uuid "2106bf7c-7bb2-4275-99c5-cf2dc4a3556f")
 	)
 	(label "iskeyboard"
-		(at 240.665 106.68 0)
+		(at 237.49 106.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3891,16 +3851,6 @@
 		)
 		(uuid "c3caa1ae-2c03-4b70-ae25-06e724073507")
 	)
-	(label "~{keyboardclk_en}"
-		(at 248.285 132.715 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c4d75ef3-dfe7-4692-9e05-afdc3ab0a511")
-	)
 	(label "~{ioid0}"
 		(at 22.225 160.655 180)
 		(effects
@@ -4044,9 +3994,9 @@
 		)
 		(uuid "4074cef1-8fdf-40ee-bba1-d830e9bd2a59")
 	)
-	(hierarchical_label "keypresent"
+	(hierarchical_label "keyready"
 		(shape input)
-		(at 193.675 137.795 180)
+		(at 208.28 133.985 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4065,17 +4015,6 @@
 			(justify right)
 		)
 		(uuid "4b9af4d3-0b83-4f13-8554-8dcb7d123b84")
-	)
-	(hierarchical_label "~{key_out}"
-		(shape output)
-		(at 267.97 121.285 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "554307f6-74ac-45cd-bab5-bb361346abb8")
 	)
 	(hierarchical_label "iocmd[0..1]"
 		(shape input)
@@ -4110,20 +4049,20 @@
 		)
 		(uuid "9cb44a7e-17e1-4efa-af0c-7be0cd8dc411")
 	)
-	(hierarchical_label "keyaval"
-		(shape input)
-		(at 187.325 159.385 180)
+	(hierarchical_label "~{key_out}"
+		(shape output)
+		(at 274.32 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "dfa6e068-ef1a-4976-a124-460a1a9f3f55")
+		(uuid "b189b08d-8d21-490b-8cd4-a91ce9130575")
 	)
 	(hierarchical_label "key_read"
 		(shape output)
-		(at 269.24 146.05 0)
+		(at 266.7 110.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5952,7 +5891,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS02")
-		(at 260.35 121.285 0)
+		(at 273.05 68.58 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5961,7 +5900,7 @@
 		(fields_autoplaced yes)
 		(uuid "39be97bc-ada0-4644-95d3-0b9a08240bf5")
 		(property "Reference" "Ud3"
-			(at 260.35 113.03 0)
+			(at 273.05 60.325 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5969,7 +5908,7 @@
 			)
 		)
 		(property "Value" "74LS02"
-			(at 260.35 115.57 0)
+			(at 273.05 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5977,7 +5916,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
-			(at 260.35 121.285 0)
+			(at 273.05 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5986,7 +5925,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74ls02"
-			(at 260.35 121.285 0)
+			(at 273.05 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5995,7 +5934,7 @@
 			)
 		)
 		(property "Description" "quad 2-input NOR gate"
-			(at 260.35 121.285 0)
+			(at 273.05 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6004,7 +5943,7 @@
 			)
 		)
 		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7402.lib"
-			(at 260.35 121.285 0)
+			(at 273.05 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6013,7 +5952,7 @@
 			)
 		)
 		(property "Sim.Name" "7402"
-			(at 260.35 121.285 0)
+			(at 273.05 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6022,7 +5961,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 260.35 121.285 0)
+			(at 273.05 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6031,7 +5970,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=Y0 2=A0 3=B0 4=Y1 5=A1 6=B1 7=GND 8=A2 9=B2 10=Y2 11=A3 12=B3 13=Y3 14=VCC"
-			(at 260.35 121.285 0)
+			(at 273.05 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6648,7 +6587,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 265.43 33.02 0)
+		(at 265.43 23.495 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6657,7 +6596,7 @@
 		(fields_autoplaced yes)
 		(uuid "44bf80bb-433e-4fde-a09f-f27efa389040")
 		(property "Reference" "#PWR0128"
-			(at 265.43 36.83 0)
+			(at 265.43 27.305 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6666,7 +6605,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 265.43 27.94 0)
+			(at 265.43 18.415 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6674,7 +6613,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 265.43 33.02 0)
+			(at 265.43 23.495 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6683,7 +6622,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 265.43 33.02 0)
+			(at 265.43 23.495 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6692,7 +6631,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 265.43 33.02 0)
+			(at 265.43 23.495 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6714,7 +6653,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 216.535 156.845 0)
+		(at 245.11 124.46 0)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6723,7 +6662,7 @@
 		(fields_autoplaced yes)
 		(uuid "46f6a531-2203-48bf-b91d-75a1819a1c67")
 		(property "Reference" "Ud6"
-			(at 216.5267 148.59 0)
+			(at 245.1017 116.205 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6731,7 +6670,7 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 216.5267 151.13 0)
+			(at 245.1017 118.745 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6739,7 +6678,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 216.535 156.845 0)
+			(at 245.11 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6748,7 +6687,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tme.eu/pl/en/details/74hc08dbj/gates-inverters/toshiba/74hc08d-bj/"
-			(at 216.535 156.845 0)
+			(at 245.11 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6757,7 +6696,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 216.535 156.845 0)
+			(at 245.11 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6766,7 +6705,7 @@
 			)
 		)
 		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7408.lib"
-			(at 216.535 156.845 0)
+			(at 245.11 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6775,7 +6714,7 @@
 			)
 		)
 		(property "Sim.Name" "7408"
-			(at 216.535 156.845 0)
+			(at 245.11 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6784,7 +6723,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 216.535 156.845 0)
+			(at 245.11 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6793,7 +6732,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
-			(at 216.535 156.845 0)
+			(at 245.11 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7472,7 +7411,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 273.05 35.56 0)
+		(at 273.05 26.035 0)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7481,7 +7420,7 @@
 		(fields_autoplaced yes)
 		(uuid "593d1efe-ec1d-448e-992d-512a0b171b76")
 		(property "Reference" "Ud7"
-			(at 273.0417 26.67 0)
+			(at 273.0417 17.145 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7489,7 +7428,7 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 273.0417 29.21 0)
+			(at 273.0417 19.685 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7497,7 +7436,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 273.05 35.56 0)
+			(at 273.05 26.035 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7506,7 +7445,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tme.eu/pl/en/details/74hc08dbj/gates-inverters/toshiba/74hc08d-bj/"
-			(at 273.05 35.56 0)
+			(at 273.05 26.035 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7515,7 +7454,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 273.05 35.56 0)
+			(at 273.05 26.035 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7524,7 +7463,7 @@
 			)
 		)
 		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7408.lib"
-			(at 273.05 35.56 0)
+			(at 273.05 26.035 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7533,7 +7472,7 @@
 			)
 		)
 		(property "Sim.Name" "7408"
-			(at 273.05 35.56 0)
+			(at 273.05 26.035 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7542,7 +7481,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 273.05 35.56 0)
+			(at 273.05 26.035 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7551,7 +7490,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
-			(at 273.05 35.56 0)
+			(at 273.05 26.035 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8724,16 +8663,15 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS02")
-		(at 201.295 154.305 0)
+		(at 266.7 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7f7eb793-e309-46a9-85e2-5232ffe2a363")
 		(property "Reference" "Ud3"
-			(at 201.295 146.05 0)
+			(at 266.7 116.205 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8741,15 +8679,15 @@
 			)
 		)
 		(property "Value" "74LS02"
-			(at 201.295 148.59 0)
+			(at 266.7 118.745 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 201.295 154.305 0)
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
+			(at 266.7 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8758,7 +8696,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74ls02"
-			(at 201.295 154.305 0)
+			(at 266.7 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8767,7 +8705,7 @@
 			)
 		)
 		(property "Description" "quad 2-input NOR gate"
-			(at 201.295 154.305 0)
+			(at 266.7 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8776,7 +8714,7 @@
 			)
 		)
 		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7402.lib"
-			(at 201.295 154.305 0)
+			(at 266.7 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8785,7 +8723,7 @@
 			)
 		)
 		(property "Sim.Name" "7402"
-			(at 201.295 154.305 0)
+			(at 266.7 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8794,7 +8732,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 201.295 154.305 0)
+			(at 266.7 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8803,7 +8741,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=Y0 2=A0 3=B0 4=Y1 5=A1 6=B1 7=GND 8=A2 9=B2 10=Y2 11=A3 12=B3 13=Y3 14=VCC"
-			(at 201.295 154.305 0)
+			(at 266.7 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11011,7 +10949,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS02")
-		(at 261.62 146.05 0)
+		(at 273.05 54.61 0)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11020,7 +10958,7 @@
 		(fields_autoplaced yes)
 		(uuid "c85e3283-6e7b-448c-bea6-b89e7f0bf5ac")
 		(property "Reference" "Ud3"
-			(at 261.62 137.16 0)
+			(at 273.05 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11028,7 +10966,7 @@
 			)
 		)
 		(property "Value" "74LS02"
-			(at 261.62 139.7 0)
+			(at 273.05 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11036,7 +10974,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
-			(at 261.62 146.05 0)
+			(at 273.05 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11045,7 +10983,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74ls02"
-			(at 261.62 146.05 0)
+			(at 273.05 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11054,7 +10992,7 @@
 			)
 		)
 		(property "Description" "quad 2-input NOR gate"
-			(at 261.62 146.05 0)
+			(at 273.05 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11063,7 +11001,7 @@
 			)
 		)
 		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7402.lib"
-			(at 261.62 146.05 0)
+			(at 273.05 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11072,7 +11010,7 @@
 			)
 		)
 		(property "Sim.Name" "7402"
-			(at 261.62 146.05 0)
+			(at 273.05 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11081,7 +11019,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 261.62 146.05 0)
+			(at 273.05 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11090,7 +11028,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=Y0 2=A0 3=B0 4=Y1 5=A1 6=B1 7=GND 8=A2 9=B2 10=Y2 11=A3 12=B3 13=Y3 14=VCC"
-			(at 261.62 146.05 0)
+			(at 273.05 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11353,7 +11291,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS02")
-		(at 236.22 146.05 0)
+		(at 273.05 40.005 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11362,7 +11300,7 @@
 		(fields_autoplaced yes)
 		(uuid "d051a38d-6ad2-42c8-b14e-80bd018a5a85")
 		(property "Reference" "Ud3"
-			(at 236.22 137.16 0)
+			(at 273.05 31.115 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11370,7 +11308,7 @@
 			)
 		)
 		(property "Value" "74LS02"
-			(at 236.22 139.7 0)
+			(at 273.05 33.655 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11378,7 +11316,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
-			(at 236.22 146.05 0)
+			(at 273.05 40.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11387,7 +11325,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74ls02"
-			(at 236.22 146.05 0)
+			(at 273.05 40.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11396,7 +11334,7 @@
 			)
 		)
 		(property "Description" "quad 2-input NOR gate"
-			(at 236.22 146.05 0)
+			(at 273.05 40.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11405,7 +11343,7 @@
 			)
 		)
 		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7402.lib"
-			(at 236.22 146.05 0)
+			(at 273.05 40.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11414,7 +11352,7 @@
 			)
 		)
 		(property "Sim.Name" "7402"
-			(at 236.22 146.05 0)
+			(at 273.05 40.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11423,7 +11361,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 236.22 146.05 0)
+			(at 273.05 40.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11432,7 +11370,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=Y0 2=A0 3=B0 4=Y1 5=A1 6=B1 7=GND 8=A2 9=B2 10=Y2 11=A3 12=B3 13=Y3 14=VCC"
-			(at 236.22 146.05 0)
+			(at 273.05 40.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
