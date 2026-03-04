@@ -1,0 +1,80 @@
+* 555 Timer behavioral model -- 555.cir
+*
+*           Ground
+*           | Trigger
+*           | | Output
+*           | | | Reset
+*           | | | | Control
+*           | | | | | Threshold
+*           | | | | | | Discharge
+*           | | | | | | | Vcc
+*           | | | | | | | |
+.subckt 555 1 2 3 4 5 6 7 8 
+
+R1  8  5 5000
+R2  5 10 5000
+R3 10  1 5000
+
+X1  6 5 11 b_op_amp        $ the reset comparitor
+X2 10 2 12 b_op_amp        $ the set comparitor
+
+
+*        R  S    R  S
+abridge [11 12] [22 21] adc_buff $ bridge from comparitors to set reset controls
+
+a0 z1 pulldown1            $ pull-down for unused clock and data
+
+*  data clock set reset q   qbar
+a1  z1    z1   21   25  23   24  flop1  $ the flip flop
+
+
+abridge1 [24] [13] dac1    $ bridge qbar to discharge timing cap, turn on Q1
+abridge2 [23]  [3] dac1    $ bridge q to pin 3
+
+Q1 7  13 1 N               $ the discharge transistor
+
+
+* Here is the active low master reset function from pin 4.
+
+abridge3 [4] [30] adc_buff $ bridge pin 4 to digital
+
+a2 30 31 inv1
+
+a3 [22 31] 25 or1
+
+* Models
+
+* Behavioral op-amp model using XSPICE
+
+.subckt b_op_amp 1 2 4  p_supply=5.0 m_supply=-5.0
+
+a2 [1 2] 3 sum1
+.model sum1 summer(in_offset=[0 0]  in_gain=[1.0 -1.0]  out_gain=100000 out_offset=-0.001)
+
+a5 3 4 limit5
+.model limit5 limit(in_offset=0.1 gain=1.0 out_lower_limit= {m_supply}
++ out_upper_limit={p_supply} limit_range=0.0010 fraction=FALSE)
+
+.ends
+
+.model adc_buff adc_bridge(in_low = 0.3 in_high = 3.5)
+
+.model flop1 d_dff(clk_delay = 13.0e-9 set_delay = 25.0e-9
++ reset_delay = 27.0e-9 ic = 2 rise_delay = 10.0e-9
++ fall_delay = 3e-9)
+
+.model pulldown1 d_pulldown(load = 20.0e-12)
+
+.model dac1 dac_bridge(out_low = 0.1 out_high = 4.9 out_undef = 2.2
++ input_load = 5.0e-12 t_rise = 50e-9
++ t_fall = 20e-9)
+
+.model N NPN
+
+.model inv1 d_inverter(rise_delay = 0.5e-9 fall_delay = 0.3e-9
++ input_load = 0.5e-12)
+
+.model or1 d_or(rise_delay = 0.5e-9 fall_delay = 0.3e-9
++ input_load = 0.5e-12)
+
+.ends

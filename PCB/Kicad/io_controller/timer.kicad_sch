@@ -1737,16 +1737,6 @@
 	)
 	(wire
 		(pts
-			(xy 46.355 72.39) (xy 50.8 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f6209e03-7b9a-46a1-bfb2-ecdbd2b845a0")
-	)
-	(wire
-		(pts
 			(xy 76.2 62.23) (xy 113.03 62.23)
 		)
 		(stroke
@@ -1775,26 +1765,6 @@
 		)
 		(uuid "11c8441b-ddcf-4c67-ba90-820b12fb4f9f")
 	)
-	(label "q2"
-		(at 163.195 67.31 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2bf67737-99db-4c11-9150-5fe8526472aa")
-	)
-	(label "q2"
-		(at 137.795 67.31 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3094aa33-2ad4-409b-a2ee-77c3530d0db8")
-	)
 	(label "q0"
 		(at 137.795 62.23 180)
 		(effects
@@ -1814,6 +1784,16 @@
 			(justify left bottom)
 		)
 		(uuid "b5c8e96a-117a-4d86-bf37-edeebb45046c")
+	)
+	(label "int"
+		(at 137.795 67.31 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ba6c05c6-5e70-493e-873f-5cafd412559a")
 	)
 	(label "q0"
 		(at 163.195 62.23 0)
@@ -1846,6 +1826,17 @@
 			(justify right)
 		)
 		(uuid "37a01f8d-65cd-4ff8-895e-236bc84a30f6")
+	)
+	(hierarchical_label "enable"
+		(shape input)
+		(at 50.8 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "952d15d6-2710-4459-8cd0-84ad4025ff0b")
 	)
 	(hierarchical_label "~{read}"
 		(shape input)
@@ -2148,72 +2139,6 @@
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/b2a66210-0f57-47f7-af2e-0fa71fd479f3"
 					(reference "Ut2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 46.355 72.39 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3d7f104e-d2f8-46f0-b687-63e864798152")
-		(property "Reference" "#PWR0131"
-			(at 46.355 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 46.355 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 46.355 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 46.355 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 46.355 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "25433a37-c57b-4c08-b849-1184fef16bbe")
-		)
-		(instances
-			(project ""
-				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/b2a66210-0f57-47f7-af2e-0fa71fd479f3"
-					(reference "#PWR0131")
 					(unit 1)
 				)
 			)
@@ -3165,7 +3090,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/555.lib"
+		(property "Sim.Library" "/home/sarvel/External/Drive2/Projects/Computers/maluch_pcb/PCB/Kicad/spice/CMOS-555.lib"
 			(at 63.5 67.31 0)
 			(effects
 				(font
@@ -3174,7 +3099,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Name" "555"
+		(property "Sim.Name" "CMOS555"
 			(at 63.5 67.31 0)
 			(effects
 				(font
@@ -3192,7 +3117,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=1 2=2 3=3 4=4 5=5 6=6 7=7 8=8"
+		(property "Sim.Pins" "1=GND0 2=Trigger 3=Output 4=Reset 5=FM 6=Threshold 7=Discharge 8=Vcc"
 			(at 63.5 67.31 0)
 			(effects
 				(font
