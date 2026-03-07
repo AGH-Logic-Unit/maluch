@@ -1,0 +1,56 @@
+* 74LS245 Octal Bus Transceiver Model
+
+.subckt 74LS245 DIR A1 A2 A3 A4 A5 A6 A7 A8 GND B8 B7 B6 B5 B4 B3 B2 B1 nG VCC
+
+R_A1 A1 GND 1G
+R_A2 A2 GND 1G
+R_A3 A3 GND 1G
+R_A4 A4 GND 1G
+R_A5 A5 GND 1G
+R_A6 A6 GND 1G
+R_A7 A7 GND 1G
+R_A8 A8 GND 1G
+R_B1 B1 GND 1G
+R_B2 B2 GND 1G
+R_B3 B3 GND 1G
+R_B4 B4 GND 1G
+R_B5 B5 GND 1G
+R_B6 B6 GND 1G
+R_B7 B7 GND 1G
+R_B8 B8 GND 1G
+
+* Inwersja wejść sterujących (nG -> G, DIR -> nDIR)
+ai0 nG G inv
+ai1 DIR nDIR inv
+
+* Sygnał aktywacji przesyłu z A do B (EnAB = G i DIR)
+aa0 [G DIR] EnAB and
+
+* Sygnał aktywacji przesyłu z B do A (EnBA = G i nDIR)
+aa1 [G nDIR] EnBA and
+
+* A -> B
+abuf_ab1 A1 EnAB B1 tristate
+abuf_ab2 A2 EnAB B2 tristate
+abuf_ab3 A3 EnAB B3 tristate
+abuf_ab4 A4 EnAB B4 tristate
+abuf_ab5 A5 EnAB B5 tristate
+abuf_ab6 A6 EnAB B6 tristate
+abuf_ab7 A7 EnAB B7 tristate
+abuf_ab8 A8 EnAB B8 tristate
+
+* B -> A 
+abuf_ba1 B1 EnBA A1 tristate
+abuf_ba2 B2 EnBA A2 tristate
+abuf_ba3 B3 EnBA A3 tristate
+abuf_ba4 B4 EnBA A4 tristate
+abuf_ba5 B5 EnBA A5 tristate
+abuf_ba6 B6 EnBA A6 tristate
+abuf_ba7 B7 EnBA A7 tristate
+abuf_ba8 B8 EnBA A8 tristate
+
+.model inv d_inverter (rise_delay=8.0e-9 fall_delay=8.0e-9 input_load=1.0e-12)
+.model and d_and (rise_delay=8.0e-9 fall_delay=8.0e-9 input_load=1.0e-12)
+.model tristate d_tristate (delay=8.0e-9 input_load=1.0e-12 enable_load=1.0e-12)
+
+.ends

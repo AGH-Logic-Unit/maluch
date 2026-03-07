@@ -1,0 +1,41 @@
+* PODMODELE BRAMEK I PRZERZUTNIKÓW
+.model d_inv_ls d_inverter(rise_delay=5ns fall_delay=5ns)
+.model d_and_ls d_and(rise_delay=5ns fall_delay=5ns)
+.model d_or_ls  d_or(rise_delay=5ns fall_delay=5ns)
+.model d_dff_ls d_dff(clk_delay=5ns set_delay=2ns reset_delay=2ns ic=0)
+
+* PODMODEL: 1-BIT DFF Z ENABLE
+.subckt DFF_EN D nE CP Q
+  a_inv1 nE nE_inv d_inv_ls
+  a_and1 [D nE_inv] D_new d_and_ls
+  a_and2 [Q nE] D_old d_and_ls
+  a_or1  [D_new D_old] D_final d_or_ls
+  
+  a_dff D_final CP NULL NULL Q Q_n d_dff_ls
+.ends
+
+* 74LS377
+.SUBCKT 74LS377 nE Q0 D0 D1 Q1 Q2 D2 D3 Q3 GND CP Q4 D4 D5 Q5 Q6 D6 D7 Q7 VCC
+
+R1 nE GND 1G
+R2 CP GND 1G
+R3 D0 GND 1G
+R4 D1 GND 1G
+R5 D2 GND 1G
+R6 D3 GND 1G
+R7 D4 GND 1G
+R8 D5 GND 1G
+R9 D6 GND 1G
+R10 D7 GND 1G
+
+* Instancje 8 przerzutników
+X1 D0 nE CP Q0 DFF_EN
+X2 D1 nE CP Q1 DFF_EN
+X3 D2 nE CP Q2 DFF_EN
+X4 D3 nE CP Q3 DFF_EN
+X5 D4 nE CP Q4 DFF_EN
+X6 D5 nE CP Q5 DFF_EN
+X7 D6 nE CP Q6 DFF_EN
+X8 D7 nE CP Q7 DFF_EN
+
+.ENDS
