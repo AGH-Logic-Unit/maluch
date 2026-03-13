@@ -4,6 +4,15 @@
 	(generator_version "9.0")
 	(uuid "efaea3fc-f1ce-4061-bfed-82c63dc3a22b")
 	(paper "A4")
+	(title_block
+		(title "Flags")
+		(date "2026-03-13")
+		(rev "1")
+		(company "AGH Logic")
+		(comment 1 "NOT Spice checked")
+		(comment 2 "review: - ")
+		(comment 3 "author: Hubert Wójcik")
+	)
 	(lib_symbols
 		(symbol "74xx:74LS04"
 			(exclude_from_sim no)
@@ -3907,7 +3916,7 @@
 		(uuid "11fd5ed7-e345-405a-a7ab-0a63e8c35d79")
 	)
 	(no_connect
-		(at 180.34 19.05)
+		(at 183.515 34.925)
 		(uuid "2d0605f5-0cb8-43d1-b176-09c2aacbc849")
 	)
 	(no_connect
@@ -3973,6 +3982,10 @@
 	(no_connect
 		(at 43.18 17.78)
 		(uuid "eea69de3-a743-4818-8904-5c6c90e7edfd")
+	)
+	(no_connect
+		(at 25.4 31.75)
+		(uuid "ff55233a-d197-4583-bbe5-2137f952d527")
 	)
 	(wire
 		(pts
@@ -4586,6 +4599,16 @@
 	)
 	(wire
 		(pts
+			(xy 89.535 156.21) (xy 91.44 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7bd5afe-bcde-48d2-92e4-68d878609782")
+	)
+	(wire
+		(pts
 			(xy 96.52 105.41) (xy 109.22 105.41)
 		)
 		(stroke
@@ -4785,7 +4808,7 @@
 		(uuid "5034e672-5487-47c8-8019-ecb341115915")
 	)
 	(label "enterint"
-		(at 91.44 156.21 180)
+		(at 89.535 156.21 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5231,6 +5254,17 @@
 		)
 		(uuid "953094ef-da9e-484c-a91c-034b5f42ad14")
 	)
+	(hierarchical_label "enterint"
+		(shape input)
+		(at 25.4 31.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9fb51b32-0c13-4895-99cb-71dc0c7279d9")
+	)
 	(hierarchical_label "leaveint"
 		(shape input)
 		(at 25.4 16.51 180)
@@ -5264,7 +5298,7 @@
 		)
 		(uuid "ec292150-2ada-45a6-be74-c8d6ed135be8")
 	)
-	(hierarchical_label "shouldjump"
+	(hierarchical_label "should_jump"
 		(shape output)
 		(at 234.95 45.72 180)
 		(effects
@@ -5285,7 +5319,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "01a932bc-dd9c-48df-8a0e-271d232c95f7")
-		(property "Reference" "U55"
+		(property "Reference" "Uf2"
 			(at 80.8833 38.1 0)
 			(effects
 				(font
@@ -5303,7 +5337,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SSOP-20_5.3x7.2mm_P0.65mm"
 			(at 78.74 58.42 0)
 			(effects
 				(font
@@ -5322,6 +5356,42 @@
 			)
 		)
 		(property "Description" "8-bit Register"
+			(at 78.74 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/Projects/Computers/maluch_pcb/PCB/Kicad/spice/74377.lib"
+			(at 78.74 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "74377"
+			(at 78.74 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 78.74 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=nE 2=Q0 3=D0 4=D1 5=Q1 6=Q2 7=D2 8=D3 9=Q3 10=GND 11=CP 12=Q4 13=D4 14=D5 15=Q5 16=Q6 17=D6 18=D7 19=Q7 20=VCC"
 			(at 78.74 58.42 0)
 			(effects
 				(font
@@ -5393,7 +5463,7 @@
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a74f3346-7c03-4c57-ba3a-21feab752d20"
-					(reference "U55")
+					(reference "Uf2")
 					(unit 1)
 				)
 			)
@@ -5476,7 +5546,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "126caf17-c663-4e9c-bc06-0fae736ca89d")
-		(property "Reference" "U61"
+		(property "Reference" "Uf3"
 			(at 68.58 177.7999 0)
 			(effects
 				(font
@@ -5494,7 +5564,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 62.23 179.07 0)
 			(effects
 				(font
@@ -5513,6 +5583,42 @@
 			)
 		)
 		(property "Description" "Hex Inverter"
+			(at 62.23 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7404.lib"
+			(at 62.23 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7404"
+			(at 62.23 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 62.23 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=Y0 3=A1 4=Y1 5=A2 6=Y2 7=GND 8=Y3 9=A3 10=Y4 11=A4 12=Y5 13=A5 14=VCC"
 			(at 62.23 179.07 0)
 			(effects
 				(font
@@ -5566,7 +5672,7 @@
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a74f3346-7c03-4c57-ba3a-21feab752d20"
-					(reference "U61")
+					(reference "Uf3")
 					(unit 7)
 				)
 			)
@@ -5780,7 +5886,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a284fea-b958-4d50-b022-3e2990694e00")
-		(property "Reference" "U60"
+		(property "Reference" "Uf5"
 			(at 47.9552 92.71 0)
 			(effects
 				(font
@@ -5796,7 +5902,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 48.26 101.6 0)
 			(effects
 				(font
@@ -5815,6 +5921,42 @@
 			)
 		)
 		(property "Description" "Quad 2-input XOR"
+			(at 48.26 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7486.lib"
+			(at 48.26 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7486"
+			(at 48.26 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 48.26 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
 			(at 48.26 101.6 0)
 			(effects
 				(font
@@ -5868,7 +6010,7 @@
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a74f3346-7c03-4c57-ba3a-21feab752d20"
-					(reference "U60")
+					(reference "Uf5")
 					(unit 1)
 				)
 			)
@@ -6282,7 +6424,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "47761964-5308-4f47-92fb-4e18a3132dc0")
-		(property "Reference" "U61"
+		(property "Reference" "Uf3"
 			(at 110.49 50.8 0)
 			(effects
 				(font
@@ -6298,7 +6440,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 110.49 59.69 0)
 			(effects
 				(font
@@ -6325,52 +6467,88 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" "/home/sarvel/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7404.lib"
+			(at 110.49 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7404"
+			(at 110.49 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 110.49 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=Y0 3=A1 4=Y1 5=A2 6=Y2 7=GND 8=Y3 9=A3 10=Y4 11=A4 12=Y5 13=A5 14=VCC"
+			(at 110.49 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "9"
-			(uuid "0602ebfb-6fbc-4b24-a029-35c176d31a0b")
+			(uuid "0602ebfb-6fbc-4b24-a029-35c176d31a0c")
 		)
 		(pin "13"
-			(uuid "94b48a5b-5eb4-4d6d-a3eb-2523e9d1a866")
+			(uuid "94b48a5b-5eb4-4d6d-a3eb-2523e9d1a867")
 		)
 		(pin "2"
-			(uuid "e1d556a4-2001-4595-9645-4c9b46b49408")
+			(uuid "e1d556a4-2001-4595-9645-4c9b46b49409")
 		)
 		(pin "3"
-			(uuid "c69d384e-e2ab-4139-853c-7530022551be")
+			(uuid "c69d384e-e2ab-4139-853c-7530022551bf")
 		)
 		(pin "1"
-			(uuid "9243eb60-206f-4307-9c17-5c5eb8a8ea78")
+			(uuid "9243eb60-206f-4307-9c17-5c5eb8a8ea79")
 		)
 		(pin "6"
-			(uuid "637552af-a185-444e-b40e-08517a95ac0c")
+			(uuid "637552af-a185-444e-b40e-08517a95ac0d")
 		)
 		(pin "5"
-			(uuid "46b2b650-2a98-4ccc-9497-9e1f0c426b0a")
+			(uuid "46b2b650-2a98-4ccc-9497-9e1f0c426b0b")
 		)
 		(pin "4"
-			(uuid "02929752-7288-4885-85e6-c042daf44f60")
+			(uuid "02929752-7288-4885-85e6-c042daf44f61")
 		)
 		(pin "12"
-			(uuid "9fbb8820-6f3b-44ff-a927-ab216199c611")
+			(uuid "9fbb8820-6f3b-44ff-a927-ab216199c612")
 		)
 		(pin "8"
-			(uuid "711e432c-e390-48e3-b07d-e566558a3251")
+			(uuid "711e432c-e390-48e3-b07d-e566558a3252")
 		)
 		(pin "10"
-			(uuid "ee34ae82-3c4a-485f-a547-86d992495061")
+			(uuid "ee34ae82-3c4a-485f-a547-86d992495062")
 		)
 		(pin "14"
-			(uuid "c331e7b8-0080-43db-a286-d7ad987814d7")
+			(uuid "c331e7b8-0080-43db-a286-d7ad987814d8")
 		)
 		(pin "7"
-			(uuid "f4426e4f-8ab8-4f57-a0ec-3a3923f8419b")
+			(uuid "f4426e4f-8ab8-4f57-a0ec-3a3923f8419c")
 		)
 		(pin "11"
-			(uuid "d99eec47-99ae-4c31-bc1f-8c198852a6d1")
+			(uuid "d99eec47-99ae-4c31-bc1f-8c198852a6d2")
 		)
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a74f3346-7c03-4c57-ba3a-21feab752d20"
-					(reference "U61")
+					(reference "Uf3")
 					(unit 2)
 				)
 			)
@@ -6577,7 +6755,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 165.1 16.51 90)
+		(at 168.275 32.385 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6586,7 +6764,7 @@
 		(fields_autoplaced yes)
 		(uuid "59186b58-d139-4b08-85c0-9abd64004a00")
 		(property "Reference" "#PWR0194"
-			(at 168.91 16.51 0)
+			(at 172.085 32.385 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6595,7 +6773,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 161.29 16.5099 90)
+			(at 164.465 32.3849 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6604,7 +6782,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 16.51 0)
+			(at 168.275 32.385 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6613,7 +6791,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 16.51 0)
+			(at 168.275 32.385 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6622,7 +6800,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 165.1 16.51 0)
+			(at 168.275 32.385 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6785,7 +6963,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6dd7823e-c057-464f-84a2-2ce994c4857e")
-		(property "Reference" "U56"
+		(property "Reference" "Uf4"
 			(at 259.08 87.63 0)
 			(effects
 				(font
@@ -6801,7 +6979,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 259.08 96.52 0)
 			(effects
 				(font
@@ -6820,6 +6998,42 @@
 			)
 		)
 		(property "Description" "Quad 2-input OR"
+			(at 259.08 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7432.lib"
+			(at 259.08 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7432"
+			(at 259.08 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 259.08 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
 			(at 259.08 96.52 0)
 			(effects
 				(font
@@ -6873,7 +7087,7 @@
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a74f3346-7c03-4c57-ba3a-21feab752d20"
-					(reference "U56")
+					(reference "Uf4")
 					(unit 3)
 				)
 			)
@@ -6889,7 +7103,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "703fb00c-c52c-43a3-9b3b-fb9205251a07")
-		(property "Reference" "U60"
+		(property "Reference" "Uf5"
 			(at 49.53 177.7999 0)
 			(effects
 				(font
@@ -6907,7 +7121,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 43.18 179.07 0)
 			(effects
 				(font
@@ -6934,52 +7148,88 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" "/home/sarvel/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7486.lib"
+			(at 43.18 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7486"
+			(at 43.18 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 43.18 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
+			(at 43.18 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "12"
-			(uuid "002a65b6-ce80-42d7-aa0c-fdcc87674667")
+			(uuid "002a65b6-ce80-42d7-aa0c-fdcc87674668")
 		)
 		(pin "11"
-			(uuid "29b28293-ecec-4e36-bac0-dd0a7c042512")
+			(uuid "29b28293-ecec-4e36-bac0-dd0a7c042513")
 		)
 		(pin "1"
-			(uuid "abbb419c-1ade-40ce-bc2d-5cae48c7b636")
+			(uuid "abbb419c-1ade-40ce-bc2d-5cae48c7b637")
 		)
 		(pin "8"
-			(uuid "aec6b5ae-2489-4b34-9073-a58c9111f12e")
+			(uuid "aec6b5ae-2489-4b34-9073-a58c9111f12f")
 		)
 		(pin "14"
-			(uuid "879cf472-9f4c-4e1c-96b0-ac8deba8c836")
+			(uuid "879cf472-9f4c-4e1c-96b0-ac8deba8c837")
 		)
 		(pin "13"
-			(uuid "6fecd17d-c1b6-45e8-81ca-8e11042e8957")
+			(uuid "6fecd17d-c1b6-45e8-81ca-8e11042e8958")
 		)
 		(pin "7"
-			(uuid "03c17397-0196-41d2-93fb-a25381e625d9")
+			(uuid "03c17397-0196-41d2-93fb-a25381e625da")
 		)
 		(pin "10"
-			(uuid "c2e3fcfa-58c6-484d-a112-5f85e13c8874")
+			(uuid "c2e3fcfa-58c6-484d-a112-5f85e13c8875")
 		)
 		(pin "2"
-			(uuid "702c34f9-5cad-4930-966d-e6b464248da8")
+			(uuid "702c34f9-5cad-4930-966d-e6b464248da9")
 		)
 		(pin "3"
-			(uuid "69225fdc-cf4c-49ae-ad01-3cbda7dbe2bc")
+			(uuid "69225fdc-cf4c-49ae-ad01-3cbda7dbe2bd")
 		)
 		(pin "4"
-			(uuid "729a128e-5812-44a5-8601-3a1182e99f09")
+			(uuid "729a128e-5812-44a5-8601-3a1182e99f0a")
 		)
 		(pin "5"
-			(uuid "8f4b3bd9-2595-4ff5-8871-d2cd8998250b")
+			(uuid "8f4b3bd9-2595-4ff5-8871-d2cd8998250c")
 		)
 		(pin "6"
-			(uuid "728a4f22-6b33-47f3-9d48-15c6e03def0e")
+			(uuid "728a4f22-6b33-47f3-9d48-15c6e03def0f")
 		)
 		(pin "9"
-			(uuid "fce4a54a-61a8-4065-9ade-d9a1805b3e9d")
+			(uuid "fce4a54a-61a8-4065-9ade-d9a1805b3e9e")
 		)
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a74f3346-7c03-4c57-ba3a-21feab752d20"
-					(reference "U60")
+					(reference "Uf5")
 					(unit 5)
 				)
 			)
@@ -7061,7 +7311,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "77d1f29d-e1cb-4eb5-bc9f-6861e3351755")
-		(property "Reference" "U61"
+		(property "Reference" "Uf3"
 			(at 110.49 64.77 0)
 			(effects
 				(font
@@ -7077,7 +7327,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 110.49 73.66 0)
 			(effects
 				(font
@@ -7104,52 +7354,88 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" "/home/sarvel/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7404.lib"
+			(at 110.49 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7404"
+			(at 110.49 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 110.49 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=Y0 3=A1 4=Y1 5=A2 6=Y2 7=GND 8=Y3 9=A3 10=Y4 11=A4 12=Y5 13=A5 14=VCC"
+			(at 110.49 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "9"
-			(uuid "0602ebfb-6fbc-4b24-a029-35c176d31a0b")
+			(uuid "0602ebfb-6fbc-4b24-a029-35c176d31a0d")
 		)
 		(pin "13"
-			(uuid "94b48a5b-5eb4-4d6d-a3eb-2523e9d1a866")
+			(uuid "94b48a5b-5eb4-4d6d-a3eb-2523e9d1a868")
 		)
 		(pin "2"
-			(uuid "e1d556a4-2001-4595-9645-4c9b46b49408")
+			(uuid "e1d556a4-2001-4595-9645-4c9b46b4940a")
 		)
 		(pin "3"
-			(uuid "c69d384e-e2ab-4139-853c-7530022551be")
+			(uuid "c69d384e-e2ab-4139-853c-7530022551c0")
 		)
 		(pin "1"
-			(uuid "9243eb60-206f-4307-9c17-5c5eb8a8ea78")
+			(uuid "9243eb60-206f-4307-9c17-5c5eb8a8ea7a")
 		)
 		(pin "6"
-			(uuid "637552af-a185-444e-b40e-08517a95ac0c")
+			(uuid "637552af-a185-444e-b40e-08517a95ac0e")
 		)
 		(pin "5"
-			(uuid "46b2b650-2a98-4ccc-9497-9e1f0c426b0a")
+			(uuid "46b2b650-2a98-4ccc-9497-9e1f0c426b0c")
 		)
 		(pin "4"
-			(uuid "02929752-7288-4885-85e6-c042daf44f60")
+			(uuid "02929752-7288-4885-85e6-c042daf44f62")
 		)
 		(pin "12"
-			(uuid "9fbb8820-6f3b-44ff-a927-ab216199c611")
+			(uuid "9fbb8820-6f3b-44ff-a927-ab216199c613")
 		)
 		(pin "8"
-			(uuid "711e432c-e390-48e3-b07d-e566558a3251")
+			(uuid "711e432c-e390-48e3-b07d-e566558a3253")
 		)
 		(pin "10"
-			(uuid "ee34ae82-3c4a-485f-a547-86d992495061")
+			(uuid "ee34ae82-3c4a-485f-a547-86d992495063")
 		)
 		(pin "14"
-			(uuid "c331e7b8-0080-43db-a286-d7ad987814d7")
+			(uuid "c331e7b8-0080-43db-a286-d7ad987814d9")
 		)
 		(pin "7"
-			(uuid "f4426e4f-8ab8-4f57-a0ec-3a3923f8419b")
+			(uuid "f4426e4f-8ab8-4f57-a0ec-3a3923f8419d")
 		)
 		(pin "11"
-			(uuid "d99eec47-99ae-4c31-bc1f-8c198852a6d1")
+			(uuid "d99eec47-99ae-4c31-bc1f-8c198852a6d3")
 		)
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a74f3346-7c03-4c57-ba3a-21feab752d20"
-					(reference "U61")
+					(reference "Uf3")
 					(unit 3)
 				)
 			)
@@ -7165,7 +7451,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7b6332b8-5f3b-4435-9b85-3414e0bf24dd")
-		(property "Reference" "U56"
+		(property "Reference" "Uf4"
 			(at 213.36 54.61 0)
 			(effects
 				(font
@@ -7181,7 +7467,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 213.36 63.5 0)
 			(effects
 				(font
@@ -7208,52 +7494,88 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" "/home/sarvel/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7432.lib"
+			(at 213.36 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7432"
+			(at 213.36 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 213.36 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
+			(at 213.36 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
-			(uuid "95dd40fc-3ebf-4d4d-9bf2-3de59d7ce159")
+			(uuid "95dd40fc-3ebf-4d4d-9bf2-3de59d7ce15a")
 		)
 		(pin "10"
-			(uuid "e435ec56-91d4-4a1b-853d-77192db9f081")
+			(uuid "e435ec56-91d4-4a1b-853d-77192db9f082")
 		)
 		(pin "2"
-			(uuid "c5ef81f5-04a2-4b1d-b688-7f9d52c2d258")
+			(uuid "c5ef81f5-04a2-4b1d-b688-7f9d52c2d259")
 		)
 		(pin "9"
-			(uuid "05495960-9943-4696-bca6-3004ce9307c7")
+			(uuid "05495960-9943-4696-bca6-3004ce9307c8")
 		)
 		(pin "3"
-			(uuid "81f15556-afbd-43f9-b73b-0a05db819708")
+			(uuid "81f15556-afbd-43f9-b73b-0a05db819709")
 		)
 		(pin "14"
-			(uuid "9b8db051-205a-4a95-80ea-9c887ae67180")
+			(uuid "9b8db051-205a-4a95-80ea-9c887ae67181")
 		)
 		(pin "7"
-			(uuid "7606683b-974f-4aaa-8840-a003eec310ed")
+			(uuid "7606683b-974f-4aaa-8840-a003eec310ee")
 		)
 		(pin "8"
-			(uuid "dde08658-e3b7-43e7-97c6-4d7446121bdc")
+			(uuid "dde08658-e3b7-43e7-97c6-4d7446121bdd")
 		)
 		(pin "5"
-			(uuid "ade4db23-f255-49e4-a858-9bada4ca0694")
+			(uuid "ade4db23-f255-49e4-a858-9bada4ca0695")
 		)
 		(pin "12"
-			(uuid "7a36612a-9fde-4482-96f7-280a5ebed869")
+			(uuid "7a36612a-9fde-4482-96f7-280a5ebed86a")
 		)
 		(pin "1"
-			(uuid "39a90be3-1c9c-438d-a7e3-fcbb4d2cc52a")
+			(uuid "39a90be3-1c9c-438d-a7e3-fcbb4d2cc52b")
 		)
 		(pin "11"
-			(uuid "3da78a3e-44ce-429d-a48f-35ffcf7966d4")
+			(uuid "3da78a3e-44ce-429d-a48f-35ffcf7966d5")
 		)
 		(pin "13"
-			(uuid "a7f78a97-fab7-4a74-8602-8b1ea1bb468d")
+			(uuid "a7f78a97-fab7-4a74-8602-8b1ea1bb468e")
 		)
 		(pin "4"
-			(uuid "ea4caa04-09a9-4847-ae4f-bd3d67f434ac")
+			(uuid "ea4caa04-09a9-4847-ae4f-bd3d67f434ad")
 		)
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a74f3346-7c03-4c57-ba3a-21feab752d20"
-					(reference "U56")
+					(reference "Uf4")
 					(unit 2)
 				)
 			)
@@ -7261,7 +7583,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS32")
-		(at 172.72 19.05 0)
+		(at 175.895 34.925 0)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7269,8 +7591,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7e4066aa-8b96-45e6-98af-e57921650894")
-		(property "Reference" "U56"
-			(at 172.72 10.16 0)
+		(property "Reference" "Uf4"
+			(at 175.895 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7278,15 +7600,15 @@
 			)
 		)
 		(property "Value" "74LS32"
-			(at 172.72 12.7 0)
+			(at 175.895 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 172.72 19.05 0)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 175.895 34.925 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7295,7 +7617,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
-			(at 172.72 19.05 0)
+			(at 175.895 34.925 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7304,7 +7626,43 @@
 			)
 		)
 		(property "Description" "Quad 2-input OR"
-			(at 172.72 19.05 0)
+			(at 175.895 34.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7432.lib"
+			(at 175.895 34.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7432"
+			(at 175.895 34.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 175.895 34.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
+			(at 175.895 34.925 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7313,51 +7671,51 @@
 			)
 		)
 		(pin "6"
-			(uuid "95dd40fc-3ebf-4d4d-9bf2-3de59d7ce159")
+			(uuid "95dd40fc-3ebf-4d4d-9bf2-3de59d7ce15b")
 		)
 		(pin "10"
-			(uuid "e435ec56-91d4-4a1b-853d-77192db9f081")
+			(uuid "e435ec56-91d4-4a1b-853d-77192db9f083")
 		)
 		(pin "2"
-			(uuid "c5ef81f5-04a2-4b1d-b688-7f9d52c2d258")
+			(uuid "c5ef81f5-04a2-4b1d-b688-7f9d52c2d25a")
 		)
 		(pin "9"
-			(uuid "05495960-9943-4696-bca6-3004ce9307c7")
+			(uuid "05495960-9943-4696-bca6-3004ce9307c9")
 		)
 		(pin "3"
-			(uuid "81f15556-afbd-43f9-b73b-0a05db819708")
+			(uuid "81f15556-afbd-43f9-b73b-0a05db81970a")
 		)
 		(pin "14"
-			(uuid "9b8db051-205a-4a95-80ea-9c887ae67180")
+			(uuid "9b8db051-205a-4a95-80ea-9c887ae67182")
 		)
 		(pin "7"
-			(uuid "7606683b-974f-4aaa-8840-a003eec310ed")
+			(uuid "7606683b-974f-4aaa-8840-a003eec310ef")
 		)
 		(pin "8"
-			(uuid "dde08658-e3b7-43e7-97c6-4d7446121bdc")
+			(uuid "dde08658-e3b7-43e7-97c6-4d7446121bde")
 		)
 		(pin "5"
-			(uuid "ade4db23-f255-49e4-a858-9bada4ca0694")
+			(uuid "ade4db23-f255-49e4-a858-9bada4ca0696")
 		)
 		(pin "12"
-			(uuid "7a36612a-9fde-4482-96f7-280a5ebed869")
+			(uuid "7a36612a-9fde-4482-96f7-280a5ebed86b")
 		)
 		(pin "1"
-			(uuid "39a90be3-1c9c-438d-a7e3-fcbb4d2cc52a")
+			(uuid "39a90be3-1c9c-438d-a7e3-fcbb4d2cc52c")
 		)
 		(pin "11"
-			(uuid "3da78a3e-44ce-429d-a48f-35ffcf7966d4")
+			(uuid "3da78a3e-44ce-429d-a48f-35ffcf7966d6")
 		)
 		(pin "13"
-			(uuid "a7f78a97-fab7-4a74-8602-8b1ea1bb468d")
+			(uuid "a7f78a97-fab7-4a74-8602-8b1ea1bb468f")
 		)
 		(pin "4"
-			(uuid "ea4caa04-09a9-4847-ae4f-bd3d67f434ac")
+			(uuid "ea4caa04-09a9-4847-ae4f-bd3d67f434ae")
 		)
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a74f3346-7c03-4c57-ba3a-21feab752d20"
-					(reference "U56")
+					(reference "Uf4")
 					(unit 4)
 				)
 			)
@@ -7373,7 +7731,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "84a8a4fd-e30c-4acf-9bcf-51b7600128d0")
-		(property "Reference" "U61"
+		(property "Reference" "Uf3"
 			(at 287.02 74.9299 90)
 			(effects
 				(font
@@ -7391,7 +7749,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 281.94 76.2 0)
 			(effects
 				(font
@@ -7418,52 +7776,88 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" "/home/sarvel/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7404.lib"
+			(at 281.94 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7404"
+			(at 281.94 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 281.94 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=Y0 3=A1 4=Y1 5=A2 6=Y2 7=GND 8=Y3 9=A3 10=Y4 11=A4 12=Y5 13=A5 14=VCC"
+			(at 281.94 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "9"
-			(uuid "0602ebfb-6fbc-4b24-a029-35c176d31a0b")
+			(uuid "0602ebfb-6fbc-4b24-a029-35c176d31a0e")
 		)
 		(pin "13"
-			(uuid "94b48a5b-5eb4-4d6d-a3eb-2523e9d1a866")
+			(uuid "94b48a5b-5eb4-4d6d-a3eb-2523e9d1a869")
 		)
 		(pin "2"
-			(uuid "e1d556a4-2001-4595-9645-4c9b46b49408")
+			(uuid "e1d556a4-2001-4595-9645-4c9b46b4940b")
 		)
 		(pin "3"
-			(uuid "c69d384e-e2ab-4139-853c-7530022551be")
+			(uuid "c69d384e-e2ab-4139-853c-7530022551c1")
 		)
 		(pin "1"
-			(uuid "9243eb60-206f-4307-9c17-5c5eb8a8ea78")
+			(uuid "9243eb60-206f-4307-9c17-5c5eb8a8ea7b")
 		)
 		(pin "6"
-			(uuid "637552af-a185-444e-b40e-08517a95ac0c")
+			(uuid "637552af-a185-444e-b40e-08517a95ac0f")
 		)
 		(pin "5"
-			(uuid "46b2b650-2a98-4ccc-9497-9e1f0c426b0a")
+			(uuid "46b2b650-2a98-4ccc-9497-9e1f0c426b0d")
 		)
 		(pin "4"
-			(uuid "02929752-7288-4885-85e6-c042daf44f60")
+			(uuid "02929752-7288-4885-85e6-c042daf44f63")
 		)
 		(pin "12"
-			(uuid "9fbb8820-6f3b-44ff-a927-ab216199c611")
+			(uuid "9fbb8820-6f3b-44ff-a927-ab216199c614")
 		)
 		(pin "8"
-			(uuid "711e432c-e390-48e3-b07d-e566558a3251")
+			(uuid "711e432c-e390-48e3-b07d-e566558a3254")
 		)
 		(pin "10"
-			(uuid "ee34ae82-3c4a-485f-a547-86d992495061")
+			(uuid "ee34ae82-3c4a-485f-a547-86d992495064")
 		)
 		(pin "14"
-			(uuid "c331e7b8-0080-43db-a286-d7ad987814d7")
+			(uuid "c331e7b8-0080-43db-a286-d7ad987814da")
 		)
 		(pin "7"
-			(uuid "f4426e4f-8ab8-4f57-a0ec-3a3923f8419b")
+			(uuid "f4426e4f-8ab8-4f57-a0ec-3a3923f8419e")
 		)
 		(pin "11"
-			(uuid "d99eec47-99ae-4c31-bc1f-8c198852a6d1")
+			(uuid "d99eec47-99ae-4c31-bc1f-8c198852a6d4")
 		)
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a74f3346-7c03-4c57-ba3a-21feab752d20"
-					(reference "U61")
+					(reference "Uf3")
 					(unit 6)
 				)
 			)
@@ -7545,7 +7939,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "933b1808-ed1f-4735-8ec2-f51ff51f25c5")
-		(property "Reference" "U59"
+		(property "Reference" "Uf7"
 			(at 124.0633 97.79 0)
 			(effects
 				(font
@@ -7563,7 +7957,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SSOP-20_5.3x7.2mm_P0.65mm"
 			(at 121.92 118.11 0)
 			(effects
 				(font
@@ -7582,6 +7976,42 @@
 			)
 		)
 		(property "Description" "8-bit Register"
+			(at 121.92 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/Projects/Computers/maluch_pcb/PCB/Kicad/spice/74377.lib"
+			(at 121.92 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "74377"
+			(at 121.92 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 121.92 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=nE 2=Q0 3=D0 4=D1 5=Q1 6=Q2 7=D2 8=D3 9=Q3 10=GND 11=CP 12=Q4 13=D4 14=D5 15=Q5 16=Q6 17=D6 18=D7 19=Q7 20=VCC"
 			(at 121.92 118.11 0)
 			(effects
 				(font
@@ -7653,7 +8083,7 @@
 		(instances
 			(project "control_unit"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a74f3346-7c03-4c57-ba3a-21feab752d20"
-					(reference "U59")
+					(reference "Uf7")
 					(unit 1)
 				)
 			)
@@ -7736,7 +8166,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2991d70-7c91-4f8c-9c61-d0f7eff9f2f6")
-		(property "Reference" "U60"
+		(property "Reference" "Uf5"
 			(at 98.7552 149.86 0)
 			(effects
 				(font
@@ -7752,7 +8182,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 99.06 158.75 0)
 			(effects
 				(font
@@ -7779,52 +8209,88 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" "/home/sarvel/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7486.lib"
+			(at 99.06 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7486"
+			(at 99.06 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 99.06 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
+			(at 99.06 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "12"
-			(uuid "002a65b6-ce80-42d7-aa0c-fdcc87674667")
+			(uuid "002a65b6-ce80-42d7-aa0c-fdcc87674669")
 		)
 		(pin "11"
-			(uuid "29b28293-ecec-4e36-bac0-dd0a7c042512")
+			(uuid "29b28293-ecec-4e36-bac0-dd0a7c042514")
 		)
 		(pin "1"
-			(uuid "abbb419c-1ade-40ce-bc2d-5cae48c7b636")
+			(uuid "abbb419c-1ade-40ce-bc2d-5cae48c7b638")
 		)
 		(pin "8"
-			(uuid "aec6b5ae-2489-4b34-9073-a58c9111f12e")
+			(uuid "aec6b5ae-2489-4b34-9073-a58c9111f130")
 		)
 		(pin "14"
-			(uuid "879cf472-9f4c-4e1c-96b0-ac8deba8c836")
+			(uuid "879cf472-9f4c-4e1c-96b0-ac8deba8c838")
 		)
 		(pin "13"
-			(uuid "6fecd17d-c1b6-45e8-81ca-8e11042e8957")
+			(uuid "6fecd17d-c1b6-45e8-81ca-8e11042e8959")
 		)
 		(pin "7"
-			(uuid "03c17397-0196-41d2-93fb-a25381e625d9")
+			(uuid "03c17397-0196-41d2-93fb-a25381e625db")
 		)
 		(pin "10"
-			(uuid "c2e3fcfa-58c6-484d-a112-5f85e13c8874")
+			(uuid "c2e3fcfa-58c6-484d-a112-5f85e13c8876")
 		)
 		(pin "2"
-			(uuid "702c34f9-5cad-4930-966d-e6b464248da8")
+			(uuid "702c34f9-5cad-4930-966d-e6b464248daa")
 		)
 		(pin "3"
-			(uuid "69225fdc-cf4c-49ae-ad01-3cbda7dbe2bc")
+			(uuid "69225fdc-cf4c-49ae-ad01-3cbda7dbe2be")
 		)
 		(pin "4"
-			(uuid "729a128e-5812-44a5-8601-3a1182e99f09")
+			(uuid "729a128e-5812-44a5-8601-3a1182e99f0b")
 		)
 		(pin "5"
-			(uuid "8f4b3bd9-2595-4ff5-8871-d2cd8998250b")
+			(uuid "8f4b3bd9-2595-4ff5-8871-d2cd8998250d")
 		)
 		(pin "6"
-			(uuid "728a4f22-6b33-47f3-9d48-15c6e03def0e")
+			(uuid "728a4f22-6b33-47f3-9d48-15c6e03def10")
 		)
 		(pin "9"
-			(uuid "fce4a54a-61a8-4065-9ade-d9a1805b3e9d")
+			(uuid "fce4a54a-61a8-4065-9ade-d9a1805b3e9f")
 		)
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a74f3346-7c03-4c57-ba3a-21feab752d20"
-					(reference "U60")
+					(reference "Uf5")
 					(unit 2)
 				)
 			)
@@ -7840,7 +8306,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab274b7f-490c-447a-a0a6-e11bfab35cd7")
-		(property "Reference" "U58"
+		(property "Reference" "Uf6"
 			(at 85.9633 97.79 0)
 			(effects
 				(font
@@ -7858,7 +8324,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 83.82 120.65 0)
 			(effects
 				(font
@@ -7877,6 +8343,42 @@
 			)
 		)
 		(property "Description" "Quad 2 to 1 Multiplexer"
+			(at 83.82 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/Projects/Computers/maluch_pcb/PCB/Kicad/spice/74257.lib"
+			(at 83.82 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "74257"
+			(at 83.82 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 83.82 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=S 2=ia0 3=ia1 4=oa 5=ib0 6=ib1 7=ob 8=GND 9=od 10=id1 11=id0 12=oc 13=ic1 14=ic0 15=nE 16=Vcc"
 			(at 83.82 120.65 0)
 			(effects
 				(font
@@ -7936,7 +8438,7 @@
 		(instances
 			(project "control_unit"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a74f3346-7c03-4c57-ba3a-21feab752d20"
-					(reference "U58")
+					(reference "Uf6")
 					(unit 1)
 				)
 			)
@@ -8208,7 +8710,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 165.1 21.59 90)
+		(at 168.275 37.465 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8217,7 +8719,7 @@
 		(fields_autoplaced yes)
 		(uuid "be194e56-23f9-45cb-8c29-f12a6176ea9c")
 		(property "Reference" "#PWR0195"
-			(at 168.91 21.59 0)
+			(at 172.085 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8226,7 +8728,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 161.29 21.5899 90)
+			(at 164.465 37.4649 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8235,7 +8737,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 21.59 0)
+			(at 168.275 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8244,7 +8746,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 21.59 0)
+			(at 168.275 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8253,7 +8755,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 165.1 21.59 0)
+			(at 168.275 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8407,6 +8909,42 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" "/home/sarvel/Projects/Computers/maluch_pcb/PCB/Kicad/spice/744067.lib"
+			(at 252.73 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "744067"
+			(at 252.73 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 252.73 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=out 2=I07 3=I06 4=I05 5=I04 6=I03 7=I02 8=I01 9=I00 10=S0 11=S1 12=GND 13=S3 14=S2 15=nE 16=I15 17=I14 18=I13 19=I12 20=I11 21=I10 22=I09 23=I08 24=VCC"
+			(at 252.73 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "17"
 			(uuid "ef7bd7bf-68d3-41c0-8796-1f13ac223c84")
 		)
@@ -8498,7 +9036,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c1dabe8a-ea57-4c7c-bcc5-aa63823e1348")
-		(property "Reference" "U61"
+		(property "Reference" "Uf3"
 			(at 110.49 36.83 0)
 			(effects
 				(font
@@ -8514,7 +9052,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 110.49 45.72 0)
 			(effects
 				(font
@@ -8541,52 +9079,88 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" "/home/sarvel/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7404.lib"
+			(at 110.49 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7404"
+			(at 110.49 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 110.49 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=Y0 3=A1 4=Y1 5=A2 6=Y2 7=GND 8=Y3 9=A3 10=Y4 11=A4 12=Y5 13=A5 14=VCC"
+			(at 110.49 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "9"
-			(uuid "0602ebfb-6fbc-4b24-a029-35c176d31a0b")
+			(uuid "0602ebfb-6fbc-4b24-a029-35c176d31a0f")
 		)
 		(pin "13"
-			(uuid "94b48a5b-5eb4-4d6d-a3eb-2523e9d1a866")
+			(uuid "94b48a5b-5eb4-4d6d-a3eb-2523e9d1a86a")
 		)
 		(pin "2"
-			(uuid "e1d556a4-2001-4595-9645-4c9b46b49408")
+			(uuid "e1d556a4-2001-4595-9645-4c9b46b4940c")
 		)
 		(pin "3"
-			(uuid "c69d384e-e2ab-4139-853c-7530022551be")
+			(uuid "c69d384e-e2ab-4139-853c-7530022551c2")
 		)
 		(pin "1"
-			(uuid "9243eb60-206f-4307-9c17-5c5eb8a8ea78")
+			(uuid "9243eb60-206f-4307-9c17-5c5eb8a8ea7c")
 		)
 		(pin "6"
-			(uuid "637552af-a185-444e-b40e-08517a95ac0c")
+			(uuid "637552af-a185-444e-b40e-08517a95ac10")
 		)
 		(pin "5"
-			(uuid "46b2b650-2a98-4ccc-9497-9e1f0c426b0a")
+			(uuid "46b2b650-2a98-4ccc-9497-9e1f0c426b0e")
 		)
 		(pin "4"
-			(uuid "02929752-7288-4885-85e6-c042daf44f60")
+			(uuid "02929752-7288-4885-85e6-c042daf44f64")
 		)
 		(pin "12"
-			(uuid "9fbb8820-6f3b-44ff-a927-ab216199c611")
+			(uuid "9fbb8820-6f3b-44ff-a927-ab216199c615")
 		)
 		(pin "8"
-			(uuid "711e432c-e390-48e3-b07d-e566558a3251")
+			(uuid "711e432c-e390-48e3-b07d-e566558a3255")
 		)
 		(pin "10"
-			(uuid "ee34ae82-3c4a-485f-a547-86d992495061")
+			(uuid "ee34ae82-3c4a-485f-a547-86d992495065")
 		)
 		(pin "14"
-			(uuid "c331e7b8-0080-43db-a286-d7ad987814d7")
+			(uuid "c331e7b8-0080-43db-a286-d7ad987814db")
 		)
 		(pin "7"
-			(uuid "f4426e4f-8ab8-4f57-a0ec-3a3923f8419b")
+			(uuid "f4426e4f-8ab8-4f57-a0ec-3a3923f8419f")
 		)
 		(pin "11"
-			(uuid "d99eec47-99ae-4c31-bc1f-8c198852a6d1")
+			(uuid "d99eec47-99ae-4c31-bc1f-8c198852a6d5")
 		)
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a74f3346-7c03-4c57-ba3a-21feab752d20"
-					(reference "U61")
+					(reference "Uf3")
 					(unit 1)
 				)
 			)
@@ -8668,7 +9242,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c8b4e2bc-7d8b-45c4-a077-225fe3533039")
-		(property "Reference" "U61"
+		(property "Reference" "Uf3"
 			(at 210.82 40.64 0)
 			(effects
 				(font
@@ -8684,7 +9258,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 210.82 49.53 0)
 			(effects
 				(font
@@ -8711,52 +9285,88 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" "/home/sarvel/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7404.lib"
+			(at 210.82 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7404"
+			(at 210.82 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 210.82 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=Y0 3=A1 4=Y1 5=A2 6=Y2 7=GND 8=Y3 9=A3 10=Y4 11=A4 12=Y5 13=A5 14=VCC"
+			(at 210.82 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "9"
-			(uuid "0602ebfb-6fbc-4b24-a029-35c176d31a0b")
+			(uuid "0602ebfb-6fbc-4b24-a029-35c176d31a10")
 		)
 		(pin "13"
-			(uuid "94b48a5b-5eb4-4d6d-a3eb-2523e9d1a866")
+			(uuid "94b48a5b-5eb4-4d6d-a3eb-2523e9d1a86b")
 		)
 		(pin "2"
-			(uuid "e1d556a4-2001-4595-9645-4c9b46b49408")
+			(uuid "e1d556a4-2001-4595-9645-4c9b46b4940d")
 		)
 		(pin "3"
-			(uuid "c69d384e-e2ab-4139-853c-7530022551be")
+			(uuid "c69d384e-e2ab-4139-853c-7530022551c3")
 		)
 		(pin "1"
-			(uuid "9243eb60-206f-4307-9c17-5c5eb8a8ea78")
+			(uuid "9243eb60-206f-4307-9c17-5c5eb8a8ea7d")
 		)
 		(pin "6"
-			(uuid "637552af-a185-444e-b40e-08517a95ac0c")
+			(uuid "637552af-a185-444e-b40e-08517a95ac11")
 		)
 		(pin "5"
-			(uuid "46b2b650-2a98-4ccc-9497-9e1f0c426b0a")
+			(uuid "46b2b650-2a98-4ccc-9497-9e1f0c426b0f")
 		)
 		(pin "4"
-			(uuid "02929752-7288-4885-85e6-c042daf44f60")
+			(uuid "02929752-7288-4885-85e6-c042daf44f65")
 		)
 		(pin "12"
-			(uuid "9fbb8820-6f3b-44ff-a927-ab216199c611")
+			(uuid "9fbb8820-6f3b-44ff-a927-ab216199c616")
 		)
 		(pin "8"
-			(uuid "711e432c-e390-48e3-b07d-e566558a3251")
+			(uuid "711e432c-e390-48e3-b07d-e566558a3256")
 		)
 		(pin "10"
-			(uuid "ee34ae82-3c4a-485f-a547-86d992495061")
+			(uuid "ee34ae82-3c4a-485f-a547-86d992495066")
 		)
 		(pin "14"
-			(uuid "c331e7b8-0080-43db-a286-d7ad987814d7")
+			(uuid "c331e7b8-0080-43db-a286-d7ad987814dc")
 		)
 		(pin "7"
-			(uuid "f4426e4f-8ab8-4f57-a0ec-3a3923f8419b")
+			(uuid "f4426e4f-8ab8-4f57-a0ec-3a3923f841a0")
 		)
 		(pin "11"
-			(uuid "d99eec47-99ae-4c31-bc1f-8c198852a6d1")
+			(uuid "d99eec47-99ae-4c31-bc1f-8c198852a6d6")
 		)
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a74f3346-7c03-4c57-ba3a-21feab752d20"
-					(reference "U61")
+					(reference "Uf3")
 					(unit 5)
 				)
 			)
@@ -8772,7 +9382,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cb2faffa-7abc-4142-b210-61049ff655ab")
-		(property "Reference" "U56"
+		(property "Reference" "Uf4"
 			(at 30.48 177.7999 0)
 			(effects
 				(font
@@ -8790,7 +9400,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 24.13 179.07 0)
 			(effects
 				(font
@@ -8817,52 +9427,88 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" "/home/sarvel/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7432.lib"
+			(at 24.13 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7432"
+			(at 24.13 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 24.13 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
+			(at 24.13 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
-			(uuid "95dd40fc-3ebf-4d4d-9bf2-3de59d7ce159")
+			(uuid "95dd40fc-3ebf-4d4d-9bf2-3de59d7ce15c")
 		)
 		(pin "10"
-			(uuid "e435ec56-91d4-4a1b-853d-77192db9f081")
+			(uuid "e435ec56-91d4-4a1b-853d-77192db9f084")
 		)
 		(pin "2"
-			(uuid "c5ef81f5-04a2-4b1d-b688-7f9d52c2d258")
+			(uuid "c5ef81f5-04a2-4b1d-b688-7f9d52c2d25b")
 		)
 		(pin "9"
-			(uuid "05495960-9943-4696-bca6-3004ce9307c7")
+			(uuid "05495960-9943-4696-bca6-3004ce9307ca")
 		)
 		(pin "3"
-			(uuid "81f15556-afbd-43f9-b73b-0a05db819708")
+			(uuid "81f15556-afbd-43f9-b73b-0a05db81970b")
 		)
 		(pin "14"
-			(uuid "9b8db051-205a-4a95-80ea-9c887ae67180")
+			(uuid "9b8db051-205a-4a95-80ea-9c887ae67183")
 		)
 		(pin "7"
-			(uuid "7606683b-974f-4aaa-8840-a003eec310ed")
+			(uuid "7606683b-974f-4aaa-8840-a003eec310f0")
 		)
 		(pin "8"
-			(uuid "dde08658-e3b7-43e7-97c6-4d7446121bdc")
+			(uuid "dde08658-e3b7-43e7-97c6-4d7446121bdf")
 		)
 		(pin "5"
-			(uuid "ade4db23-f255-49e4-a858-9bada4ca0694")
+			(uuid "ade4db23-f255-49e4-a858-9bada4ca0697")
 		)
 		(pin "12"
-			(uuid "7a36612a-9fde-4482-96f7-280a5ebed869")
+			(uuid "7a36612a-9fde-4482-96f7-280a5ebed86c")
 		)
 		(pin "1"
-			(uuid "39a90be3-1c9c-438d-a7e3-fcbb4d2cc52a")
+			(uuid "39a90be3-1c9c-438d-a7e3-fcbb4d2cc52d")
 		)
 		(pin "11"
-			(uuid "3da78a3e-44ce-429d-a48f-35ffcf7966d4")
+			(uuid "3da78a3e-44ce-429d-a48f-35ffcf7966d7")
 		)
 		(pin "13"
-			(uuid "a7f78a97-fab7-4a74-8602-8b1ea1bb468d")
+			(uuid "a7f78a97-fab7-4a74-8602-8b1ea1bb4690")
 		)
 		(pin "4"
-			(uuid "ea4caa04-09a9-4847-ae4f-bd3d67f434ac")
+			(uuid "ea4caa04-09a9-4847-ae4f-bd3d67f434af")
 		)
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a74f3346-7c03-4c57-ba3a-21feab752d20"
-					(reference "U56")
+					(reference "Uf4")
 					(unit 5)
 				)
 			)
@@ -8878,7 +9524,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d28266a9-f76a-479c-8b74-44639d814845")
-		(property "Reference" "U54"
+		(property "Reference" "Uf1"
 			(at 42.7833 38.1 0)
 			(effects
 				(font
@@ -8896,7 +9542,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 40.64 60.96 0)
 			(effects
 				(font
@@ -8915,6 +9561,42 @@
 			)
 		)
 		(property "Description" "Quad 2 to 1 Multiplexer"
+			(at 40.64 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/Projects/Computers/maluch_pcb/PCB/Kicad/spice/74257.lib"
+			(at 40.64 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "74257"
+			(at 40.64 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 40.64 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=S 2=ia0 3=ia1 4=oa 5=ib0 6=ib1 7=ob 8=GND 9=od 10=id1 11=id0 12=oc 13=ic1 14=ic0 15=nE 16=Vcc"
 			(at 40.64 60.96 0)
 			(effects
 				(font
@@ -8974,7 +9656,7 @@
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a74f3346-7c03-4c57-ba3a-21feab752d20"
-					(reference "U54")
+					(reference "Uf1")
 					(unit 1)
 				)
 			)
@@ -9056,7 +9738,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e2f3c799-26bf-4da7-8332-be23c87bd2e7")
-		(property "Reference" "U60"
+		(property "Reference" "Uf5"
 			(at 195.2752 40.64 0)
 			(effects
 				(font
@@ -9072,7 +9754,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 195.58 49.53 0)
 			(effects
 				(font
@@ -9099,52 +9781,88 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" "/home/sarvel/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7486.lib"
+			(at 195.58 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7486"
+			(at 195.58 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 195.58 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
+			(at 195.58 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "12"
-			(uuid "002a65b6-ce80-42d7-aa0c-fdcc87674667")
+			(uuid "002a65b6-ce80-42d7-aa0c-fdcc8767466a")
 		)
 		(pin "11"
-			(uuid "29b28293-ecec-4e36-bac0-dd0a7c042512")
+			(uuid "29b28293-ecec-4e36-bac0-dd0a7c042515")
 		)
 		(pin "1"
-			(uuid "abbb419c-1ade-40ce-bc2d-5cae48c7b636")
+			(uuid "abbb419c-1ade-40ce-bc2d-5cae48c7b639")
 		)
 		(pin "8"
-			(uuid "aec6b5ae-2489-4b34-9073-a58c9111f12e")
+			(uuid "aec6b5ae-2489-4b34-9073-a58c9111f131")
 		)
 		(pin "14"
-			(uuid "879cf472-9f4c-4e1c-96b0-ac8deba8c836")
+			(uuid "879cf472-9f4c-4e1c-96b0-ac8deba8c839")
 		)
 		(pin "13"
-			(uuid "6fecd17d-c1b6-45e8-81ca-8e11042e8957")
+			(uuid "6fecd17d-c1b6-45e8-81ca-8e11042e895a")
 		)
 		(pin "7"
-			(uuid "03c17397-0196-41d2-93fb-a25381e625d9")
+			(uuid "03c17397-0196-41d2-93fb-a25381e625dc")
 		)
 		(pin "10"
-			(uuid "c2e3fcfa-58c6-484d-a112-5f85e13c8874")
+			(uuid "c2e3fcfa-58c6-484d-a112-5f85e13c8877")
 		)
 		(pin "2"
-			(uuid "702c34f9-5cad-4930-966d-e6b464248da8")
+			(uuid "702c34f9-5cad-4930-966d-e6b464248dab")
 		)
 		(pin "3"
-			(uuid "69225fdc-cf4c-49ae-ad01-3cbda7dbe2bc")
+			(uuid "69225fdc-cf4c-49ae-ad01-3cbda7dbe2bf")
 		)
 		(pin "4"
-			(uuid "729a128e-5812-44a5-8601-3a1182e99f09")
+			(uuid "729a128e-5812-44a5-8601-3a1182e99f0c")
 		)
 		(pin "5"
-			(uuid "8f4b3bd9-2595-4ff5-8871-d2cd8998250b")
+			(uuid "8f4b3bd9-2595-4ff5-8871-d2cd8998250e")
 		)
 		(pin "6"
-			(uuid "728a4f22-6b33-47f3-9d48-15c6e03def0e")
+			(uuid "728a4f22-6b33-47f3-9d48-15c6e03def11")
 		)
 		(pin "9"
-			(uuid "fce4a54a-61a8-4065-9ade-d9a1805b3e9d")
+			(uuid "fce4a54a-61a8-4065-9ade-d9a1805b3ea0")
 		)
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a74f3346-7c03-4c57-ba3a-21feab752d20"
-					(reference "U60")
+					(reference "Uf5")
 					(unit 3)
 				)
 			)
@@ -9160,7 +9878,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e9063f5d-0aa9-46b1-a3cd-459e6faa0599")
-		(property "Reference" "U60"
+		(property "Reference" "Uf5"
 			(at 224.4852 71.12 0)
 			(effects
 				(font
@@ -9176,7 +9894,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 224.79 80.01 0)
 			(effects
 				(font
@@ -9203,52 +9921,88 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" "/home/sarvel/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7486.lib"
+			(at 224.79 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7486"
+			(at 224.79 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 224.79 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
+			(at 224.79 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "12"
-			(uuid "002a65b6-ce80-42d7-aa0c-fdcc87674667")
+			(uuid "002a65b6-ce80-42d7-aa0c-fdcc8767466b")
 		)
 		(pin "11"
-			(uuid "29b28293-ecec-4e36-bac0-dd0a7c042512")
+			(uuid "29b28293-ecec-4e36-bac0-dd0a7c042516")
 		)
 		(pin "1"
-			(uuid "abbb419c-1ade-40ce-bc2d-5cae48c7b636")
+			(uuid "abbb419c-1ade-40ce-bc2d-5cae48c7b63a")
 		)
 		(pin "8"
-			(uuid "aec6b5ae-2489-4b34-9073-a58c9111f12e")
+			(uuid "aec6b5ae-2489-4b34-9073-a58c9111f132")
 		)
 		(pin "14"
-			(uuid "879cf472-9f4c-4e1c-96b0-ac8deba8c836")
+			(uuid "879cf472-9f4c-4e1c-96b0-ac8deba8c83a")
 		)
 		(pin "13"
-			(uuid "6fecd17d-c1b6-45e8-81ca-8e11042e8957")
+			(uuid "6fecd17d-c1b6-45e8-81ca-8e11042e895b")
 		)
 		(pin "7"
-			(uuid "03c17397-0196-41d2-93fb-a25381e625d9")
+			(uuid "03c17397-0196-41d2-93fb-a25381e625dd")
 		)
 		(pin "10"
-			(uuid "c2e3fcfa-58c6-484d-a112-5f85e13c8874")
+			(uuid "c2e3fcfa-58c6-484d-a112-5f85e13c8878")
 		)
 		(pin "2"
-			(uuid "702c34f9-5cad-4930-966d-e6b464248da8")
+			(uuid "702c34f9-5cad-4930-966d-e6b464248dac")
 		)
 		(pin "3"
-			(uuid "69225fdc-cf4c-49ae-ad01-3cbda7dbe2bc")
+			(uuid "69225fdc-cf4c-49ae-ad01-3cbda7dbe2c0")
 		)
 		(pin "4"
-			(uuid "729a128e-5812-44a5-8601-3a1182e99f09")
+			(uuid "729a128e-5812-44a5-8601-3a1182e99f0d")
 		)
 		(pin "5"
-			(uuid "8f4b3bd9-2595-4ff5-8871-d2cd8998250b")
+			(uuid "8f4b3bd9-2595-4ff5-8871-d2cd8998250f")
 		)
 		(pin "6"
-			(uuid "728a4f22-6b33-47f3-9d48-15c6e03def0e")
+			(uuid "728a4f22-6b33-47f3-9d48-15c6e03def12")
 		)
 		(pin "9"
-			(uuid "fce4a54a-61a8-4065-9ade-d9a1805b3e9d")
+			(uuid "fce4a54a-61a8-4065-9ade-d9a1805b3ea1")
 		)
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a74f3346-7c03-4c57-ba3a-21feab752d20"
-					(reference "U60")
+					(reference "Uf5")
 					(unit 4)
 				)
 			)
@@ -9331,7 +10085,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ef6f4c2a-fdda-4986-9dee-0f2ee324afb5")
-		(property "Reference" "U56"
+		(property "Reference" "Uf4"
 			(at 33.02 90.17 0)
 			(effects
 				(font
@@ -9347,7 +10101,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 33.02 99.06 0)
 			(effects
 				(font
@@ -9374,52 +10128,88 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" "/home/sarvel/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7432.lib"
+			(at 33.02 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7432"
+			(at 33.02 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 33.02 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=GND 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
+			(at 33.02 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
-			(uuid "95dd40fc-3ebf-4d4d-9bf2-3de59d7ce159")
+			(uuid "95dd40fc-3ebf-4d4d-9bf2-3de59d7ce15d")
 		)
 		(pin "10"
-			(uuid "e435ec56-91d4-4a1b-853d-77192db9f081")
+			(uuid "e435ec56-91d4-4a1b-853d-77192db9f085")
 		)
 		(pin "2"
-			(uuid "c5ef81f5-04a2-4b1d-b688-7f9d52c2d258")
+			(uuid "c5ef81f5-04a2-4b1d-b688-7f9d52c2d25c")
 		)
 		(pin "9"
-			(uuid "05495960-9943-4696-bca6-3004ce9307c7")
+			(uuid "05495960-9943-4696-bca6-3004ce9307cb")
 		)
 		(pin "3"
-			(uuid "81f15556-afbd-43f9-b73b-0a05db819708")
+			(uuid "81f15556-afbd-43f9-b73b-0a05db81970c")
 		)
 		(pin "14"
-			(uuid "9b8db051-205a-4a95-80ea-9c887ae67180")
+			(uuid "9b8db051-205a-4a95-80ea-9c887ae67184")
 		)
 		(pin "7"
-			(uuid "7606683b-974f-4aaa-8840-a003eec310ed")
+			(uuid "7606683b-974f-4aaa-8840-a003eec310f1")
 		)
 		(pin "8"
-			(uuid "dde08658-e3b7-43e7-97c6-4d7446121bdc")
+			(uuid "dde08658-e3b7-43e7-97c6-4d7446121be0")
 		)
 		(pin "5"
-			(uuid "ade4db23-f255-49e4-a858-9bada4ca0694")
+			(uuid "ade4db23-f255-49e4-a858-9bada4ca0698")
 		)
 		(pin "12"
-			(uuid "7a36612a-9fde-4482-96f7-280a5ebed869")
+			(uuid "7a36612a-9fde-4482-96f7-280a5ebed86d")
 		)
 		(pin "1"
-			(uuid "39a90be3-1c9c-438d-a7e3-fcbb4d2cc52a")
+			(uuid "39a90be3-1c9c-438d-a7e3-fcbb4d2cc52e")
 		)
 		(pin "11"
-			(uuid "3da78a3e-44ce-429d-a48f-35ffcf7966d4")
+			(uuid "3da78a3e-44ce-429d-a48f-35ffcf7966d8")
 		)
 		(pin "13"
-			(uuid "a7f78a97-fab7-4a74-8602-8b1ea1bb468d")
+			(uuid "a7f78a97-fab7-4a74-8602-8b1ea1bb4691")
 		)
 		(pin "4"
-			(uuid "ea4caa04-09a9-4847-ae4f-bd3d67f434ac")
+			(uuid "ea4caa04-09a9-4847-ae4f-bd3d67f434b0")
 		)
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a74f3346-7c03-4c57-ba3a-21feab752d20"
-					(reference "U56")
+					(reference "Uf4")
 					(unit 1)
 				)
 			)
@@ -9435,7 +10225,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe455a4c-3641-4642-bbc5-a1fa0443b051")
-		(property "Reference" "U61"
+		(property "Reference" "Uf3"
 			(at 110.49 78.74 0)
 			(effects
 				(font
@@ -9451,7 +10241,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 110.49 87.63 0)
 			(effects
 				(font
@@ -9478,52 +10268,88 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" "/home/sarvel/Projects/Computers/maluch_pcb/PCB/Kicad/spice/7404.lib"
+			(at 110.49 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "7404"
+			(at 110.49 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 110.49 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=Y0 3=A1 4=Y1 5=A2 6=Y2 7=GND 8=Y3 9=A3 10=Y4 11=A4 12=Y5 13=A5 14=VCC"
+			(at 110.49 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "9"
-			(uuid "0602ebfb-6fbc-4b24-a029-35c176d31a0b")
+			(uuid "0602ebfb-6fbc-4b24-a029-35c176d31a11")
 		)
 		(pin "13"
-			(uuid "94b48a5b-5eb4-4d6d-a3eb-2523e9d1a866")
+			(uuid "94b48a5b-5eb4-4d6d-a3eb-2523e9d1a86c")
 		)
 		(pin "2"
-			(uuid "e1d556a4-2001-4595-9645-4c9b46b49408")
+			(uuid "e1d556a4-2001-4595-9645-4c9b46b4940e")
 		)
 		(pin "3"
-			(uuid "c69d384e-e2ab-4139-853c-7530022551be")
+			(uuid "c69d384e-e2ab-4139-853c-7530022551c4")
 		)
 		(pin "1"
-			(uuid "9243eb60-206f-4307-9c17-5c5eb8a8ea78")
+			(uuid "9243eb60-206f-4307-9c17-5c5eb8a8ea7e")
 		)
 		(pin "6"
-			(uuid "637552af-a185-444e-b40e-08517a95ac0c")
+			(uuid "637552af-a185-444e-b40e-08517a95ac12")
 		)
 		(pin "5"
-			(uuid "46b2b650-2a98-4ccc-9497-9e1f0c426b0a")
+			(uuid "46b2b650-2a98-4ccc-9497-9e1f0c426b10")
 		)
 		(pin "4"
-			(uuid "02929752-7288-4885-85e6-c042daf44f60")
+			(uuid "02929752-7288-4885-85e6-c042daf44f66")
 		)
 		(pin "12"
-			(uuid "9fbb8820-6f3b-44ff-a927-ab216199c611")
+			(uuid "9fbb8820-6f3b-44ff-a927-ab216199c617")
 		)
 		(pin "8"
-			(uuid "711e432c-e390-48e3-b07d-e566558a3251")
+			(uuid "711e432c-e390-48e3-b07d-e566558a3257")
 		)
 		(pin "10"
-			(uuid "ee34ae82-3c4a-485f-a547-86d992495061")
+			(uuid "ee34ae82-3c4a-485f-a547-86d992495067")
 		)
 		(pin "14"
-			(uuid "c331e7b8-0080-43db-a286-d7ad987814d7")
+			(uuid "c331e7b8-0080-43db-a286-d7ad987814dd")
 		)
 		(pin "7"
-			(uuid "f4426e4f-8ab8-4f57-a0ec-3a3923f8419b")
+			(uuid "f4426e4f-8ab8-4f57-a0ec-3a3923f841a1")
 		)
 		(pin "11"
-			(uuid "d99eec47-99ae-4c31-bc1f-8c198852a6d1")
+			(uuid "d99eec47-99ae-4c31-bc1f-8c198852a6d7")
 		)
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a74f3346-7c03-4c57-ba3a-21feab752d20"
-					(reference "U61")
+					(reference "Uf3")
 					(unit 4)
 				)
 			)

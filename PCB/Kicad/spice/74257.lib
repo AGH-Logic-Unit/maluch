@@ -1,0 +1,44 @@
+* 74257 model
+ 
+.subckt 74257 S ia0 ia1 oa ib0 ib1 ob GND od id1 id0 oc ic1 ic0 nE Vcc
+
+*necessary for proper output calculations
+Ro0  oa GND 1G
+Ro1  ob GND 1G
+Ro2  oc GND 1G
+Ro3  od GND 1G
+
+*muxing
+aa0 [ia0 ~S  ] sa0 and
+aa1 [ia1  S  ] sa1 and
+aa2 [sa0  sa1] toa or
+
+ab0 [ib0 ~S  ] sb0 and
+ab1 [ib1  S  ] sb1 and
+ab2 [sb0  sb1] tob or
+
+ac0 [ic0 ~S  ] sc0 and
+ac1 [ic1  S  ] sc1 and
+ac2 [sc0  sc1] toc or
+
+ad0 [id0 ~S  ] sd0 and
+ad1 [id1  S  ] sd1 and
+ad2 [sd0  sd1] tod or
+
+
+*buffers
+ao1 toa ~nE oa tri
+ao2 tob ~nE ob tri
+ao3 toc ~nE oc tri
+ao4 tod ~nE od tri
+
+.model and  d_and       (rise_delay=1.0e-12 fall_delay=2.0e-12
++                        input_load=1.0e-12)
+
+.model or   d_or        (rise_delay=1.0e-12 fall_delay=2.0e-12
++                        input_load=1.0e-12)
+
+.model tri  d_tristate  (input_load=1.0e-12)
+
+.ends
+

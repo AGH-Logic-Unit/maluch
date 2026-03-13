@@ -73,13 +73,13 @@ adf5 in5 CP GND GND Q5 null dff
 adf6 in6 CP GND GND Q6 null dff
 adf7 in7 CP GND GND Q7 null dff
 
-.model and  d_and       (rise_delay=1.0e-6 fall_delay=2.0e-6
+.model and  d_and       (rise_delay=1.0e-12 fall_delay=2.0e-12
 +                        input_load=1.0e-12)
 
-.model or   d_or        (rise_delay=1.0e-6 fall_delay=2.0e-6
+.model or   d_or        (rise_delay=1.0e-12 fall_delay=2.0e-12
 +                        input_load=1.0e-12)
 
-.model inv  d_inverter  (rise_delay=1.0e-6 fall_delay=2.0e-6
+.model inv  d_inverter  (rise_delay=1.0e-12 fall_delay=2.0e-12
 +                        input_load=1.0e-12)
 
 .model dff  d_dff       (clk_delay = 13.0e-9 set_delay = 25.0e-9

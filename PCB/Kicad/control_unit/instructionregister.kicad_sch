@@ -4,6 +4,15 @@
 	(generator_version "9.0")
 	(uuid "a14c4a96-5d68-4b9e-9b40-61502e396fbd")
 	(paper "A4")
+	(title_block
+		(title "Instruction Register")
+		(date "2026-03-11")
+		(rev "1")
+		(company "AGH Logic Unit")
+		(comment 1 "NOT Spice checked")
+		(comment 2 "review: -")
+		(comment 3 "author: Hubert Wójcik")
+	)
 	(lib_symbols
 		(symbol "74xx:74LS257"
 			(pin_names
@@ -757,6 +766,15 @@
 		(at 227.33 86.36)
 		(uuid "6a7176e8-d346-40f3-8f99-4d316f023290")
 	)
+	(bus_entry
+		(at 160.02 80.01)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7d47555-86d8-4b64-b5fd-fb2e5df7dd5a")
+	)
 	(bus
 		(pts
 			(xy 118.11 59.69) (xy 118.11 80.01)
@@ -779,6 +797,16 @@
 	)
 	(bus
 		(pts
+			(xy 160.02 80.01) (xy 161.925 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29d7f7cd-3cde-4649-a0d3-0ae881ec8d21")
+	)
+	(bus
+		(pts
 			(xy 104.14 80.01) (xy 118.11 80.01)
 		)
 		(stroke
@@ -796,6 +824,16 @@
 			(type default)
 		)
 		(uuid "44acac1a-c6d3-4ce8-ad4b-67939ec15fc6")
+	)
+	(wire
+		(pts
+			(xy 162.56 76.835) (xy 175.26 76.835)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "564c63ae-93fe-43a5-86ba-ae07c84b3a6a")
 	)
 	(wire
 		(pts
@@ -837,6 +875,26 @@
 		)
 		(uuid "ba8461ce-04d1-4114-97ea-f5791b872c51")
 	)
+	(wire
+		(pts
+			(xy 162.56 77.47) (xy 162.56 76.835)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be707d40-d065-493e-a2e7-eee35260ede6")
+	)
+	(bus
+		(pts
+			(xy 157.48 80.01) (xy 160.02 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbe1207d-adaf-43c8-a795-7b10cd06e207")
+	)
 	(label "instr[15..12]"
 		(at 198.12 69.85 180)
 		(effects
@@ -867,7 +925,7 @@
 		)
 		(uuid "0474aefc-ea8c-4b20-94ee-ae3fca4544b4")
 	)
-	(label "regid0"
+	(label "regid2"
 		(at 243.84 142.24 0)
 		(effects
 			(font
@@ -897,7 +955,7 @@
 		)
 		(uuid "169eaf0b-5e73-4139-8712-ffa422b7b73e")
 	)
-	(label "regid0"
+	(label "regid3"
 		(at 254 142.24 0)
 		(effects
 			(font
@@ -948,7 +1006,7 @@
 		(uuid "5b6e245c-af8f-41ed-872c-71a46dc50d16")
 	)
 	(label "instr[10..8]"
-		(at 198.12 74.93 180)
+		(at 198.12 83.82 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -966,6 +1024,16 @@
 			(justify left bottom)
 		)
 		(uuid "88f1a904-9ba3-4a85-99e0-834228c94123")
+	)
+	(label "instr11"
+		(at 164.465 76.835 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9512fd00-048d-48de-aa2a-9f61407a108a")
 	)
 	(label "instr4"
 		(at 161.29 142.24 180)
@@ -998,7 +1066,7 @@
 		(uuid "c00f0966-5ea0-4994-8fbe-5b2f37e02be3")
 	)
 	(label "instr[15..0]"
-		(at 157.48 80.01 0)
+		(at 161.925 80.01 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1017,17 +1085,7 @@
 		)
 		(uuid "d90f80b7-ae97-4fb7-8855-b445be5c2714")
 	)
-	(label "instr11"
-		(at 198.12 72.39 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e4a9eb97-c96d-4c24-8810-1561faac8732")
-	)
-	(label "regid0"
+	(label "regid1"
 		(at 233.68 142.24 0)
 		(effects
 			(font
@@ -1061,7 +1119,7 @@
 	)
 	(hierarchical_label "funct[2..0]"
 		(shape output)
-		(at 198.12 74.93 0)
+		(at 198.12 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1127,7 +1185,7 @@
 	)
 	(hierarchical_label "isimm"
 		(shape output)
-		(at 198.12 72.39 0)
+		(at 175.26 76.835 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1421,7 +1479,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69f83878-7461-4601-8574-777f0f6bc829")
-		(property "Reference" "R35"
+		(property "Reference" "Rir2"
 			(at 236.22 137.1599 0)
 			(effects
 				(font
@@ -1439,7 +1497,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 235.458 138.43 90)
 			(effects
 				(font
@@ -1475,7 +1533,7 @@
 		(instances
 			(project "control_unit"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/8dd513a7-9e42-4785-8158-c05d517a1257"
-					(reference "R35")
+					(reference "Rir2")
 					(unit 1)
 				)
 			)
@@ -1491,7 +1549,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "912167a9-0850-4e47-86c2-fda1867c6f6d")
-		(property "Reference" "R37"
+		(property "Reference" "Rir4"
 			(at 256.54 144.7799 0)
 			(effects
 				(font
@@ -1509,7 +1567,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 252.222 146.05 90)
 			(effects
 				(font
@@ -1545,7 +1603,7 @@
 		(instances
 			(project "control_unit"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/8dd513a7-9e42-4785-8158-c05d517a1257"
-					(reference "R37")
+					(reference "Rir4")
 					(unit 1)
 				)
 			)
@@ -1627,7 +1685,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b75c3257-4092-412c-9db2-ff725cb676d1")
-		(property "Reference" "R36"
+		(property "Reference" "Rir3"
 			(at 246.38 144.7799 0)
 			(effects
 				(font
@@ -1645,7 +1703,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 242.062 146.05 90)
 			(effects
 				(font
@@ -1681,7 +1739,7 @@
 		(instances
 			(project "control_unit"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/8dd513a7-9e42-4785-8158-c05d517a1257"
-					(reference "R36")
+					(reference "Rir3")
 					(unit 1)
 				)
 			)
@@ -1697,7 +1755,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b7ecb8b8-a9ec-466b-901b-8897a0f662f5")
-		(property "Reference" "U12"
+		(property "Reference" "Uinsr1"
 			(at 176.1333 111.76 0)
 			(effects
 				(font
@@ -1715,7 +1773,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 173.99 134.62 0)
 			(effects
 				(font
@@ -1793,7 +1851,7 @@
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/8dd513a7-9e42-4785-8158-c05d517a1257"
-					(reference "U12")
+					(reference "Uinsr1")
 					(unit 1)
 				)
 			)
@@ -1875,7 +1933,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ea42d4fb-e1f8-4f24-84cd-e97a8e93ac08")
-		(property "Reference" "R34"
+		(property "Reference" "Rir1"
 			(at 226.06 144.7799 0)
 			(effects
 				(font
@@ -1893,7 +1951,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 221.742 146.05 90)
 			(effects
 				(font
@@ -1929,7 +1987,7 @@
 		(instances
 			(project "control_unit"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/8dd513a7-9e42-4785-8158-c05d517a1257"
-					(reference "R34")
+					(reference "Rir1")
 					(unit 1)
 				)
 			)
