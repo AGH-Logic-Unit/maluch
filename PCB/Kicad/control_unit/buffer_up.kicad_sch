@@ -4,6 +4,15 @@
 	(generator_version "9.0")
 	(uuid "1abfe13c-b7bf-4aa5-81ff-5a969ce55a16")
 	(paper "A4")
+	(title_block
+		(title "Buffer Down -> Top")
+		(date "2026-03-06")
+		(rev "1")
+		(company "AGH Logic Unit")
+		(comment 1 "Spice Checked")
+		(comment 2 "review: - ")
+		(comment 3 "author: Hubert Wójcik")
+	)
 	(lib_symbols
 		(symbol "74xx:74HC245"
 			(pin_names
@@ -1115,6 +1124,101 @@
 		(uuid "8e38c2ac-4f44-442d-b655-13e221a60796")
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 111.76 80.01 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0c04001c-258c-4d97-ab92-0c113f6e4db8")
+		(property "Reference" "#PWR0116"
+			(at 105.41 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 107.95 80.0099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 111.76 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "59ea1144-2f80-4541-95f3-9187e034b8e9")
+		)
+		(instances
+			(project "control_unit"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/3744fb0f-ac07-41fc-b6c3-97955bda687d"
+					(reference "#PWR0157")
+					(unit 1)
+				)
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/67e04e41-66ab-4fc5-b561-dc65b85d5d13"
+					(reference "#PWR0154")
+					(unit 1)
+				)
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/861c6f30-31b8-4a23-93d7-072e0ad1145f"
+					(reference "#PWR0135")
+					(unit 1)
+				)
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/a84006ef-1857-49ae-9bf4-ea3a22a698a5"
+					(reference "#PWR0132")
+					(unit 1)
+				)
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/b014ef02-9cbc-4c7f-a6eb-383e9c81a3c4"
+					(reference "#PWR0151")
+					(unit 1)
+				)
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/f6b3e3da-ae75-4dc0-8c19-f89bb89bfdea"
+					(reference "#PWR0160")
+					(unit 1)
+				)
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/c0031539-c4c3-432d-9a69-ce5a0aa72fa8/0a6a9eb9-d6de-41cb-b688-88e6d432538a"
+					(reference "#PWR0116")
+					(unit 1)
+				)
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/c0031539-c4c3-432d-9a69-ce5a0aa72fa8/dd347045-cf54-4035-b500-ae19ac73b76a"
+					(reference "#PWR0119")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74HC245")
 		(at 132.08 69.85 0)
 		(unit 1)
@@ -1124,7 +1228,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3485ea2f-5305-4d6f-accd-eac74b59d710")
-		(property "Reference" "U17"
+		(property "Reference" "Ubu14"
 			(at 134.2233 49.53 0)
 			(effects
 				(font
@@ -1142,7 +1246,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm"
 			(at 132.08 69.85 0)
 			(effects
 				(font
@@ -1232,35 +1336,130 @@
 		(instances
 			(project "control_unit"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/3744fb0f-ac07-41fc-b6c3-97955bda687d"
-					(reference "U49")
+					(reference "Ubu10")
 					(unit 1)
 				)
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/67e04e41-66ab-4fc5-b561-dc65b85d5d13"
-					(reference "U42")
+					(reference "Ubu8")
 					(unit 1)
 				)
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/861c6f30-31b8-4a23-93d7-072e0ad1145f"
-					(reference "U35")
+					(reference "Ubu4")
 					(unit 1)
 				)
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/a84006ef-1857-49ae-9bf4-ea3a22a698a5"
-					(reference "U30")
+					(reference "Ubu2")
 					(unit 1)
 				)
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/b014ef02-9cbc-4c7f-a6eb-383e9c81a3c4"
-					(reference "U37")
+					(reference "Ubu6")
 					(unit 1)
 				)
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/f6b3e3da-ae75-4dc0-8c19-f89bb89bfdea"
-					(reference "U51")
+					(reference "Ubu12")
 					(unit 1)
 				)
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/c0031539-c4c3-432d-9a69-ce5a0aa72fa8/0a6a9eb9-d6de-41cb-b688-88e6d432538a"
-					(reference "U17")
+					(reference "Ubu14")
 					(unit 1)
 				)
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/c0031539-c4c3-432d-9a69-ce5a0aa72fa8/dd347045-cf54-4035-b500-ae19ac73b76a"
-					(reference "U19")
+					(reference "Ubu16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 72.39 80.01 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "40738a7c-9ea5-4163-9691-d3cee0cba0e4")
+		(property "Reference" "#PWR047"
+			(at 66.04 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 69.215 80.0099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 72.39 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 72.39 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 72.39 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "88057449-308d-4082-89e1-31e4998d418f")
+		)
+		(instances
+			(project "control_unit"
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/3744fb0f-ac07-41fc-b6c3-97955bda687d"
+					(reference "#PWR0110")
+					(unit 1)
+				)
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/67e04e41-66ab-4fc5-b561-dc65b85d5d13"
+					(reference "#PWR097")
+					(unit 1)
+				)
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/861c6f30-31b8-4a23-93d7-072e0ad1145f"
+					(reference "#PWR056")
+					(unit 1)
+				)
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/a84006ef-1857-49ae-9bf4-ea3a22a698a5"
+					(reference "#PWR053")
+					(unit 1)
+				)
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/b014ef02-9cbc-4c7f-a6eb-383e9c81a3c4"
+					(reference "#PWR094")
+					(unit 1)
+				)
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/f6b3e3da-ae75-4dc0-8c19-f89bb89bfdea"
+					(reference "#PWR0113")
+					(unit 1)
+				)
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/c0031539-c4c3-432d-9a69-ce5a0aa72fa8/0a6a9eb9-d6de-41cb-b688-88e6d432538a"
+					(reference "#PWR047")
+					(unit 1)
+				)
+				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/c0031539-c4c3-432d-9a69-ce5a0aa72fa8/dd347045-cf54-4035-b500-ae19ac73b76a"
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -1455,100 +1654,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 111.76 80.01 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "96206d35-2907-4215-a2f0-9e2074932eb7")
-		(property "Reference" "#PWR050"
-			(at 111.76 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 111.76 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 111.76 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.76 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 111.76 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4731a489-b955-402d-afc5-efc4cef3b674")
-		)
-		(instances
-			(project "control_unit"
-				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/3744fb0f-ac07-41fc-b6c3-97955bda687d"
-					(reference "#PWR0154")
-					(unit 1)
-				)
-				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/67e04e41-66ab-4fc5-b561-dc65b85d5d13"
-					(reference "#PWR0135")
-					(unit 1)
-				)
-				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/861c6f30-31b8-4a23-93d7-072e0ad1145f"
-					(reference "#PWR0113")
-					(unit 1)
-				)
-				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/a84006ef-1857-49ae-9bf4-ea3a22a698a5"
-					(reference "#PWR097")
-					(unit 1)
-				)
-				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/b014ef02-9cbc-4c7f-a6eb-383e9c81a3c4"
-					(reference "#PWR0119")
-					(unit 1)
-				)
-				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/f6b3e3da-ae75-4dc0-8c19-f89bb89bfdea"
-					(reference "#PWR0160")
-					(unit 1)
-				)
-				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/c0031539-c4c3-432d-9a69-ce5a0aa72fa8/0a6a9eb9-d6de-41cb-b688-88e6d432538a"
-					(reference "#PWR050")
-					(unit 1)
-				)
-				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/c0031539-c4c3-432d-9a69-ce5a0aa72fa8/dd347045-cf54-4035-b500-ae19ac73b76a"
-					(reference "#PWR056")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "74xx:74HC245")
 		(at 91.44 69.85 0)
 		(unit 1)
@@ -1558,7 +1663,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aa58f64c-848d-4631-ba6d-eaea265f7dc8")
-		(property "Reference" "U16"
+		(property "Reference" "Ubu13"
 			(at 93.5833 49.53 0)
 			(effects
 				(font
@@ -1576,7 +1681,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm"
 			(at 91.44 69.85 0)
 			(effects
 				(font
@@ -1666,129 +1771,35 @@
 		(instances
 			(project "control_unit"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/3744fb0f-ac07-41fc-b6c3-97955bda687d"
-					(reference "U48")
+					(reference "Ubu9")
 					(unit 1)
 				)
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/67e04e41-66ab-4fc5-b561-dc65b85d5d13"
-					(reference "U41")
+					(reference "Ubu7")
 					(unit 1)
 				)
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/861c6f30-31b8-4a23-93d7-072e0ad1145f"
-					(reference "U34")
+					(reference "Ubu3")
 					(unit 1)
 				)
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/a84006ef-1857-49ae-9bf4-ea3a22a698a5"
-					(reference "U29")
+					(reference "Ubu1")
 					(unit 1)
 				)
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/b014ef02-9cbc-4c7f-a6eb-383e9c81a3c4"
-					(reference "U36")
+					(reference "Ubu5")
 					(unit 1)
 				)
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/f6b3e3da-ae75-4dc0-8c19-f89bb89bfdea"
-					(reference "U50")
+					(reference "Ubu11")
 					(unit 1)
 				)
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/c0031539-c4c3-432d-9a69-ce5a0aa72fa8/0a6a9eb9-d6de-41cb-b688-88e6d432538a"
-					(reference "U16")
+					(reference "Ubu13")
 					(unit 1)
 				)
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/c0031539-c4c3-432d-9a69-ce5a0aa72fa8/dd347045-cf54-4035-b500-ae19ac73b76a"
-					(reference "U18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 72.39 80.01 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ac1a9441-8106-4eb4-a0a1-29fe36a459f8")
-		(property "Reference" "#PWR047"
-			(at 72.39 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 72.39 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 72.39 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 72.39 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 72.39 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a04f7cf2-4108-4de0-8637-a7d5e3c4bc84")
-		)
-		(instances
-			(project "control_unit"
-				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/3744fb0f-ac07-41fc-b6c3-97955bda687d"
-					(reference "#PWR0151")
-					(unit 1)
-				)
-				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/67e04e41-66ab-4fc5-b561-dc65b85d5d13"
-					(reference "#PWR0132")
-					(unit 1)
-				)
-				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/861c6f30-31b8-4a23-93d7-072e0ad1145f"
-					(reference "#PWR0110")
-					(unit 1)
-				)
-				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/a84006ef-1857-49ae-9bf4-ea3a22a698a5"
-					(reference "#PWR094")
-					(unit 1)
-				)
-				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/b014ef02-9cbc-4c7f-a6eb-383e9c81a3c4"
-					(reference "#PWR0116")
-					(unit 1)
-				)
-				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/a82b8d26-6b75-458e-b02e-293c0a6baacc/f6b3e3da-ae75-4dc0-8c19-f89bb89bfdea"
-					(reference "#PWR0157")
-					(unit 1)
-				)
-				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/c0031539-c4c3-432d-9a69-ce5a0aa72fa8/0a6a9eb9-d6de-41cb-b688-88e6d432538a"
-					(reference "#PWR047")
-					(unit 1)
-				)
-				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/c0031539-c4c3-432d-9a69-ce5a0aa72fa8/dd347045-cf54-4035-b500-ae19ac73b76a"
-					(reference "#PWR053")
+					(reference "Ubu15")
 					(unit 1)
 				)
 			)

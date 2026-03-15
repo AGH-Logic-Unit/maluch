@@ -1,0 +1,41 @@
+* 744067
+* THIS MODEL IS SUITABLE FOR USE ONLY IN MUX CONFIGURATION
+ 
+.subckt 744067 out I07 I06 I05 I04 I03 I02 I01 I00 S0 S1 GND S3 S2 nE I15 I14 I13 I12 I11 I10 I09 I08 VCC
+
+*necessary for proper output calculations
+Ro0 out GND 1G
+
+*muxing
+aa00 [I00 ~S3 ~S2 ~S1 ~S0] sa00 and
+aa01 [I01 ~S3 ~S2 ~S1  S0] sa01 and
+aa02 [I02 ~S3 ~S2  S1 ~S0] sa02 and
+aa03 [I03 ~S3 ~S2  S1  S0] sa03 and
+aa04 [I04 ~S3  S2 ~S1 ~S0] sa04 and
+aa05 [I05 ~S3  S2 ~S1  S0] sa05 and
+aa06 [I06 ~S3  S2  S1 ~S0] sa06 and
+aa07 [I07 ~S3  S2  S1  S0] sa07 and
+aa08 [I08  S3 ~S2 ~S1 ~S0] sa08 and
+aa09 [I09  S3 ~S2 ~S1  S0] sa09 and
+aa10 [I10  S3 ~S2  S1 ~S0] sa10 and
+aa11 [I11  S3 ~S2  S1  S0] sa11 and
+aa12 [I12  S3  S2 ~S1 ~S0] sa12 and
+aa13 [I13  S3  S2 ~S1  S0] sa13 and
+aa14 [I14  S3  S2  S1 ~S0] sa14 and
+aa15 [I15  S3  S2  S1  S0] sa15 and
+
+aa99 [sa00 sa01 sa02 sa03 sa04 sa05 sa06 sa07 sa08 sa09 sa10 sa11 sa12 sa13 sa14 sa15] tout or
+
+*buffers
+ao1 tout ~nE out tri
+
+.model and  d_and       (rise_delay=1.0e-12 fall_delay=2.0e-12
++                        input_load=1.0e-12)
+
+.model or   d_or        (rise_delay=1.0e-12 fall_delay=2.0e-12
++                        input_load=1.0e-12)
+
+.model tri  d_tristate  (input_load=1.0e-12)
+
+.ends
+

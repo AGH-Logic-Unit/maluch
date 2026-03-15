@@ -1,0 +1,24 @@
+* 7404 model
+ 
+.subckt 7404 A0 Y0 A1 Y1 A2 Y2 GND Y3 A3 Y4 A4 Y5 A5 VCC
+
+*necessary for proper output calculations
+Ro0  Y0 GND 1G
+Ro1  Y1 GND 1G
+Ro2  Y2 GND 1G
+Ro3  Y3 GND 1G
+Ro4  Y4 GND 1G
+Ro5  Y5 GND 1G
+
+*gates
+a0 A0 Y0 inv
+a1 A1 Y1 inv
+a2 A2 Y2 inv
+a3 A3 Y3 inv
+a4 A4 Y4 inv
+a5 A5 Y5 inv
+
+.model inv d_inverter (rise_delay=1.0e-6 fall_delay=2.0e-6
++                      input_load=1.0e-12)
+
+.ends

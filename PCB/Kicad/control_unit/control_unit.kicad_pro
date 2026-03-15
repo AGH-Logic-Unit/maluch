@@ -239,7 +239,24 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "lib_symbol_mismatch|1282700|1200150|0e71b38d-2e81-430d-b3e0-996fc299501c|00000000-0000-0000-0000-000000000000|||",
+        "edited"
+      ],
+      [
+        "lib_symbol_mismatch|1854200|1200150|52e37161-9b50-4279-99c2-6a7aea91e88e|00000000-0000-0000-0000-000000000000|||",
+        "edited"
+      ],
+      [
+        "lib_symbol_mismatch|2463800|1200150|3226821a-81b0-49eb-b636-21cad9e0b634|00000000-0000-0000-0000-000000000000|||",
+        "edited"
+      ],
+      [
+        "lib_symbol_mismatch|723900|1200150|b94a3697-adbe-4eb5-b2ff-6f17f23d8acd|00000000-0000-0000-0000-000000000000|||",
+        "edited"
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -422,7 +439,7 @@
       "different_unit_net": "error",
       "duplicate_reference": "error",
       "duplicate_sheet_names": "error",
-      "endpoint_off_grid": "warning",
+      "endpoint_off_grid": "ignore",
       "extra_units": "error",
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
@@ -437,13 +454,13 @@
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
       "missing_unit": "warning",
-      "multiple_net_names": "warning",
+      "multiple_net_names": "ignore",
       "net_not_bus_member": "warning",
       "no_connect_connected": "warning",
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "ignore",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -610,6 +627,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "space_save_all_events": true,
@@ -750,6 +775,10 @@
     [
       "9a79b597-abb2-44e5-893d-3b1e1cb1e119",
       "cyclereg"
+    ],
+    [
+      "9816758e-ab1e-4820-8b48-eee1586c314a",
+      "tempreg"
     ]
   ],
   "text_variables": {}

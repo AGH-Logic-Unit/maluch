@@ -43,10 +43,9 @@ a26 B6 lba A6 tri
 a27 B7 lba A7 tri
 a28 B8 lba A8 tri
 
-.model and  d_and       (rise_delay=1.0e-6 fall_delay=2.0e-6
+.model and  d_and       (rise_delay=1.0e-12 fall_delay=2.0e-12
 +                        input_load=1.0e-12)
 
-.model tri  d_tristate  (rise_delay=1.0e-6 fall_delay=2.0e-6
-+                        input_load=1.0e-12)
+.model tri  d_tristate  ()
 
 .ends

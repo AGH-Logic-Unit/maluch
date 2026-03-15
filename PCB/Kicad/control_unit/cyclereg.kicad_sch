@@ -4,6 +4,15 @@
 	(generator_version "9.0")
 	(uuid "7be5dbb6-1ef2-4e7c-b752-bedf496d5eab")
 	(paper "A4")
+	(title_block
+		(title "Cycle counter")
+		(date "2026-03-11")
+		(rev "1")
+		(company "AGH Logic Unit")
+		(comment 1 "Spice checked")
+		(comment 2 "review: - ")
+		(comment 3 "author: Hubert Wójcik")
+	)
 	(lib_symbols
 		(symbol "74xx:74LS257"
 			(pin_names
@@ -1676,6 +1685,10 @@
 		(uuid "3d8bacdf-bf12-464d-86f6-7f92d8c95888")
 	)
 	(no_connect
+		(at 107.95 91.44)
+		(uuid "6585def2-a787-47fc-8bb9-729dd89272a1")
+	)
+	(no_connect
 		(at 242.57 82.55)
 		(uuid "86c30983-c82d-4f97-8229-7a2708781af8")
 	)
@@ -1989,6 +2002,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 74.295) (xy 123.19 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "905f7c92-bbfa-4e2f-a040-30ae63922483")
+	)
+	(wire
+		(pts
 			(xy 107.95 86.36) (xy 113.03 86.36)
 		)
 		(stroke
@@ -2237,7 +2260,7 @@
 		)
 		(uuid "f9f9fa3e-ea98-4e35-a3ca-e9cea756ba75")
 	)
-	(hierarchical_label "~{rst}"
+	(hierarchical_label "rst"
 		(shape input)
 		(at 124.46 111.76 180)
 		(effects
@@ -2554,10 +2577,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6aee57ca-71c0-4531-a936-447c5fffc11b")
-		(property "Reference" "R61"
-			(at 203.2 68.5799 0)
+		(property "Reference" "Rcr4"
+			(at 201.93 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2566,7 +2588,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 203.2 71.1199 0)
+			(at 201.93 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2574,7 +2596,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 198.882 69.85 90)
 			(effects
 				(font
@@ -2610,7 +2632,7 @@
 		(instances
 			(project "control_unit"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/9a79b597-abb2-44e5-893d-3b1e1cb1e119"
-					(reference "R61")
+					(reference "Rcr4")
 					(unit 1)
 				)
 			)
@@ -2626,7 +2648,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6d7db33c-7e91-4165-a42e-5bfbc585d68e")
-		(property "Reference" "U66"
+		(property "Reference" "Ucr1"
 			(at 97.3933 71.12 0)
 			(effects
 				(font
@@ -2644,7 +2666,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 95.25 91.44 0)
 			(effects
 				(font
@@ -2663,6 +2685,42 @@
 			)
 		)
 		(property "Description" "4-bit full Adder"
+			(at 95.25 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/Projects/Computers/maluch_pcb/PCB/Kicad/spice/74283.lib"
+			(at 95.25 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "74HC283"
+			(at 95.25 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 95.25 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=S2 2=B2 3=A2 4=S1 5=A1 6=B1 7=C0 8=GND 9=C4 10=S4 11=B4 12=A4 13=S3 14=A3 15=B3 16=VCC"
 			(at 95.25 91.44 0)
 			(effects
 				(font
@@ -2722,7 +2780,7 @@
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/9a79b597-abb2-44e5-893d-3b1e1cb1e119"
-					(reference "U66")
+					(reference "Ucr1")
 					(unit 1)
 				)
 			)
@@ -2736,10 +2794,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "72e9b9e2-807f-4944-91c8-f72271ade3ed")
-		(property "Reference" "R60"
-			(at 195.58 68.5799 0)
+		(property "Reference" "Rcr3"
+			(at 194.31 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2748,7 +2805,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 195.58 71.1199 0)
+			(at 194.31 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2756,7 +2813,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 191.262 69.85 90)
 			(effects
 				(font
@@ -2792,7 +2849,7 @@
 		(instances
 			(project "control_unit"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/9a79b597-abb2-44e5-893d-3b1e1cb1e119"
-					(reference "R60")
+					(reference "Rcr3")
 					(unit 1)
 				)
 			)
@@ -2800,7 +2857,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 123.19 78.74 270)
+		(at 123.19 74.295 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2809,7 +2866,7 @@
 		(fields_autoplaced yes)
 		(uuid "7e8e936f-78ea-44e3-9eaf-7ac961473527")
 		(property "Reference" "#PWR0211"
-			(at 116.84 78.74 0)
+			(at 116.84 74.295 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2818,7 +2875,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 119.38 78.7399 90)
+			(at 119.38 74.2949 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2827,7 +2884,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.19 78.74 0)
+			(at 123.19 74.295 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2836,7 +2893,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 78.74 0)
+			(at 123.19 74.295 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2845,7 +2902,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 123.19 78.74 0)
+			(at 123.19 74.295 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2941,7 +2998,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8dce8aba-7073-491e-a7ff-42267a38b92d")
-		(property "Reference" "U65"
+		(property "Reference" "Ucr3"
 			(at 218.0433 71.12 0)
 			(effects
 				(font
@@ -2959,7 +3016,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SSOP-20_5.3x7.2mm_P0.65mm"
 			(at 215.9 91.44 0)
 			(effects
 				(font
@@ -2978,6 +3035,42 @@
 			)
 		)
 		(property "Description" "8-bit Register"
+			(at 215.9 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/Projects/Computers/maluch_pcb/PCB/Kicad/spice/74377.lib"
+			(at 215.9 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "74377"
+			(at 215.9 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 215.9 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=nE 2=Q0 3=D0 4=D1 5=Q1 6=Q2 7=D2 8=D3 9=Q3 10=GND 11=CP 12=Q4 13=D4 14=D5 15=Q5 16=Q6 17=D6 18=D7 19=Q7 20=VCC"
 			(at 215.9 91.44 0)
 			(effects
 				(font
@@ -3049,7 +3142,7 @@
 		(instances
 			(project "control_unit"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/9a79b597-abb2-44e5-893d-3b1e1cb1e119"
-					(reference "U65")
+					(reference "Ucr3")
 					(unit 1)
 				)
 			)
@@ -3195,10 +3288,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "cee04269-0d1d-4008-a6c6-aa6d63732f00")
-		(property "Reference" "R59"
-			(at 187.96 68.5799 0)
+		(property "Reference" "Rcr2"
+			(at 186.69 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3207,7 +3299,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 187.96 71.1199 0)
+			(at 186.69 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3215,7 +3307,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 183.642 69.85 90)
 			(effects
 				(font
@@ -3251,7 +3343,7 @@
 		(instances
 			(project "control_unit"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/9a79b597-abb2-44e5-893d-3b1e1cb1e119"
-					(reference "R59")
+					(reference "Rcr2")
 					(unit 1)
 				)
 			)
@@ -3267,7 +3359,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e6103db3-7b9a-433f-82ae-4094ebde2255")
-		(property "Reference" "U67"
+		(property "Reference" "Ucr2"
 			(at 139.3033 71.12 0)
 			(effects
 				(font
@@ -3285,7 +3377,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 137.16 93.98 0)
 			(effects
 				(font
@@ -3304,6 +3396,42 @@
 			)
 		)
 		(property "Description" "Quad 2 to 1 Multiplexer"
+			(at 137.16 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/sarvel/Projects/Computers/maluch_pcb/PCB/Kicad/spice/74257.lib"
+			(at 137.16 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "74257"
+			(at 137.16 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 137.16 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=S 2=ia0 3=ia1 4=oa 5=ib0 6=ib1 7=ob 8=GND 9=od 10=id1 11=id0 12=oc 13=ic1 14=ic0 15=nE 16=Vcc"
 			(at 137.16 93.98 0)
 			(effects
 				(font
@@ -3363,7 +3491,7 @@
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/9a79b597-abb2-44e5-893d-3b1e1cb1e119"
-					(reference "U67")
+					(reference "Ucr2")
 					(unit 1)
 				)
 			)
@@ -3509,10 +3637,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "eed13145-1aef-4277-8b81-2ed95519d931")
-		(property "Reference" "R58"
-			(at 180.34 68.5799 0)
+		(property "Reference" "Rcr1"
+			(at 179.07 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3521,7 +3648,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 180.34 71.1199 0)
+			(at 179.07 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3529,7 +3656,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 176.022 69.85 90)
 			(effects
 				(font
@@ -3565,7 +3692,7 @@
 		(instances
 			(project "control_unit"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/a601307c-be83-4128-aa2e-f19df4dff19c/9a79b597-abb2-44e5-893d-3b1e1cb1e119"
-					(reference "R58")
+					(reference "Rcr1")
 					(unit 1)
 				)
 			)

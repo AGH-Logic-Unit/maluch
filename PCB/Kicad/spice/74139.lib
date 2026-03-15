@@ -1,0 +1,31 @@
+* 74139 model
+ 
+.subckt 74139 nG1 A1 B1 Y10 Y11 Y12 Y13 GND Y23 Y22 Y21 Y20 B2 A2 nG2 VCC
+
+*necessary for proper output calculations
+Ro10  Y10 GND 1G
+Ro11  Y11 GND 1G
+Ro12  Y12 GND 1G
+Ro13  Y13 GND 1G
+Ro20  Y20 GND 1G
+Ro21  Y21 GND 1G
+Ro22  Y22 GND 1G
+Ro23  Y23 GND 1G
+
+*Y1 gates
+a10 [~nG1 ~A1 ~B1] Y10 nand
+a11 [~nG1  A1 ~B1] Y11 nand
+a12 [~nG1 ~A1  B1] Y12 nand
+a13 [~nG1  A1  B1] Y13 nand
+
+*Y2 gates
+a20 [~nG2 ~A2 ~B2] Y20 nand
+a21 [~nG2  A2 ~B2] Y21 nand
+a22 [~nG2 ~A2  B2] Y22 nand
+a23 [~nG2  A2  B2] Y23 nand
+
+
+.model nand d_nand (rise_delay=1.0e-6 fall_delay=2.0e-6
++                   input_load=1.0e-12)
+
+.ends
