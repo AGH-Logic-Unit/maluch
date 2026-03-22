@@ -1,0 +1,34 @@
+* PODMODELE BRAMEK
+.model d_xor_hc d_xor(rise_delay=10ns fall_delay=10ns)
+.model d_and_hc d_and(rise_delay=10ns fall_delay=10ns)
+.model d_or_hc  d_or(rise_delay=10ns fall_delay=10ns)
+
+* PODMODEL PEŁNEGO SUMATORA (1-BIT)
+.subckt FULL_ADDER_1B A B Cin Sum Cout
+  a_xor1 [A B]   xor_int d_xor_hc
+  a_xor2 [xor_int Cin] Sum d_xor_hc
+  
+  a_and1 [A B]   and1_int d_and_hc
+  a_and2 [Cin xor_int] and2_int d_and_hc
+  a_or1  [and1_int and2_int] Cout d_or_hc
+.ends
+
+* 74HC283
+.SUBCKT 74HC283 S2 B2 A2 S1 A1 B1 C0 GND C4 S4 B4 A4 S3 A3 B3 VCC
+
+R1 A1 GND 1G
+R2 A2 GND 1G
+R3 A3 GND 1G
+R4 A4 GND 1G
+R5 B1 GND 1G
+R6 B2 GND 1G
+R7 B3 GND 1G
+R8 B4 GND 1G
+R9 C0 GND 1G
+
+X1 A1 B1 C0     S1 C1_int FULL_ADDER_1B
+X2 A2 B2 C1_int S2 C2_int FULL_ADDER_1B
+X3 A3 B3 C2_int S3 C3_int FULL_ADDER_1B
+X4 A4 B4 C3_int S4 C4     FULL_ADDER_1B
+
+.ENDS
