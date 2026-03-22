@@ -793,8 +793,8 @@
 		)
 	)
 	(sheet
-		(at 82.55 93.98)
-		(size 12.7 3.81)
+		(at 105.41 83.82)
+		(size 12.7 50.8)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -809,7 +809,7 @@
 		)
 		(uuid "0eaf8b1b-208e-4530-9e71-9b0391e18fef")
 		(property "Sheetname" "DECODE"
-			(at 82.55 93.2684 0)
+			(at 105.41 83.1084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -818,12 +818,122 @@
 			)
 		)
 		(property "Sheetfile" "DECODE.kicad_sch"
-			(at 82.55 98.3746 0)
+			(at 105.41 135.2046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "OP[0..3]" input
+			(at 105.41 85.09 180)
+			(uuid "097e1f3b-28f2-41d6-85bb-4ab88ce93493")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{EN}" input
+			(at 105.41 88.9 180)
+			(uuid "d5edc33c-d4ad-44d4-babd-0dc3da6cd330")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{REG_LOAD}" output
+			(at 118.11 133.35 0)
+			(uuid "883f86ab-4382-425a-8871-13f3745ced57")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "~{SEL_ADD}" output
+			(at 118.11 121.92 0)
+			(uuid "a8ef1ed3-e545-477a-adb4-f1dd0e5a564c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "~{SEL_AND}" output
+			(at 118.11 106.68 0)
+			(uuid "fdf70216-fdee-4431-a1c4-3fe233f0eb00")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "~{SEL_NOT}" output
+			(at 118.11 110.49 0)
+			(uuid "6b615d8c-3cf7-40f4-a2b9-5ed56af774cd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "~{SEL_OR}" output
+			(at 118.11 102.87 0)
+			(uuid "1557831b-6fd0-49f4-b12c-25b6dba44b13")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "~{SEL_SHL}" output
+			(at 118.11 125.73 0)
+			(uuid "d63bb5fa-4340-4d06-93d9-f2c5924a27c0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "~{SEL_SHR}" output
+			(at 118.11 129.54 0)
+			(uuid "7d7893e3-1114-4a17-9b1e-f4a08a7baa6b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "~{SEL_SUB}" output
+			(at 118.11 118.11 0)
+			(uuid "8a2bc6e8-5452-4823-845e-543d6635487f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "~{SEL_XOR}" output
+			(at 118.11 114.3 0)
+			(uuid "8846a1f2-aca7-47da-b0d7-3c01b305c3ff")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -907,7 +1017,7 @@
 		)
 	)
 	(sheet
-		(at 81.28 46.99)
+		(at 105.41 40.64)
 		(size 17.78 15.24)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -923,7 +1033,7 @@
 		)
 		(uuid "3c4c5033-bd2a-4f85-be2a-cffc4fb60939")
 		(property "Sheetname" "REGISTER"
-			(at 81.28 46.2784 0)
+			(at 105.41 39.9284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -932,7 +1042,7 @@
 			)
 		)
 		(property "Sheetfile" "REGISTER.kicad_sch"
-			(at 81.28 62.8146 0)
+			(at 105.41 56.4646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -941,7 +1051,7 @@
 			)
 		)
 		(pin "CLK" input
-			(at 81.28 53.34 180)
+			(at 105.41 46.99 180)
 			(uuid "c6eb8a9d-c459-4572-87fb-705703502dc3")
 			(effects
 				(font
@@ -951,7 +1061,7 @@
 			)
 		)
 		(pin "REG_IN[0..15]" input
-			(at 81.28 49.53 180)
+			(at 105.41 43.18 180)
 			(uuid "7b271062-9efd-43b2-89d1-81a21272de3f")
 			(effects
 				(font
@@ -961,7 +1071,7 @@
 			)
 		)
 		(pin "REG_OUT[0..15]" output
-			(at 99.06 59.69 0)
+			(at 123.19 53.34 0)
 			(uuid "c9017d35-c540-414d-a5ed-6e86d53dcb61")
 			(effects
 				(font
@@ -971,7 +1081,7 @@
 			)
 		)
 		(pin "~{REG_EN}" input
-			(at 81.28 57.15 180)
+			(at 105.41 50.8 180)
 			(uuid "79e89a76-21cb-4bb7-9029-e2d14669d1e0")
 			(effects
 				(font
@@ -989,7 +1099,7 @@
 		)
 	)
 	(sheet
-		(at 81.28 68.58)
+		(at 105.41 62.23)
 		(size 12.7 15.24)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1005,7 +1115,7 @@
 		)
 		(uuid "5ab12d4b-f89e-49d0-8204-204e90469800")
 		(property "Sheetname" "OUT_EN"
-			(at 81.28 67.8684 0)
+			(at 105.41 61.5184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1014,7 +1124,7 @@
 			)
 		)
 		(property "Sheetfile" "OUT_EN.kicad_sch"
-			(at 81.28 84.4046 0)
+			(at 105.41 78.0546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1023,7 +1133,7 @@
 			)
 		)
 		(pin "IN[0..15]" input
-			(at 81.28 71.12 180)
+			(at 105.41 64.77 180)
 			(uuid "3ff209c6-baf7-4be5-9a46-a5dd2cf1e61f")
 			(effects
 				(font
@@ -1033,7 +1143,7 @@
 			)
 		)
 		(pin "OUT[0..15]" output
-			(at 93.98 81.28 0)
+			(at 118.11 74.93 0)
 			(uuid "282f94fa-c8d3-41ca-80e2-8e9c8a3a28b7")
 			(effects
 				(font
@@ -1043,7 +1153,7 @@
 			)
 		)
 		(pin "~{CE}" input
-			(at 81.28 74.93 180)
+			(at 105.41 68.58 180)
 			(uuid "e4181493-e9e9-4323-a2bb-9d8652c9bd3d")
 			(effects
 				(font
