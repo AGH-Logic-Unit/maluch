@@ -5,24 +5,33 @@
 
 import types::csr_t;
 
-module counter (
-        input logic [31:0]  instr_pointer,
+module program_counter (
+        input logic [15:0]  instr_pointer,
         input csr_t         csr,
         input logic [31:0]  instruction,
-        input logic [15:0]  src2,
-        output logic [31:0] _next_pointer
+        input logic [15:0]  instr_pointer_ctrl,
+        
+        output logic [15:0]  instr_pointer_seq,
+        output logic [15:0] _nxt_instr_pointer
 );
 
     import types::instr_t;
+    instr_t i;
+    assign i = instruction;
 
     logic branch_valid;
 
     logic [3:0] _code;
-    assign _code = {instruction[28], instruction[26:24]};
+    assign _code = {i.opcode[0], i.funct};
 
     logic branching;
-    assign branching = (instruction[31:28] ==? 4'b010x) ? 1 : 0;
+    assign branching = (i.opcode ==? 4'b010x) ? 1 : 0;
 
+    logic subroute_ctrl;
+    assign subroute_ctrl = i.opcode inside {4'b1010, 4'b1011} ? 1 : 0;
+
+    logic invalid;
+    assign invalid = i.opcode == 4'b0000 ? 1 : 0;
 
     always_comb begin
 
@@ -47,22 +56,19 @@ module counter (
 
     end
 
+    logic [15:0]    _pointer, _pointer_seq;
 
-    instr_t i;
-    assign i = instruction;
+    always_comb begin
+        _pointer = instr_pointer;
+        _pointer_seq = instr_pointer + (i.imm_valid ? 2 : 1);
 
-    logic [15:0]    _pointer0;
-    logic [15:0]    _pointer1;
+        if (subroute_ctrl || (branching && branch_valid))
+            _pointer = i.imm_valid ? i.imm : instr_pointer_ctrl;
+        else if (!invalid)
+            _pointer = _pointer_seq;
+    end
 
-    always_comb _pointer0 = branching && branch_valid ? src2 :
-                            i.imm_valid ? instr_pointer[15:0] + 1 :
-                            instr_pointer[15:0];
-
-    always_comb _pointer1 = branching && branch_valid ? src2 + 1 :
-                            i.imm_valid ? instr_pointer[15:0] + 2 :
-                            instr_pointer[15:0] + 1;
-
-
-    assign _next_pointer = {_pointer0, _pointer1};
+    assign instr_pointer_seq = _pointer_seq;
+    assign _nxt_instr_pointer = _pointer;
 
 endmodule

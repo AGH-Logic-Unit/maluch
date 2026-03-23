@@ -18,19 +18,32 @@ private:
     uint64_t cycle_count = 0;
     
 public:
+    uint64_t ns_count = 0;
+
     bool loadInstructions(const std::string& filename) {
         return Memmory->program(filename);
     }
     
-    uint16_t getInstruction(uint16_t pc) {
-        return Memmory->read(pc);
+    uint32_t getInstruction(uint16_t pc) {
+        return Memmory->read32(pc);
+    }
+
+    uint16_t getData(uint16_t address) {
+        return Memmory->read(address);
+    }
+
+    void writeData(uint16_t address, uint16_t data) {
+        Memmory->write(address, data);
     }
     
     bool toggleClock() {
-        clk = !clk;
-        if (clk) { // Rising edge
+        ns_count = (ns_count + 1) % 20;
+        bool next_clk = (ns_count <= 10);
+
+        if (!clk && next_clk) {
             cycle_count++;
         }
+        clk = next_clk;
         return clk;
     }
     
@@ -88,7 +101,7 @@ int main(int argc, char* argv[]) {
     std::cout << "Applying reset..." << std::endl;
     cpu->_reset = 1;
     cpu->clk = 0;
-    cpu->instr_in = 0;
+    cpu->mem2core_instr = 0;
     cpu->eval();
     if (tfp) tfp->dump(contextp->time());
     contextp->timeInc(1);
@@ -113,19 +126,39 @@ int main(int argc, char* argv[]) {
         // Toggle clock
         cpu->clk = tb.toggleClock();
         
-        // On rising edge, feed new instruction
-        if (cpu->clk) {
-            uint16_t finstr = tb.getInstruction(static_cast<uint16_t>(cpu->pointer >> 16));
-            uint16_t sinstr = tb.getInstruction(static_cast<uint16_t>(cpu->pointer & 0x0000FFFF));
-            cpu->instr_in = (static_cast<uint32_t>(finstr) << 16) + static_cast<uint32_t>(sinstr);
+        // Feed new instruction slightly after rising edge
+        uint32_t instr = tb.getInstruction(static_cast<uint16_t>(cpu->core2mem_instr_pointer));
+        
+        if (tb.ns_count == 3) { // Simulating instruction fetch delay
+            cpu->mem2core_instr = static_cast<uint32_t>(instr);
             if (verbose) {
-                std::cout << "Cycle " << tb.getCycleCount() 
-                            << ": Pointer " << std::hex << cpu->pointer
-                            << " instruction 0x" << std::hex << cpu->instr_in << std::dec << std::endl;
+                std::cout << "Cycle " << std::dec << (tb.getCycleCount() + 1) 
+                            << ": Pointer 0x" << std::hex << std::setw(8) << std::setfill('0') << cpu->core2mem_instr_pointer
+                            << " instruction to execute: 0x" << cpu->mem2core_instr << std::endl;
             }
             instructions_executed++;
         }
-        
+
+        // Evaluate the CPU
+        cpu->eval();
+
+        if (cpu->core2io_w_en && tb.ns_count == 12) { // Simulating I/O write delay
+            std::cout << "I/O write: Address 0x" << std::hex << std::setw(4) << std::setfill('0') << (int)cpu->core2io_addr
+                      << " Data 0x" << std::hex << std::setw(4) << std::setfill('0') << cpu->core2io_data_w << std::dec << std::endl;
+        } else if (cpu->core2io_r_en && tb.ns_count == 12) { // Simulating I/O read delay
+            cpu->io2core_data_r = 0xABCD; // Example I/O read data
+            std::cout << "I/O read: Address 0x" << std::hex << std::setw(4) << std::setfill('0') << (int)cpu->core2io_addr
+                      << " Data read: 0x" << std::hex << std::setw(4) << std::setfill('0') << cpu->io2core_data_r << std::dec << std::endl;
+        }
+
+        if (!cpu->clk && cpu->core2mem_w_en && tb.ns_count == 13) { // Simulating memory write delay
+            std::cout << "Memory write: Address 0x" << std::hex << std::setw(4) << std::setfill('0') << cpu->core2mem_addr
+                      << " Data 0x" << std::hex << std::setw(4) << std::setfill('0') << cpu->core2mem_data_w << std::dec << std::endl;
+            tb.writeData(static_cast<uint16_t>(cpu->core2mem_addr), static_cast<uint16_t>(cpu->core2mem_data_w));
+        }
+
+        cpu->mem2core_data_r = tb.getData(static_cast<uint16_t>(cpu->core2mem_addr));
+
         // Evaluate the CPU
         cpu->eval();
         

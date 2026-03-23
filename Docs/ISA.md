@@ -64,10 +64,10 @@ word - 16bit, base length on which ISA operates
 |baa src | 0101 | 101 | if(FC = 0 and FZ = 0) IP <-- src (branch if above (unsigned)) |
 |bbb src | 0101 | 110 | if(FC = 1) IP <-- src (branch if below (unsigned)) |
 |bno src | 0101 | 111 | if(FO = 0) IP <-- src (branch if no overflow)
-|in Rd fff | 0110 | fff  | Rd <-- IO[fff] |
+|in fff Rd | 0110 | fff  | Rd <-- IO[fff] |
 |out fff src | 0111 | fff  | IO[fff] <-- src |
 |ldw Rd src | 1000 | XXX | Rd <-- MEM[src] |
-|stw src Rd | 1001 | XXX | MEM[src] <-- Rd |
+|stw Rd src | 1001 | XXX | MEM[src] <-- Rd |
 |call src | 1010 | XXX | MEM[SP - 1] <-- IP ; SP <-- SP - 1 ; IP <-- src |
 |ret | 1011 | 000 | IP <-- MEM[SP] ; SP <-- SP + 1|
 |iret | 1011 | 001 | IP <-- MEM[SP] ; SP <-- SP + 1 ; turns on interrupts |

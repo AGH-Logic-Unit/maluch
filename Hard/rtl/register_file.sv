@@ -17,7 +17,9 @@ module register_file #(
     input logic         _reset,
     // R/W intpus
     input logic         reg_w_en,
+    input logic         sp_w_en,
     input logic [15:0]  reg_in,
+    input logic [15:0]  sp_in,
     input logic [3:0]   addr_in,
     input logic [3:0]   addr_out1,
     input logic [3:0]   addr_out2,
@@ -33,22 +35,29 @@ module register_file #(
     assign reg0.int_flags = int_flags;
     assign reg0.busy_flags = busy_flags;
     regmask_t reg1;
-    logic [DataWidth-1:0] regs[2:NumRegs-2];
+    logic [DataWidth-1:0] reg2;
+    logic [DataWidth-1:0] regs[3:NumRegs-1];
 
     // Write logic
     always_ff @(posedge clk or posedge _reset) begin
         if (_reset) begin
-            for (int i=2; i<NumRegs; i++) begin
+            for (int i=3; i<NumRegs; i++) begin
                 regs[i] <= '0;
             end
             reg1 <= '0;
-        end
-        if (reg_w_en) begin
-            case (addr_in)
-                0: ;
-                1: reg1 <= reg_in;
-                default: regs[addr_in] <= reg_in;
-            endcase
+            reg2 <= '0;
+        end else begin
+            if (sp_w_en) begin
+                reg2 <= sp_in;
+            end
+            if (reg_w_en) begin
+                case (addr_in)
+                    0: ;
+                    1: reg1 <= reg_in;
+                    2: reg2 <= reg_in;
+                    default: regs[addr_in] <= reg_in;
+                endcase
+            end
         end
     end
 
@@ -58,11 +67,13 @@ module register_file #(
         case (addr_out1)
             0: reg_out1 = {reg0.int_flags & reg1.int_mask, reg0.busy_flags};
             1: reg_out1 = reg1;
+            2: reg_out1 = reg2;
             default: reg_out1 = regs[addr_out1];
         endcase
         case (addr_out2)
             0: reg_out2 = {reg0.int_flags & reg1.int_mask, reg0.busy_flags};
             1: reg_out2 = reg1;
+            2: reg_out2 = reg2;
             default: reg_out2 = regs[addr_out2];
         endcase
     end
