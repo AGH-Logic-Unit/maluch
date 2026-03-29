@@ -5,7 +5,10 @@
 	(uuid "44469b9e-1aca-4226-b7d1-84ff59c56448")
 	(paper "A4")
 	(title_block
-		(title "2xROM")
+		(title "2xROM AT28C256")
+		(rev "1")
+		(comment 1 "review: Hubert Wójcik")
+		(comment 2 "author: Maciej Rogoż")
 	)
 	(lib_symbols
 		(symbol "Device:C"
@@ -2927,7 +2930,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "012e0ea7-1b4d-413a-91da-0028d8ab9266")
-		(property "Reference" "#PWR0120"
+		(property "Reference" "#PWR0162"
 			(at 104.14 181.61 0)
 			(effects
 				(font
@@ -2977,7 +2980,7 @@
 		(instances
 			(project "memory_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/3e52e97d-2d91-445f-b76b-e1b0d1dc86b1"
-					(reference "#PWR0120")
+					(reference "#PWR0162")
 					(unit 1)
 				)
 			)
@@ -2993,7 +2996,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "54bb4b47-bd10-44a5-a78e-501b7e350394")
-		(property "Reference" "#PWR0124"
+		(property "Reference" "#PWR0166"
 			(at 124.46 171.45 0)
 			(effects
 				(font
@@ -3043,7 +3046,7 @@
 		(instances
 			(project "memory_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/3e52e97d-2d91-445f-b76b-e1b0d1dc86b1"
-					(reference "#PWR0124")
+					(reference "#PWR0166")
 					(unit 1)
 				)
 			)
@@ -3059,7 +3062,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "62a61e1e-8a79-4128-8c0c-09dfe0d56063")
-		(property "Reference" "#PWR0122"
+		(property "Reference" "#PWR0164"
 			(at 124.46 90.17 0)
 			(effects
 				(font
@@ -3109,7 +3112,7 @@
 		(instances
 			(project "memory_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/3e52e97d-2d91-445f-b76b-e1b0d1dc86b1"
-					(reference "#PWR0122")
+					(reference "#PWR0164")
 					(unit 1)
 				)
 			)
@@ -3125,7 +3128,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6ec773a5-466f-4e9f-9800-f6d05247d87b")
-		(property "Reference" "#PWR0118"
+		(property "Reference" "#PWR0160"
 			(at 104.14 100.33 0)
 			(effects
 				(font
@@ -3175,7 +3178,7 @@
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/3e52e97d-2d91-445f-b76b-e1b0d1dc86b1"
-					(reference "#PWR0118")
+					(reference "#PWR0160")
 					(unit 1)
 				)
 			)
@@ -3209,7 +3212,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 123.4948 76.2 0)
 			(effects
 				(font
@@ -3261,7 +3264,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "712ac463-9169-472d-9c38-84f3b2e18c37")
-		(property "Reference" "#PWR0117"
+		(property "Reference" "#PWR0159"
 			(at 104.14 33.02 0)
 			(effects
 				(font
@@ -3311,7 +3314,7 @@
 		(instances
 			(project ""
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/3e52e97d-2d91-445f-b76b-e1b0d1dc86b1"
-					(reference "#PWR0117")
+					(reference "#PWR0159")
 					(unit 1)
 				)
 			)
@@ -3345,7 +3348,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 123.4948 157.48 0)
 			(effects
 				(font
@@ -3397,7 +3400,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aa5416c6-fc0f-41c7-b250-781ac14e2279")
-		(property "Reference" "#PWR0114"
+		(property "Reference" "#PWR0156"
 			(at 77.47 166.37 0)
 			(effects
 				(font
@@ -3448,7 +3451,7 @@
 		(instances
 			(project "memory_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/3e52e97d-2d91-445f-b76b-e1b0d1dc86b1"
-					(reference "#PWR0114")
+					(reference "#PWR0156")
 					(unit 1)
 				)
 			)
@@ -3482,7 +3485,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-28_W15.24mm_Socket"
 			(at 104.14 58.42 0)
 			(effects
 				(font
@@ -3621,7 +3624,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca15c4ee-fa3c-485e-9383-356d75b81a5b")
-		(property "Reference" "#PWR0123"
+		(property "Reference" "#PWR0165"
 			(at 124.46 161.29 0)
 			(effects
 				(font
@@ -3671,7 +3674,7 @@
 		(instances
 			(project "memory_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/3e52e97d-2d91-445f-b76b-e1b0d1dc86b1"
-					(reference "#PWR0123")
+					(reference "#PWR0165")
 					(unit 1)
 				)
 			)
@@ -3687,7 +3690,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cf35c491-0285-475a-ac8d-7ab40857e4bf")
-		(property "Reference" "#PWR0115"
+		(property "Reference" "#PWR0157"
 			(at 88.9 80.01 0)
 			(effects
 				(font
@@ -3738,7 +3741,7 @@
 		(instances
 			(project "memory_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/3e52e97d-2d91-445f-b76b-e1b0d1dc86b1"
-					(reference "#PWR0115")
+					(reference "#PWR0157")
 					(unit 1)
 				)
 			)
@@ -3754,7 +3757,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d29c8982-35c0-45d5-a356-908483e6d33a")
-		(property "Reference" "#PWR0116"
+		(property "Reference" "#PWR0158"
 			(at 88.9 161.29 0)
 			(effects
 				(font
@@ -3805,7 +3808,7 @@
 		(instances
 			(project "memory_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/3e52e97d-2d91-445f-b76b-e1b0d1dc86b1"
-					(reference "#PWR0116")
+					(reference "#PWR0158")
 					(unit 1)
 				)
 			)
@@ -3821,7 +3824,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db241b0c-7dd4-4454-9f86-d988ea794678")
-		(property "Reference" "#PWR0113"
+		(property "Reference" "#PWR0155"
 			(at 77.47 85.09 0)
 			(effects
 				(font
@@ -3872,7 +3875,7 @@
 		(instances
 			(project "memory_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/3e52e97d-2d91-445f-b76b-e1b0d1dc86b1"
-					(reference "#PWR0113")
+					(reference "#PWR0155")
 					(unit 1)
 				)
 			)
@@ -3906,7 +3909,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-28_W15.24mm_Socket"
 			(at 104.14 139.7 0)
 			(effects
 				(font
@@ -4045,7 +4048,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fd64b05f-6111-446c-b8ee-2b4745f4154f")
-		(property "Reference" "#PWR0119"
+		(property "Reference" "#PWR0161"
 			(at 104.14 114.3 0)
 			(effects
 				(font
@@ -4095,7 +4098,7 @@
 		(instances
 			(project "memory_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/3e52e97d-2d91-445f-b76b-e1b0d1dc86b1"
-					(reference "#PWR0119")
+					(reference "#PWR0161")
 					(unit 1)
 				)
 			)
@@ -4111,7 +4114,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe786638-4ab8-4562-891c-115f021e61bc")
-		(property "Reference" "#PWR0121"
+		(property "Reference" "#PWR0163"
 			(at 124.46 80.01 0)
 			(effects
 				(font
@@ -4161,7 +4164,7 @@
 		(instances
 			(project "memory_controller"
 				(path "/dccec861-b967-466c-843e-d6d1ad6064ce/3e52e97d-2d91-445f-b76b-e1b0d1dc86b1"
-					(reference "#PWR0121")
+					(reference "#PWR0163")
 					(unit 1)
 				)
 			)
