@@ -34,7 +34,7 @@ module graphics_card (
       .address(address),
       .data_out(data_out),
       .vram_addr(gpu2mem_addr),
-      .vram_data(mem2gpu_data),
+      .vram_data(mem2gpu_data)
   );
 
   vga_controller vga_controller (

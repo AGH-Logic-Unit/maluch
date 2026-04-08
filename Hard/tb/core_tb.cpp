@@ -1,4 +1,5 @@
 #include "Vcore.h"
+#include "Vcore_core.h"
 #include "verilated.h"
 #include "verilated_fst_c.h"
 #include <iostream>
@@ -38,7 +39,7 @@ public:
     
     bool toggleClock() {
         ns_count = (ns_count + 1) % 20;
-        bool next_clk = (ns_count <= 10);
+        bool next_clk = (ns_count < 10);
 
         if (!clk && next_clk) {
             cycle_count++;
@@ -134,13 +135,28 @@ int main(int argc, char* argv[]) {
             if (verbose) {
                 std::cout << "Cycle " << std::dec << (tb.getCycleCount() + 1) 
                             << ": Pointer 0x" << std::hex << std::setw(8) << std::setfill('0') << cpu->core2mem_instr_pointer
-                            << " instruction to execute: 0x" << cpu->mem2core_instr << std::endl;
+                            << " instruction to execute: 0x" << cpu->core->instruction << " Time: " << std::dec << contextp->time() << std::endl;
             }
             instructions_executed++;
         }
 
         // Evaluate the CPU
         cpu->eval();
+
+        if (tb.getCycleCount() == 30 && tb.ns_count == 10) {
+            std::cout << "Simulating INT3" << std::endl;
+            cpu->io2core_int_f = 0x10;
+        }
+
+        if (cpu->core2io_w_en && tb.ns_count == 12) { // Simulating I/O write delay
+            std::cout << "I/O write: Address 0x" << std::hex << std::setw(4) << std::setfill('0') << (int)cpu->core2io_addr
+                      << " Data 0x" << std::hex << std::setw(4) << std::setfill('0') << cpu->core2io_data_w << std::dec << std::endl;
+        } else if (cpu->core2io_r_en && tb.ns_count == 12) { // Simulating I/O read delay
+            cpu->io2core_data_r = 0xABCD; // Example I/O read data
+            std::cout << "I/O read: Address 0x" << std::hex << std::setw(4) << std::setfill('0') << (int)cpu->core2io_addr
+                      << " Data read: 0x" << std::hex << std::setw(4) << std::setfill('0') << cpu->io2core_data_r << std::dec << std::endl;
+            cpu->io2core_int_f = 0x00;
+        }
 
         if (!cpu->clk && cpu->core2mem_w_en && tb.ns_count == 13) { // Simulating memory write delay
             std::cout << "Memory write: Address 0x" << std::hex << std::setw(4) << std::setfill('0') << cpu->core2mem_addr
@@ -163,7 +179,7 @@ int main(int argc, char* argv[]) {
             tb.printStatus();
         }
 
-        if (tb.getCycleCount() %20 == 0 ) tfp->flush();
+        if (tfp && tb.getCycleCount() % 20 == 0 && tb.ns_count == 0) tfp->flush();
         
         contextp->timeInc(1);
     }
