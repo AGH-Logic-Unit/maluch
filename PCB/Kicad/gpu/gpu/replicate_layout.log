@@ -1,0 +1,24 @@
+04-19 23:39:03 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 409:Plugin executed on: 'linux'
+04-19 23:39:03 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 410:Plugin executed with python version: '3.14.3 (main, Feb 13 2026, 15:31:44) [GCC 15.2.1 20260209]'
+04-19 23:39:03 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 411:KiCad build version: 10.0.0
+04-19 23:39:03 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 412:Plugin version: 4.0.3
+04-19 23:39:03 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 413:Frame repr: <wx._core.Frame object at 0x7f8049817bf0>
+04-19 23:39:03 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 437:Preparing replicator with U24 as a reference
+04-19 23:39:03 com_github_MitjaNemec_ReplicateLayout.replicate_layout 117:getting a list of all footprints on board
+04-19 23:39:03 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 485:source anchor footprint is 'U24'
+Located on: ['/VGA Synchronization/', '/VGA Synchronization/12bit Hcounter/']
+With filenames: ['untitled.kicad_sch', '16bit_counter.kicad_sch']
+With sheet_id:['/VGA Synchronization/', '/VGA Synchronization/12bit Hcounter/']
+04-19 23:39:03 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 492:Corresponding footprints are 
+[('U24', ['/VGA Synchronization/', '/VGA Synchronization/12bit Hcounter/']), ('U11', ['/VGA Synchronization/', '/VGA Synchronization/12bit Vcounter/'])]
+04-19 23:39:03 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 504:Showing dialog
+04-19 23:39:03 com_github_MitjaNemec_ReplicateLayout.replicate_layout 472:constructing a list of sheets suitable for replication on level:'/VGA Synchronization/12bit Hcounter/', file:'16bit_counter.kicad_sch'
+04-19 23:39:03 com_github_MitjaNemec_ReplicateLayout.replicate_layout 509:suitable sheets are:[['/VGA Synchronization/', '/VGA Synchronization/12bit Vcounter/']]
+04-19 23:39:03 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1512:Level selected: ['/VGA Synchronization/', '/VGA Synchronization/12bit Hcounter/']
+04-19 23:39:03 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1336:Filtering list of tracks
+04-19 23:39:03 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 519:Fatal error when making an instance of replicator
+Traceback (most recent call last):
+  File "/home/merlin/.local/share/kicad/10.0/3rdparty//plugins/com_github_MitjaNemec_ReplicateLayout/action_replicate_layout.py", line 509, in Run
+    toolbar_pos = self.frame.FindWindowById(pcbnew.ID_V_TOOLBAR).GetScreenPosition()
+                                            ^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'pcbnew' has no attribute 'ID_V_TOOLBAR'
