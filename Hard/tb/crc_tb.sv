@@ -95,4 +95,9 @@ module crc_tb();
         $display("PASS crc_tb");
         $finish;
     end
+
+    initial begin
+        $dumpfile("waveforms/crc_tb.fst");
+        $dumpvars(0, crc_tb);
+    end
 endmodule
