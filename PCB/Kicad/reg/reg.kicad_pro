@@ -3,6 +3,8 @@
     "3dviewports": [],
     "design_settings": {
       "defaults": {
+        "apply_defaults_to_fp_barcodes": false,
+        "apply_defaults_to_fp_dimensions": false,
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
@@ -71,6 +73,7 @@
         "extra_footprint": "warning",
         "footprint": "error",
         "footprint_filters_mismatch": "ignore",
+        "footprint_symbol_field_mismatch": "warning",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
@@ -88,6 +91,7 @@
         "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
+        "missing_tuning_profile": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
@@ -107,9 +111,12 @@
         "too_many_vias": "error",
         "track_angle": "error",
         "track_dangling": "warning",
+        "track_not_centered_on_via": "ignore",
+        "track_on_post_machined_layer": "error",
         "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
+        "tuning_profile_track_geometries": "ignore",
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
@@ -211,17 +218,28 @@
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
+      "bom_rev": "",
       "dist": "",
       "distpn": "",
       "internal_id": "",
       "mfg": "",
-      "mpn": ""
+      "mpn": "",
+      "sch_revision": ""
     },
     "layer_pairs": [],
     "layer_presets": [],
     "viewports": []
   },
   "boards": [],
+  "component_class_settings": {
+    "assignments": [],
+    "meta": {
+      "version": 0
+    },
+    "sheet_component_classes": {
+      "enabled": false
+    }
+  },
   "cvpcb": {
     "equivalence_files": []
   },
@@ -411,11 +429,14 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
+      "field_name_whitespace": "warning",
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
       "four_way_junction": "ignore",
       "global_label_dangling": "warning",
+      "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
+      "isolated_pin_label": "warning",
       "label_dangling": "error",
       "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
@@ -438,6 +459,7 @@
       "similar_power": "warning",
       "simulation_model_issue": "ignore",
       "single_global_label": "ignore",
+      "stacked_pin_name": "warning",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
       "undefined_netclass": "error",
@@ -470,13 +492,14 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
+        "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
       }
     ],
     "meta": {
-      "version": 4
+      "version": 5
     },
     "net_colors": null,
     "netclass_assignments": null,
@@ -498,6 +521,10 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "annotation": {
+      "method": 0,
+      "sort_order": 0
+    },
     "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
@@ -581,6 +608,7 @@
       "sort_asc": true,
       "sort_field": "Reference"
     },
+    "bus_aliases": {},
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
@@ -588,6 +616,7 @@
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
+      "hop_over_size_choice": 0,
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -619,6 +648,7 @@
     },
     "page_layout_descr_file": "",
     "plot_directory": "",
+    "reuse_designators": true,
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -627,12 +657,21 @@
     "spice_save_all_dissipations": false,
     "spice_save_all_voltages": false,
     "subpart_first_id": 65,
-    "subpart_id_separator": 0
+    "subpart_id_separator": 0,
+    "top_level_sheets": [
+      {
+        "filename": "reg.kicad_sch",
+        "name": "reg",
+        "uuid": "e5ea2144-296a-4524-8c5b-c3f6342ff44f"
+      }
+    ],
+    "used_designators": "J2,J11-17,#PWR287-289",
+    "variants": []
   },
   "sheets": [
     [
       "e5ea2144-296a-4524-8c5b-c3f6342ff44f",
-      "Root"
+      "reg"
     ],
     [
       "27f808ce-0319-4468-b03c-bd2f50effdd4",
@@ -651,20 +690,20 @@
       "T74154"
     ],
     [
-      "7885197f-34d2-4aa3-9bbf-7fa671eeaca2",
-      "16 bit buffor2"
+      "634deb76-45fb-4395-9517-049a10fe970e",
+      "16 bit buffor21"
     ],
     [
       "84777844-e930-4940-be6c-cd98ed976a37",
       "16 bit buffor3"
     ],
     [
-      "3675aacb-3a68-485b-b0f6-890cbed9528a",
-      "16 bit buffor4"
+      "ac42550f-d9d0-4341-a5d6-fc65d93d2bad",
+      "16 bit buffor25"
     ],
     [
-      "5bccec9c-d2d2-4634-b74b-f0e3389ce674",
-      "16 bit buffor5"
+      "c55de957-d5a3-45c6-9845-9f961f30a683",
+      "16 bit buffor26"
     ],
     [
       "aaea77b9-5a11-451e-acea-670620db62c0",
@@ -683,104 +722,104 @@
       "16 bit register4"
     ],
     [
-      "24956380-2057-4d41-be5c-597b554b56b2",
-      "16 bit buffor10"
+      "868b5c93-0747-4852-b93e-d0bef65d631b",
+      "16 bit buffor31"
     ],
     [
-      "07606cc6-3bda-4ff5-a11b-89884b40fcb8",
-      "16 bit buffor11"
+      "48ff2cb5-0f8b-4e13-967e-5db2dd916882",
+      "16 bit buffor32"
     ],
     [
       "a6c98a6f-a1fe-47ec-be09-ec6e42ca8e3f",
       "16 bit register6"
     ],
     [
-      "1c88d763-04fb-4aab-8388-1e93f5851eea",
-      "16 bit buffor12"
+      "968a3bf0-4724-4d31-9f3d-04a96645d25d",
+      "16 bit buffor33"
     ],
     [
       "70cc4c9a-c7ce-4b30-819e-f95ed0fb15c3",
       "16 bit register7"
     ],
     [
-      "fd63b237-0883-4a58-ace3-4392896caf7d",
-      "16 bit buffor13"
+      "d84840fa-2e44-4e18-a15b-9e800ed0bcea",
+      "16 bit buffor34"
     ],
     [
       "d8e4d84b-10e0-4b4e-a0c4-0d7900664559",
       "16 bit register8"
     ],
     [
-      "5a6c055e-d592-4dca-aa70-80a3f5abb0e9",
-      "16 bit buffor14"
+      "0c48952d-a14e-480c-bc0e-560391300806",
+      "16 bit buffor35"
     ],
     [
       "b24a577c-9676-449b-8993-777af89e41cd",
       "16 bit register9"
     ],
     [
-      "b4fdacce-57df-47d6-94f1-c892f72d7a5f",
-      "16 bit buffor15"
+      "c06b3639-5330-4edf-8de9-2993ea49e1b0",
+      "16 bit buffor36"
     ],
     [
       "ec1f9aa3-b9ee-4e78-a6c3-12fea5410cf0",
       "16 bit register10"
     ],
     [
-      "f6fbb212-edb7-4263-a164-f2681ec8621a",
-      "16 bit buffor22"
+      "0c5ea6e7-d512-439a-aaed-8443accc1c2e",
+      "16 bit buffor27"
     ],
     [
-      "e0e481dd-d56f-4715-89f6-c63a76bd42f0",
-      "16 bit buffor7"
+      "a8e1d671-13e2-4de0-84a7-80f15724c51a",
+      "16 bit buffor28"
     ],
     [
-      "34c70520-9f3f-4a9c-9427-b91bcb78dce4",
-      "16 bit buffor8"
+      "976cbd64-c686-4c90-aeaa-e324860f5722",
+      "16 bit buffor29"
     ],
     [
-      "434ee3d0-daec-4cc2-b75f-6128d82aa44a",
-      "16 bit buffor9"
+      "4091455b-ab5c-4441-9e37-df99f5cce491",
+      "16 bit buffor30"
     ],
     [
       "18f685f4-49f4-4291-b9d1-ecac15bb06bb",
       "16 bit register5"
     ],
     [
-      "ef049bdc-0777-4b3d-a317-b3c074757c65",
-      "16 bit buffor16"
+      "b4dae543-a54a-4af7-aff6-b6f1af6f2f6b",
+      "16 bit buffor37"
     ],
     [
       "0bae4094-082e-4b26-899c-79db617b94b2",
       "16 bit register11"
     ],
     [
-      "bfcc8b6b-0f10-4e7c-b4d5-18507e282ed7",
-      "16 bit buffor17"
+      "56f590cb-8488-4348-9ec0-6d7141e6f3e5",
+      "16 bit buffor38"
     ],
     [
       "92c83b8e-ae34-4f53-9a7d-32a94d679a53",
       "16 bit register12"
     ],
     [
-      "8efc2628-23ea-497e-899c-456a27f92688",
-      "16 bit buffor18"
+      "cb4067a7-63ae-46ea-9555-3f52dcb3313a",
+      "16 bit buffor40"
     ],
     [
       "e483ecbc-9717-4d79-8843-524f382acebe",
       "16 bit register13"
     ],
     [
-      "9882e6b1-cfde-435d-9ebc-768715e76b9a",
-      "16 bit buffor19"
+      "bd026c1b-dfae-43d7-9ebe-5f8b61d7a5f2",
+      "16 bit buffor39"
     ],
     [
       "a3e1c781-7354-4ffb-86d8-b2ae188f3bbc",
       "16 bit register14"
     ],
     [
-      "a4cddaed-b3e4-424e-8b5c-88e3d5fe5f04",
-      "16 bit buffor20"
+      "6619b1ab-7f94-4a46-86f6-12de9399b3c6",
+      "16 bit buffor41"
     ],
     [
       "22c2b447-d3ee-4939-ac70-cb89133ce16c",
@@ -805,39 +844,13 @@
     [
       "0637fef5-0f55-4f54-ae60-aa7dfdf942b0",
       "running_and_8b"
-    ],
-    [
-      "a570e21e-b4a1-4287-bfa2-ec00053e8cdc",
-      "data_1"
-    ],
-    [
-      "7329afbb-e955-4ffa-9962-4bca7c85d44a",
-      "mask_saved"
-    ],
-    [
-      "9adec0a6-2ebd-4272-8e7a-b7b03b11656f",
-      "data"
-    ],
-    [
-      "2ccf1bf1-4273-4625-b9fc-017288b95a40",
-      "r1_out"
-    ],
-    [
-      "637e5b67-aa85-4704-9279-bc87b4b94078",
-      "mask_saved_1"
-    ],
-    [
-      "241691bc-de88-42ac-bf4c-44766b727791",
-      "0000"
-    ],
-    [
-      "e05aaee8-47e0-415e-8a43-6f8186892a1e",
-      "reg_out"
-    ],
-    [
-      "7aa4ce45-fba4-44f7-8569-717eef0c8679",
-      "IO_bus[0..7]_IO_int[8..15]"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {},
+  "tuning_profiles": {
+    "meta": {
+      "version": 0
+    },
+    "tuning_profiles_impedance_geometric": []
+  }
 }
