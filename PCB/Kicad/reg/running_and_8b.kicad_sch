@@ -993,183 +993,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C_Polarized"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Polarized"
-				(at 0.635 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Polarized capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "CP_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_Polarized_0_1"
-				(rectangle
-					(start -2.286 0.508)
-					(end 2.286 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 2.286) (xy -0.762 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.794) (xy -1.27 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.286 -0.508)
-					(end -2.286 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "C_Polarized_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+5V"
 			(power global)
 			(pin_numbers
@@ -1426,46 +1249,10 @@
 		)
 	)
 	(junction
-		(at 81.28 29.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0e21a74a-939f-4477-8135-eee9369c88ba")
-	)
-	(junction
-		(at 69.85 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "21d1dbaa-017a-44af-8e16-42984c3bd042")
-	)
-	(junction
-		(at 71.12 29.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3039abaf-acc6-434d-9efa-346e7abb9159")
-	)
-	(junction
-		(at 99.06 39.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b5d6e97d-454b-4db9-90b8-b3598a1be80f")
-	)
-	(junction
-		(at 59.69 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bd1cf817-52ac-4be6-8aaa-c97be755e14a")
-	)
-	(junction
 		(at 140.97 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c8025145-08d1-4d7b-96d8-55d67ad96152")
-	)
-	(junction
-		(at 92.71 29.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c9ae8a03-c8d3-4c07-88c5-965cf00b9c82")
 	)
 	(no_connect
 		(at 156.21 147.32)
@@ -1543,26 +1330,6 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 39.37) (xy 99.06 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "500bf6a1-298a-456c-9162-3df0b5ad7794")
-	)
-	(wire
-		(pts
-			(xy 92.71 29.21) (xy 92.71 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "50613d40-fa24-480d-a986-c0e6b0c6bb7b")
-	)
-	(wire
-		(pts
 			(xy 67.31 138.43) (xy 77.47 138.43)
 		)
 		(stroke
@@ -1580,16 +1347,6 @@
 			(type default)
 		)
 		(uuid "5c50524e-8962-4413-a4ce-cfc1b1ce1e03")
-	)
-	(wire
-		(pts
-			(xy 113.03 31.75) (xy 113.03 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5e6d88e5-973e-4420-930b-3568d9357f9b")
 	)
 	(wire
 		(pts
@@ -1633,16 +1390,6 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 54.61) (xy 59.69 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72db221c-6792-4fa5-ab3e-06618d705d9f")
-	)
-	(wire
-		(pts
 			(xy 114.3 116.84) (xy 123.19 116.84)
 		)
 		(stroke
@@ -1670,26 +1417,6 @@
 			(type default)
 		)
 		(uuid "7fe776b1-c4cc-43e6-81a3-669773c5eb14")
-	)
-	(wire
-		(pts
-			(xy 50.8 29.21) (xy 71.12 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81f30321-b408-43fc-8545-dadf973aa8f8")
-	)
-	(wire
-		(pts
-			(xy 69.85 54.61) (xy 71.12 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "854da64c-22b4-4dfa-ad1b-38a06f9c171e")
 	)
 	(wire
 		(pts
@@ -1723,26 +1450,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 29.21) (xy 81.28 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aaa42e18-b315-460b-88ce-c894a909b119")
-	)
-	(wire
-		(pts
-			(xy 69.85 55.88) (xy 69.85 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "afa278dc-fb81-46ad-883f-763551a7a3cb")
-	)
-	(wire
-		(pts
 			(xy 68.58 102.87) (xy 77.47 102.87)
 		)
 		(stroke
@@ -1753,16 +1460,6 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 29.21) (xy 92.71 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b36e2417-2bec-442c-bde5-a1f65c19fcf5")
-	)
-	(wire
-		(pts
 			(xy 115.57 77.47) (xy 123.19 77.47)
 		)
 		(stroke
@@ -1770,16 +1467,6 @@
 			(type default)
 		)
 		(uuid "b3cffc16-cb16-4fea-b14e-28fcfc9671b7")
-	)
-	(wire
-		(pts
-			(xy 92.71 29.21) (xy 113.03 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4bfce51-b5b1-42d9-9881-aa0d396eb7ac")
 	)
 	(wire
 		(pts
@@ -1813,16 +1500,6 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 55.88) (xy 69.85 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c6e36c64-98f5-47af-957e-a1e594d8eb7e")
-	)
-	(wire
-		(pts
 			(xy 140.97 144.78) (xy 140.97 149.86)
 		)
 		(stroke
@@ -1830,16 +1507,6 @@
 			(type default)
 		)
 		(uuid "dcb32625-48f5-452f-8427-1e2ec9cca894")
-	)
-	(wire
-		(pts
-			(xy 99.06 39.37) (xy 113.03 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e04b1a5e-8fae-4917-8a7f-f0e0d8911ed2")
 	)
 	(wire
 		(pts
@@ -1873,26 +1540,6 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 54.61) (xy 69.85 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f039c9f1-8fe5-4f0a-9554-618a668d9e56")
-	)
-	(wire
-		(pts
-			(xy 59.69 54.61) (xy 59.69 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f44df465-7030-4d3f-85a2-f989b28010a2")
-	)
-	(wire
-		(pts
 			(xy 118.11 105.41) (xy 118.11 82.55)
 		)
 		(stroke
@@ -1900,16 +1547,6 @@
 			(type default)
 		)
 		(uuid "f9307af9-00cc-443b-9779-f416043e4694")
-	)
-	(wire
-		(pts
-			(xy 99.06 39.37) (xy 99.06 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa26229d-a39e-433e-82ce-02e3d036bb98")
 	)
 	(wire
 		(pts
@@ -2042,7 +1679,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS08"
+		(property "Value" "7408"
 			(at 85.0817 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2052,7 +1689,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_SMDSocket_SmallPads"
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 85.09 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -2063,7 +1700,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
+		(property "Datasheet" "https://www.tme.eu/pl/details/74hc08d.653/bramki-inwertery/nexperia/74hc08d-653/"
 			(at 85.09 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -2137,84 +1774,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 59.69 60.96 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0bad0d23-81b3-4187-9c14-c0ca8fe0d354")
-		(property "Reference" "#PWR0247"
-			(at 59.69 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 59.69 66.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 59.69 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 59.69 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 59.69 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a0917140-096e-4930-8418-ef203aadda98")
-		)
-		(instances
-			(project "reg"
-				(path "/e5ea2144-296a-4524-8c5b-c3f6342ff44f/0637fef5-0f55-4f54-ae60-aa7dfdf942b0"
-					(reference "#PWR0247")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "74xx:74LS08")
 		(at 148.59 147.32 0)
 		(unit 4)
@@ -2236,7 +1795,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS08"
+		(property "Value" "7408"
 			(at 148.5817 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2246,7 +1805,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-20_W7.62mm_SMDSocket_SmallPads"
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 148.59 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -2257,7 +1816,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
+		(property "Datasheet" "https://www.tme.eu/pl/details/74hc08d.653/bramki-inwertery/nexperia/74hc08d-653/"
 			(at 148.59 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -2331,8 +1890,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 113.03 35.56 0)
+		(lib_id "power:+5V")
+		(at 41.91 19.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2341,31 +1900,30 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3f584e4c-0f0b-43fb-8596-b5915b9c538a")
-		(property "Reference" "C86"
-			(at 116.84 33.4009 0)
+		(uuid "39978a30-a011-4ed2-b864-8c242993d208")
+		(property "Reference" "#PWR013"
+			(at 41.91 22.86 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "C_Polarized"
-			(at 116.84 35.9409 0)
+		(property "Value" "+5V"
+			(at 41.91 13.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 113.9952 39.37 0)
+		(property "Footprint" ""
+			(at 41.91 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2376,7 +1934,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 35.56 0)
+			(at 41.91 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2386,8 +1944,8 @@
 				)
 			)
 		)
-		(property "Description" "Polarized capacitor"
-			(at 113.03 35.56 0)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 41.91 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2398,15 +1956,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "751b00b2-9215-4885-b976-03b37ac9aa47")
-		)
-		(pin "2"
-			(uuid "16f6605a-251d-48bc-82d2-1fd3e466f8f2")
+			(uuid "4b72b8f3-7b0d-44b9-aa78-40ed940a6e75")
 		)
 		(instances
 			(project "reg"
 				(path "/e5ea2144-296a-4524-8c5b-c3f6342ff44f/0637fef5-0f55-4f54-ae60-aa7dfdf942b0"
-					(reference "C86")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -2414,7 +1969,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 50.8 41.91 0)
+		(at 21.59 31.75 0)
 		(unit 5)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2425,7 +1980,7 @@
 		(fields_autoplaced yes)
 		(uuid "407d761c-840d-4e68-bc9b-25bac6855aaa")
 		(property "Reference" "U91"
-			(at 57.15 40.6399 0)
+			(at 27.94 30.4799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2435,8 +1990,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "74LS08"
-			(at 57.15 43.1799 0)
+		(property "Value" "7408"
+			(at 27.94 33.0199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2446,8 +2001,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_SMDSocket_SmallPads"
-			(at 50.8 41.91 0)
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
+			(at 21.59 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2457,8 +2012,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 50.8 41.91 0)
+		(property "Datasheet" "https://www.tme.eu/pl/details/74hc08d.653/bramki-inwertery/nexperia/74hc08d-653/"
+			(at 21.59 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2469,7 +2024,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 50.8 41.91 0)
+			(at 21.59 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2552,7 +2107,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS08"
+		(property "Value" "7408"
 			(at 130.8017 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2562,7 +2117,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-20_W7.62mm_SMDSocket_SmallPads"
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 130.81 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -2573,7 +2128,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
+		(property "Datasheet" "https://www.tme.eu/pl/details/74hc08d.653/bramki-inwertery/nexperia/74hc08d-653/"
 			(at 130.81 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -2647,88 +2202,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 92.71 35.56 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5ccf2cce-61eb-40b8-aba3-394f3c381365")
-		(property "Reference" "C85"
-			(at 96.52 33.4009 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "C_Polarized"
-			(at 96.52 35.9409 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 93.6752 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 92.71 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 92.71 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4b8988cf-e544-4fe1-a279-14e9daead421")
-		)
-		(pin "2"
-			(uuid "bee5ce57-0d1c-4a88-a459-326959230dbf")
-		)
-		(instances
-			(project "reg"
-				(path "/e5ea2144-296a-4524-8c5b-c3f6342ff44f/0637fef5-0f55-4f54-ae60-aa7dfdf942b0"
-					(reference "C85")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "74xx:74LS08")
 		(at 130.81 119.38 0)
 		(unit 3)
@@ -2750,7 +2223,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS08"
+		(property "Value" "7408"
 			(at 130.8017 113.03 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2760,7 +2233,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-20_W7.62mm_SMDSocket_SmallPads"
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 130.81 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -2771,7 +2244,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
+		(property "Datasheet" "https://www.tme.eu/pl/details/74hc08d.653/bramki-inwertery/nexperia/74hc08d-653/"
 			(at 130.81 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -2866,7 +2339,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS08"
+		(property "Value" "7408"
 			(at 85.0817 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2876,7 +2349,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_SMDSocket_SmallPads"
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 85.09 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -2887,7 +2360,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
+		(property "Datasheet" "https://www.tme.eu/pl/details/74hc08d.653/bramki-inwertery/nexperia/74hc08d-653/"
 			(at 85.09 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -2962,7 +2435,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 71.12 41.91 0)
+		(at 41.91 31.75 0)
 		(unit 5)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2973,7 +2446,7 @@
 		(fields_autoplaced yes)
 		(uuid "708beb6f-3e38-4e5f-b381-f2fd73dea591")
 		(property "Reference" "U92"
-			(at 77.47 40.6399 0)
+			(at 48.26 30.4799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2983,8 +2456,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "74LS08"
-			(at 77.47 43.1799 0)
+		(property "Value" "7408"
+			(at 48.26 33.0199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2994,8 +2467,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-20_W7.62mm_SMDSocket_SmallPads"
-			(at 71.12 41.91 0)
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
+			(at 41.91 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3005,8 +2478,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 71.12 41.91 0)
+		(property "Datasheet" "https://www.tme.eu/pl/details/74hc08d.653/bramki-inwertery/nexperia/74hc08d-653/"
+			(at 41.91 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3017,7 +2490,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 71.12 41.91 0)
+			(at 41.91 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3074,6 +2547,84 @@
 				(path "/e5ea2144-296a-4524-8c5b-c3f6342ff44f/0637fef5-0f55-4f54-ae60-aa7dfdf942b0"
 					(reference "U92")
 					(unit 5)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 21.59 44.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "769329f4-787b-47bc-92d3-94cec9c19910")
+		(property "Reference" "#PWR01"
+			(at 21.59 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 21.59 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 21.59 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 21.59 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 21.59 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "58dc1d23-29d3-41ae-837b-2172e5996058")
+		)
+		(instances
+			(project "reg"
+				(path "/e5ea2144-296a-4524-8c5b-c3f6342ff44f/0637fef5-0f55-4f54-ae60-aa7dfdf942b0"
+					(reference "#PWR01")
+					(unit 1)
 				)
 			)
 		)
@@ -3178,7 +2729,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS08"
+		(property "Value" "7408"
 			(at 85.0817 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3188,7 +2739,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_SMDSocket_SmallPads"
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 85.09 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -3199,7 +2750,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
+		(property "Datasheet" "https://www.tme.eu/pl/details/74hc08d.653/bramki-inwertery/nexperia/74hc08d-653/"
 			(at 85.09 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -3274,7 +2825,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 81.28 29.21 0)
+		(at 21.59 19.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3285,7 +2836,7 @@
 		(fields_autoplaced yes)
 		(uuid "96ea95b1-9932-4445-bb1e-e99bdde1586c")
 		(property "Reference" "#PWR07"
-			(at 81.28 33.02 0)
+			(at 21.59 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3296,7 +2847,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 81.28 24.13 0)
+			(at 21.59 13.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3306,7 +2857,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 81.28 29.21 0)
+			(at 21.59 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3317,7 +2868,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 29.21 0)
+			(at 21.59 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3328,7 +2879,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 81.28 29.21 0)
+			(at 21.59 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3372,7 +2923,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS08"
+		(property "Value" "7408"
 			(at 130.8017 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3382,7 +2933,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-20_W7.62mm_SMDSocket_SmallPads"
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 130.81 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -3393,7 +2944,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
+		(property "Datasheet" "https://www.tme.eu/pl/details/74hc08d.653/bramki-inwertery/nexperia/74hc08d-653/"
 			(at 130.81 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -3488,7 +3039,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS08"
+		(property "Value" "7408"
 			(at 85.0817 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3498,7 +3049,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_SMDSocket_SmallPads"
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 85.09 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -3509,7 +3060,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
+		(property "Datasheet" "https://www.tme.eu/pl/details/74hc08d.653/bramki-inwertery/nexperia/74hc08d-653/"
 			(at 85.09 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -3577,6 +3128,84 @@
 			(project "reg"
 				(path "/e5ea2144-296a-4524-8c5b-c3f6342ff44f/0637fef5-0f55-4f54-ae60-aa7dfdf942b0"
 					(reference "U91")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 41.91 44.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f4815dcd-d442-40ec-8865-f50e5fea69b9")
+		(property "Reference" "#PWR0119"
+			(at 41.91 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 41.91 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 41.91 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0955b149-9b77-4420-ba8a-1846654025ec")
+		)
+		(instances
+			(project "reg"
+				(path "/e5ea2144-296a-4524-8c5b-c3f6342ff44f/0637fef5-0f55-4f54-ae60-aa7dfdf942b0"
+					(reference "#PWR0119")
 					(unit 1)
 				)
 			)
